@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="de" id="html-tag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="ASMR Color Reveal 🎨 Wake up the colors!">
+    <meta name="description" content="A neuro-inclusive digital safe space for kids. 100% stress-free, ad-free, and gently stimulating. Pre-register now to claim your reward!">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neurodivdev.github.io/public/asmr-color-reveal-kids/prereg-landingpage.html">
+    <meta property="og:title" content="ASMR Color Reveal 🎨 Wake up the colors!">
+    <meta property="og:description" content="A neuro-inclusive digital safe space for kids. 100% stress-free, ad-free, and gently stimulating. Pre-register now to claim your reward!">
+    <meta property="og:image" content="https://neurodivdev.github.io/public/asmr-color-reveal-kids/header-en.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://neurodivdev.github.io/public/asmr-color-reveal-kids/prereg-landingpage.html">
+    <meta property="twitter:title" content="ASMR Color Reveal 🎨 Wake up the colors!">
+    <meta property="twitter:description" content="A neuro-inclusive digital safe space for kids. 100% stress-free, ad-free, and gently stimulating. Pre-register now to claim your reward!">
+    <meta property="twitter:image" content="https://neurodivdev.github.io/public/asmr-color-reveal-kids/header-en.jpg">
+
+    <title id="page-title">ASMR Color Reveal Kids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #FFF8DC;
+            --card-bg: #FFFFE0;
+            --text-color: #1A1A2E;
+            --text-muted: #2D2D2D;
+            --accent-primary: #6200EE;
+            --accent-secondary: #03DAC6;
+            --btn-bg: #03DAC6;
+            --btn-text: #1A1A2E;
+            --btn-hover: #4CAF50;
+            --reward-border: #FFD700;
+            --title-text: #FFFFFF;
+            --title-outline: #7C4DFF;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1A1A2E;
+            --card-bg: #16213E;
+            --text-color: #FFFFE0;
+            --text-muted: #BB86FC;
+            --accent-primary: #03DAC6;
+            --accent-secondary: #BB86FC;
+            --btn-bg: #03DAC6;
+            --btn-text: #1A1A2E;
+            --btn-hover: #4CAF50;
+            --reward-border: #FFD700;
+            --title-text: #1C1B1F;
+            --title-outline: #CDA8FF;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .controls-container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 20px 20px 0 20px;
+        }
+
+        .control-btn {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: 2px solid var(--accent-primary);
+            border-radius: 50px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .control-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px 20px 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 3.5em;
+            color: var(--title-text);
+            margin-bottom: 10px;
+            margin-top: 0;
+            font-weight: normal;
+            letter-spacing: 2px;
+            -webkit-text-stroke: 8px var(--title-outline);
+            paint-order: stroke fill;
+            filter: drop-shadow(0px 4px 0px rgba(0,0,0,0.15));
+        }
+
+        header p.subtitle {
+            font-size: 1.2em;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .image-hero {
+            width: 100%;
+            aspect-ratio: 21 / 9;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+            color: var(--text-color);
+            font-size: 0.9em;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .image-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: none;
+        }
+
+        .info-section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+
+        .info-section h2 {
+            color: var(--accent-primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-primary);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-item h3 {
+            color: var(--accent-secondary);
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+        }
+
+        ul.custom-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.custom-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        ul.custom-list li::before {
+            content: "•";
+            color: var(--accent-primary);
+            font-weight: bold;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+
+        .reward-section {
+            background-color: var(--card-bg);
+            border: 3px solid var(--reward-border);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 40px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            text-align: left;
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.15);
+            transition: background-color 0.3s ease;
+        }
+
+        .reward-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .reward-content h2 {
+            margin: 0 0 10px 0;
+            color: var(--accent-primary);
+            font-size: 1.5em;
+        }
+
+        .reward-content p {
+            margin: 0 0 10px 0;
+            font-size: 1.05em;
+        }
+
+        .tc-link {
+            font-size: 0.8em;
+            color: var(--text-muted);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .reward-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 15px rgba(3, 218, 198, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: var(--btn-hover);
+            color: #FFFFFF;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9em;
+            color: var(--text-muted);
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="controls-container">
+    <button id="lang-btn" class="control-btn" aria-label="Sprache wechseln">🇬🇧 EN</button>
+    <button id="theme-btn" class="control-btn" aria-label="Erscheinungsbild anpassen">
+        <span id="theme-icon">🌓</span> <span data-i18n="themeBtnText">Modus</span>
+    </button>
+</div>
+
+<div class="container">
+    <header>
+        <h1 data-i18n="title">ASMR Color Reveal Kids</h1>
+        <p class="subtitle" data-i18n="subtitle">Wecke eine Welt voller Farben auf. Reizarm, sicher und 100% stressfrei.</p>
+    </header>
+
+    <div class="image-hero">
+        <img id="hero-image" src="header-de.png" alt="Weck die Farben auf!">
+    </div>
+
+    <div class="info-section">
+        <h2 data-i18n="mechanicsTitle">🎨 Einzigartige Enthüllungen</h2>
+        <p data-i18n="mechanicsIntro">Die Welt liegt unter einem grauen Schleier und wartet auf deine Berührung. Mit jedem Tippen und Wischen blühen die Farben auf. Es gibt keine falschen Züge – nur puren, bunten Spaß!</p>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3 data-i18n="mech1Title">Fließendes Aquarell</h3>
+                <p data-i18n="mech1Desc">Beobachte, wie sich die Farben wie echte Wasserfarben ausbreiten und vermischen.</p>
+            </div>
+            <div class="feature-item">
+                <h3 data-i18n="mech2Title">Zickzack & Streifen</h3>
+                <p data-i18n="mech2Desc">Enthülle die Bilder durch faszinierende, rhythmische Wischbewegungen.</p>
+            </div>
+            <div class="feature-item">
+                <h3 data-i18n="mech3Title">Coole Raster & Diamanten</h3>
+                <p data-i18n="mech3Desc">Lass Vierecke und funkelnde Rauten aufpoppen, um zu entdecken, was sich dahinter verbirgt.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <h2 data-i18n="safeTitle">♾️ Ein digitaler Safe Space</h2>
+        <p data-i18n="safeIntro">Als neurodivergenter Entwickler war es für mich eine Herzensangelegenheit, einen beruhigenden digitalen Rückzugsort zu erschaffen. Diese App wurde speziell für sensible Köpfe und neurodivergente Kinder (z. B. mit ADHS oder Autismus) entwickelt.</p>
+        <ul class="custom-list">
+            <li data-i18n="safe1"><strong>Sanftes Erlebnis:</strong> Keine blinkenden Lichter, keine Reizüberflutung, keine lauten Überraschungen.</li>
+            <li data-i18n="safe2"><strong>Beruhigende Wiederholung:</strong> Vorhersehbare Bewegungen und sanfte ASMR-Sounds fördern den Fokus und helfen beim Entspannen.</li>
+            <li data-i18n="safe3"><strong>Volle Kontrolle:</strong> Keine Timer, keine Highscores und kein "Game Over". Jedes Kind spielt im eigenen Tempo.</li>
+            <li data-i18n="safe4"><strong>100% Werbefrei & Offline:</strong> Keine Unterbrechungen durch Anzeigen. Perfekt für Flugreisen oder Autofahrten.</li>
+            <li data-i18n="safe5"><strong>Deine eigenen, geheimen Level:</strong> Nutze eigene Fotos (z.B. vom Haustier oder Lieblingsspielzeug). 100% privat – die Fotos verlassen niemals dein Gerät.</li>
+        </ul>
+    </div>
+
+    <div class="reward-section">
+        <a href="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor" target="_blank" >
+            <img src="prereg-gift.png" alt="Capybara Starter Pack" class="reward-img">
+        </a>
+        <div class="reward-content">
+            <h2 data-i18n="rewardTitle">🎁 Exklusiver Bonus!</h2>
+            <p data-i18n="rewardDesc">Sichere dir das <strong>"Starter-Paket"</strong> mit 2 exklusiven Premium-Ausmal-Welten (<em>"Wilde Tiere"</em> und <em>"Spielzeugkiste"</em>) geschenkt, wenn du dich jetzt vorregistrierst.</p>
+            <a href="https://neurodivdev.github.io/public/asmr-color-reveal-kids/prereg-terms/prereg-terms-de.html" target="_blank" class="tc-link" id="tc-link" data-i18n="rewardTc">*Nutzungsbedingungen gelten</a>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2 data-i18n="ctaTitle">Bereit für dein farbenfrohes Abenteuer?</h2>
+        <p data-i18n="ctaDesc">ASMR Color Reveal Kids steht kurz vor der Veröffentlichung. Melde dich jetzt an, um als Erstes einzutauchen und dir dein Starter-Paket zu sichern!</p>
+
+        <a href="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor" target="_blank" class="cta-button" data-i18n="ctaBtn">
+            Jetzt im Play Store vorregistrieren
+        </a>
+    </div>
+</div>
+
+<footer data-i18n="footerText">
+    Ein Herzensprojekt von neuro / dev.
+</footer>
+
+<script>
+    const i18n = {
+        de: {
+            pageTitle: "ASMR Color Reveal Kids - Wecke eine Welt voller Farben auf!",
+            themeBtnText: "Modus",
+            langBtnText: "🇬🇧 EN",
+            title: "ASMR Color Reveal Kids",
+            subtitle: "Wecke eine Welt voller Farben auf. Reizarm, sicher und 100% stressfrei.",
+            heroImgSrc: "header-de.png",
+            heroImgAlt: "Weck die Farben auf! ASMR Color Reveal Kids",
+            mechanicsTitle: "🎨 Einzigartige Aufdeck-Arten",
+            mechanicsIntro: "Die Welt liegt unter einem grauen Schleier und wartet auf deine Berührung. Mit jedem Tippen und Wischen blühen die Farben auf. Es gibt keine falschen Züge – nur puren, bunten Spaß!",
+            mech1Title: "Fließendes Aquarell",
+            mech1Desc: "Beobachte, wie sich die Farben wie echte Wasserfarben ausbreiten.",
+            mech2Title: "Zickzack & Streifen",
+            mech2Desc: "Enthülle die Bilder durch Tippen und Wischen.",
+            mech3Title: "Coole Raster & Diamanten",
+            mech3Desc: "Lass Vierecke und funkelnde Rauten aufpoppen, um zu entdecken, was sich dahinter verbirgt.",
+            safeTitle: "♾️ Ein digitaler Safe Space",
+            safeIntro: "Als neurodivergenter Entwickler war es für mich eine Herzensangelegenheit, einen beruhigenden digitalen Rückzugsort zu erschaffen. Diese App wurde speziell für sensible Köpfe und neurodivergente Kinder (z. B. mit ADHS oder Autismus) entwickelt.",
+            safe1: "<strong>Sanftes Erlebnis:</strong> Keine blinkenden Lichter, keine Reizüberflutung, keine lauten Überraschungen.",
+            safe2: "<strong>Beruhigende Wiederholung:</strong> Vorhersehbare Bewegungen und sanfte ASMR-Sounds fördern den Fokus und helfen beim Entspannen.",
+            safe3: "<strong>Volle Kontrolle:</strong> Keine Timer, keine Highscores und kein \"Game Over\". Jedes Kind spielt im eigenen Tempo.",
+            safe4: "<strong>100% Werbefrei & Offline:</strong> Keine Unterbrechungen durch Anzeigen. Perfekt für Flugreisen oder Autofahrten.",
+            safe5: "<strong>Deine eigenen, geheimen Level:</strong> Nutze eigene Fotos (z.B. vom Haustier oder Lieblingsspielzeug). 100% privat – die Fotos verlassen niemals dein Gerät.",
+            rewardTitle: "🎁 Exklusiver Bonus!",
+            rewardDesc: "Erhalte das <strong>\"Starter-Paket\"</strong> mit 2 exklusiven Premium-Ausmal-Welten (<em>\"Wilde Tiere\"</em> und <em>\"Spielzeugkiste\"</em>) kostenlos, wenn du dich jetzt vorregistrierst.",
+            rewardTc: "*Nutzungsbedingungen gelten",
+            tcUrl: "https://neurodivdev.github.io/public/asmr-color-reveal-kids/prereg-terms/prereg-terms-de.html",
+            ctaTitle: "Bereit für dein farbenfrohes Abenteuer?",
+            ctaDesc: "ASMR Color Reveal Kids steht kurz vor der Veröffentlichung. Melde dich jetzt an, um als Erstes einzutauchen und dir dein Starter-Paket zu sichern!",
+            ctaBtn: "Jetzt im Play Store vorregistrieren",
+            footerText: "Ein Herzensprojekt von neuro / dev."
+        },
+        en: {
+            pageTitle: "ASMR Color Reveal Kids - Wake Up a World of Color!",
+            themeBtnText: "Mode",
+            langBtnText: "🇩🇪 DE",
+            title: "ASMR Color Reveal Kids",
+            subtitle: "Wake up a world of color. Low-stimulation, safe, and 100% stress-free.",
+            heroImgSrc: "header-en.png",
+            heroImgAlt: "Wake up the colors! ASMR Color Reveal Kids",
+            mechanicsTitle: "🎨 Unique Ways to Reveal",
+            mechanicsIntro: "The world looks a bit sleepy — covered in a gray shadow. It is waiting for your touch. Every tap and swipe brings the image to life. There are NO wrong moves. Just pure, colorful fun!",
+            mech1Title: "Wonderful Watercolor",
+            mech1Desc: "Watch colors spread like real paint!",
+            mech2Title: "Super Swipes",
+            mech2Desc: "Reveal the picture in cool stripes and zig-zags.",
+            mech3Title: "Gorgeous Grids",
+            mech3Desc: "Pop the squares and sparkling diamonds one by one to see what’s hiding.",
+            safeTitle: "♾️ A Digital Safe Space",
+            safeIntro: "As a neurodivergent developer, creating a calming digital retreat was a project close to my heart. This app was designed specifically with the needs of neurodivergent children in mind (such as those with ADHD or on the Autism spectrum).",
+            safe1: "<strong>Gentle Sensory Experience:</strong> No flashing lights, overstimulating colors, or sudden surprises.",
+            safe2: "<strong>Calming Repetition:</strong> Predictable movements and gentle ASMR sounds create a relaxing environment.",
+            safe3: "<strong>Full Control:</strong> A safe design where the child sets their own pace. Completely stress-free, with no timers and no mistakes.",
+            safe4: "<strong>100% Ad-Free & Offline:</strong> No annoying ads. Take your colors on car rides or plane trips.",
+            safe5: "<strong>Your Own Secret Levels:</strong> Use your own photos to create custom levels! 100% private—photos never leave your device.",
+            rewardTitle: "🎁 Exclusive Reward!",
+            rewardDesc: "Get the <strong>\"Starter Pack\"</strong> featuring 2 exclusive premium coloring worlds (<em>\"Wild Animals\"</em> and <em>\"Toy Box\"</em>) for free when you pre-register today!",
+            rewardTc: "*Terms & Conditions apply",
+            tcUrl: "https://neurodivdev.github.io/public/asmr-color-reveal-kids/prereg-terms/prereg-terms-en.html",
+            ctaTitle: "Ready to see what's hiding?",
+            ctaDesc: "ASMR Color Reveal Kids is launching soon. Pre-register now to dive in first and claim your Starter Pack!",
+            ctaBtn: "Pre-register now on Google Play",
+            footerText: "A heartfelt project by neuro / dev."
+        }
+    };
+
+    const langBtn = document.getElementById('lang-btn');
+    let currentLang = localStorage.getItem('lang');
+
+    if (!currentLang) {
+        const browserLang = navigator.language || navigator.userLanguage;
+        currentLang = browserLang.startsWith('de') ? 'de' : 'en';
+    }
+
+    function applyLanguage(lang) {
+        document.getElementById('html-tag').lang = lang;
+        document.getElementById('page-title').textContent = i18n[lang].pageTitle;
+        langBtn.textContent = i18n[lang].langBtnText;
+
+        document.getElementById('tc-link').href = i18n[lang].tcUrl;
+
+        const heroImg = document.getElementById('hero-image');
+        heroImg.src = i18n[lang].heroImgSrc;
+        heroImg.alt = i18n[lang].heroImgAlt;
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (i18n[lang][key]) {
+                el.innerHTML = i18n[lang][key];
+            }
+        });
+    }
+
+    langBtn.addEventListener('click', () => {
+        currentLang = currentLang === 'de' ? 'en' : 'de';
+        localStorage.setItem('lang', currentLang);
+        applyLanguage(currentLang);
+    });
+
+    applyLanguage(currentLang);
+
+    const themeBtn = document.getElementById('theme-btn');
+    const themeIcon = document.getElementById('theme-icon');
+    const root = document.documentElement;
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let currentTheme = localStorage.getItem('theme');
+    if (!currentTheme) {
+        currentTheme = prefersDark ? 'dark' : 'light';
+    }
+
+    function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        themeIcon.textContent = theme === 'dark' ? '🌙' : '☀️';
+    }
+
+    themeBtn.addEventListener('click', () => {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', currentTheme);
+        applyTheme(currentTheme);
+    });
+
+    applyTheme(currentTheme);
+</script>
+</body>
+</html>
