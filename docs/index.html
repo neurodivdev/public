@@ -10,13 +10,13 @@
     <meta property="og:url" content="https://neurodiv.dev/">
     <meta property="og:title" content="neuro / dev - neurodivergent software developer">
     <meta property="og:description" content="Digital safe spaces. Stress-free, ad-free, and neuro-inclusive apps for kids and adults.">
-    <meta property="og:image" content="https://neurodiv.dev/playstore_header.jpg">
+    <meta property="og:image" content="https://neurodiv.dev/website_social_media_preview.jpg">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://neurodiv.dev/">
     <meta property="twitter:title" content="neuro / dev - neurodivergent software developer">
     <meta property="twitter:description" content="Digital safe spaces. Stress-free, ad-free, and neuro-inclusive apps for kids and adults.">
-    <meta property="twitter:image" content="https://neurodiv.dev/playstore_header.jpg">
+    <meta property="twitter:image" content="https://neurodiv.dev/website_social_media_preview.jpg">
 
     <title id="page-title">neuro / dev</title>
     
@@ -26,12 +26,12 @@
         }
 
         :root {
-            --bg-color: #FAFAFA; /* Etwas neutraleres Weiß für die Dachmarke */
+            --bg-color: #FAFAFA;
             --card-bg: #FFFFFF;
             --text-color: #2D2D2D;
-            --text-muted: #555555;
-            --accent-primary: #00B4D8; /* Ein Cyan aus deinem Logo */
-            --accent-secondary: #9D4EDD; /* Ein Violett aus deinem Logo */
+            --text-muted: #777777; /* Nur noch für den Footer genutzt */
+            --accent-primary: #00B4D8;
+            --accent-secondary: #9D4EDD;
             --btn-bg: #00B4D8;
             --btn-text: #FFFFFF;
             --btn-hover: #9D4EDD;
@@ -42,12 +42,12 @@
             --bg-color: #1A1A2E;
             --card-bg: #16213E;
             --text-color: #FFFFE0;
-            --text-muted: #BB86FC;
+            --text-muted: #A0A0A0; /* Nur noch für den Footer genutzt */
             --accent-primary: #03DAC6;
             --accent-secondary: #BB86FC;
             --btn-bg: #03DAC6;
             --btn-text: #1A1A2E;
-            --btn-hover: #4CAF50;
+            --btn-hover: #9D4EDD;
             --border-color: #2D2D2D;
         }
 
@@ -99,7 +99,6 @@
             width: 100%;
             max-width: 900px;
             padding: 20px 20px 60px 20px;
-            text-align: center;
         }
 
         /* Hero Banner */
@@ -120,7 +119,7 @@
         /* Mission Section */
         .mission-section {
             background-color: var(--card-bg);
-            padding: 40px;
+            padding: 30px; /* Standardmäßig etwas kompakter für Mobile */
             border-radius: 16px;
             margin-bottom: 50px;
             text-align: left;
@@ -128,6 +127,13 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
         
+        /* Etwas mehr Luft auf größeren Bildschirmen */
+        @media (min-width: 768px) {
+            .mission-section {
+                padding: 40px;
+            }
+        }
+
         .mission-section h1 {
             color: var(--accent-primary);
             margin-top: 0;
@@ -136,15 +142,15 @@
 
         .mission-section p {
             font-size: 1.15em;
-            max-width: 800px; /* Darf ruhig etwas breiter sein jetzt */
-            margin: 0 0 20px 0; /* <-- Das "auto" für die Zentrierung entfernen */
-            
+            max-width: 800px;
+            margin: 0 0 20px 0;
+            color: var(--text-color);
         }
 
         .core-values {
             display: flex;
             justify-content: flex-start;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
             margin-top: 30px;
         }
@@ -153,7 +159,7 @@
             background-color: var(--bg-color);
             border: 2px solid var(--accent-secondary);
             color: var(--text-color);
-            padding: 10px 20px;
+            padding: 8px 18px;
             border-radius: 50px;
             font-weight: bold;
             font-size: 0.95em;
@@ -174,7 +180,6 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 30px;
-            text-align: left;
         }
 
         .app-card {
@@ -215,7 +220,7 @@
         .app-card-desc {
             font-size: 1.1em;
             margin: 0 0 25px 0;
-            color: var(--text-muted);
+            color: var(--text-color);
             flex-grow: 1;
         }
 
@@ -274,7 +279,7 @@
 
 <div class="container">
     <div class="hero-banner">
-        <img src="playstore_header.jpg" alt="neuro / dev - neurodivergent software developer">
+        <img src="website_header.jpg" alt="neuro / dev - neurodivergent software developer">
     </div>
 
     <div class="mission-section">
@@ -325,7 +330,7 @@
             appsHeader: "Meine Apps",
             app1Desc: "Ein reizarmes, stressfreies Ausmal-Abenteuer für Kinder und Erwachsene. Wecke eine Welt voller Farben auf – ganz ohne Druck und Game Over.",
             app1Btn: "Zur App Webseite",
-            app1ImgSrc: "asmr-color-reveal-kids/header-de.webp", /* Dynamisches Bild für DE */
+            app1ImgSrc: "asmr-color-reveal-kids/header-de.webp",
             footerText: "Ein Herzensprojekt von neuro / dev."
         },
         en: {
@@ -341,7 +346,7 @@
             appsHeader: "My Apps",
             app1Desc: "A low-stimulation, stress-free coloring adventure for kids and adults. Wake up a world of colors — with no pressure and no game over.",
             app1Btn: "View App Website",
-            app1ImgSrc: "asmr-color-reveal-kids/header-en.webp", /* Dynamisches Bild für EN */
+            app1ImgSrc: "asmr-color-reveal-kids/header-en.webp",
             footerText: "A heartfelt project by neuro / dev."
         }
     };
@@ -359,7 +364,6 @@
         document.getElementById('page-title').textContent = i18n[lang].pageTitle;
         langBtn.textContent = i18n[lang].langBtnText;
 
-        // Vorschau-Bild der App der Sprache anpassen
         const app1Img = document.getElementById('app1-img');
         if(app1Img) {
             app1Img.src = i18n[lang].app1ImgSrc;
