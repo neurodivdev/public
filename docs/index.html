@@ -1,386 +1,419 @@
 <!DOCTYPE html>
 <html lang="de" id="html-tag">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="neuro / dev - neurodivergent software developer">
-    <meta name="description" content="Digital safe spaces. Stress-free, ad-free, and neuro-inclusive apps for kids and adults.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="neuro / dev - neurodivergent software developer">
+  <meta name="description"
+        content="Digital safe spaces. Stress-free, ad-free, and neuro-inclusive apps for kids and adults.">
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://neurodiv.dev/">
-    <meta property="og:title" content="neuro / dev - neurodivergent software developer">
-    <meta property="og:description" content="Digital safe spaces. Stress-free, ad-free, and neuro-inclusive apps for kids and adults.">
-    <meta property="og:image" content="https://neurodiv.dev/website_social_media_preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neurodiv.dev/">
+  <meta property="og:title" content="neuro / dev - neurodivergent software developer">
+  <meta property="og:description"
+        content="Digital safe spaces. Stress-free, ad-free, and neuro-inclusive apps for kids and adults.">
+  <meta property="og:image" content="https://neurodiv.dev/website_social_media_preview.jpg">
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://neurodiv.dev/">
-    <meta property="twitter:title" content="neuro / dev - neurodivergent software developer">
-    <meta property="twitter:description" content="Digital safe spaces. Stress-free, ad-free, and neuro-inclusive apps for kids and adults.">
-    <meta property="twitter:image" content="https://neurodiv.dev/website_social_media_preview.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://neurodiv.dev/">
+  <meta property="twitter:title" content="neuro / dev - neurodivergent software developer">
+  <meta property="twitter:description"
+        content="Digital safe spaces. Stress-free, ad-free, and neuro-inclusive apps for kids and adults.">
+  <meta property="twitter:image" content="https://neurodiv.dev/website_social_media_preview.jpg">
 
-    <title id="page-title">neuro / dev</title>
-    
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <title id="page-title">neuro / dev</title>
 
-        :root {
-            --bg-color: #FAFAFA;
-            --card-bg: #FFFFFF;
-            --text-color: #2D2D2D;
-            --text-muted: #777777; /* Nur noch für den Footer genutzt */
-            --accent-primary: #00B4D8;
-            --accent-secondary: #9D4EDD;
-            --btn-bg: #00B4D8;
-            --btn-text: #FFFFFF;
-            --btn-hover: #9D4EDD;
-            --border-color: #EEEEEE;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        [data-theme="dark"] {
-            --bg-color: #1A1A2E;
-            --card-bg: #16213E;
-            --text-color: #FFFFE0;
-            --text-muted: #A0A0A0; /* Nur noch für den Footer genutzt */
-            --accent-primary: #03DAC6;
-            --accent-secondary: #BB86FC;
-            --btn-bg: #03DAC6;
-            --btn-text: #1A1A2E;
-            --btn-hover: #9D4EDD;
-            --border-color: #2D2D2D;
-        }
+    :root {
+      --bg-color: #FAFAFA;
+      --card-bg: #FFFFFF;
+      --text-color: #2D2D2D;
+      --text-muted: #777777; /* Nur noch für den Footer genutzt */
+      --accent-primary: #00B4D8;
+      --accent-secondary: #9D4EDD;
+      --btn-bg: #00B4D8;
+      --btn-text: #FFFFFF;
+      --btn-hover: #9D4EDD;
+      --border-color: #EEEEEE;
+    }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            width: 100%;
-            overflow-x: hidden;
-        }
+    [data-theme="dark"] {
+      --bg-color: #1A1A2E;
+      --card-bg: #16213E;
+      --text-color: #FFFFE0;
+      --text-muted: #A0A0A0; /* Nur noch für den Footer genutzt */
+      --accent-primary: #03DAC6;
+      --accent-secondary: #BB86FC;
+      --btn-bg: #03DAC6;
+      --btn-text: #1A1A2E;
+      --btn-hover: #9D4EDD;
+      --border-color: #2D2D2D;
+    }
 
-        .controls-container {
-            width: 100%;
-            max-width: 900px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 10px;
-            padding: 20px 20px 0 20px;
-        }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      width: 100%;
+      overflow-x: hidden;
+    }
 
-        .control-btn {
-            background-color: var(--card-bg);
-            color: var(--text-color);
-            border: 2px solid var(--accent-primary);
-            border-radius: 50px;
-            padding: 8px 16px;
-            cursor: pointer;
-            font-size: 1em;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.2s ease;
-        }
+    .controls-container {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      padding: 20px 20px 0 20px;
+    }
 
-        .control-btn:hover {
-            transform: scale(1.05);
-            border-color: var(--accent-secondary);
-        }
+    .control-btn {
+      background-color: var(--card-bg);
+      color: var(--text-color);
+      border: 2px solid var(--accent-primary);
+      border-radius: 50px;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
 
-        .container {
-            width: 100%;
-            max-width: 900px;
-            padding: 20px 20px 60px 20px;
-        }
+    .control-btn:hover {
+      transform: scale(1.05);
+      border-color: var(--accent-secondary);
+    }
 
-        /* Hero Banner */
-        .hero-banner {
-            width: 100%;
-            border-radius: 16px;
-            overflow: hidden;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
+    .container {
+      width: 100%;
+      max-width: 900px;
+      padding: 20px 20px 60px 20px;
+    }
 
-        .hero-banner img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+    /* Hero Banner */
+    .hero-banner {
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
 
-        /* Mission Section */
-        .mission-section {
-            background-color: var(--card-bg);
-            padding: 30px; /* Standardmäßig etwas kompakter für Mobile */
-            border-radius: 16px;
-            margin-bottom: 50px;
-            text-align: left;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        
-        /* Etwas mehr Luft auf größeren Bildschirmen */
-        @media (min-width: 768px) {
-            .mission-section {
-                padding: 40px;
-            }
-        }
+    .hero-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-        .mission-section h1 {
-            color: var(--accent-primary);
-            margin-top: 0;
-            font-size: 2.2em;
-        }
+    /* Mission Section */
+    .mission-section {
+      background-color: var(--card-bg);
+      padding: 30px; /* Standardmäßig etwas kompakter für Mobile */
+      border-radius: 16px;
+      margin-bottom: 50px;
+      text-align: left;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
 
-        .mission-section p {
-            font-size: 1.15em;
-            max-width: 800px;
-            margin: 0 0 20px 0;
-            color: var(--text-color);
-        }
+    /* Etwas mehr Luft auf größeren Bildschirmen */
+    @media (min-width: 768px) {
+      .mission-section {
+        padding: 40px;
+      }
+    }
 
-        .core-values {
-            display: flex;
-            justify-content: flex-start;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 30px;
-        }
+    .mission-section h1 {
+      color: var(--accent-primary);
+      margin-top: 0;
+      font-size: 2.2em;
+    }
 
-        .value-badge {
-            background-color: var(--bg-color);
-            border: 2px solid var(--accent-secondary);
-            color: var(--text-color);
-            padding: 8px 18px;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 0.95em;
-        }
+    .mission-section p {
+      font-size: 1.15em;
+      max-width: 800px;
+      margin: 0 0 20px 0;
+      color: var(--text-color);
+    }
 
-        /* Apps Portfolio Section */
-        .apps-section h2 {
-            font-size: 2em;
-            color: var(--text-color);
-            margin-bottom: 30px;
-            text-align: left;
-            border-bottom: 3px solid var(--accent-primary);
-            display: inline-block;
-            padding-bottom: 10px;
-        }
+    .core-values {
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
 
-        .apps-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
+    .value-badge {
+      background-color: var(--bg-color);
+      border: 2px solid var(--accent-secondary);
+      color: var(--text-color);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 0.95em;
+    }
 
-        .app-card {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
+    /* Apps Portfolio Section */
+    .apps-section h2 {
+      font-size: 2em;
+      color: var(--text-color);
+      margin-bottom: 30px;
+      text-align: left;
+      border-bottom: 3px solid var(--accent-primary);
+      display: inline-block;
+      padding-bottom: 10px;
+    }
 
-        .app-card:hover {
-            transform: translateY(-5px);
-        }
+    .apps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
 
-        .app-card-img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-bottom: 1px solid var(--border-color);
-        }
+    .app-card {
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
 
-        .app-card-content {
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
+    .app-card:hover {
+      transform: translateY(-5px);
+    }
 
-        .app-card-title {
-            font-size: 1.8em;
-            margin: 0 0 15px 0;
-            color: var(--accent-primary);
-        }
+    .app-card-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--border-color);
+    }
 
-        .app-card-desc {
-            font-size: 1.1em;
-            margin: 0 0 25px 0;
-            color: var(--text-color);
-            flex-grow: 1;
-        }
+    .app-card-content {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
 
-        .app-card-btn {
-            align-self: flex-start;
-            background-color: var(--btn-bg);
-            color: var(--btn-text);
-            padding: 12px 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            transition: background-color 0.2s ease, transform 0.2s ease;
-        }
+    .app-card-title {
+      font-size: 1.8em;
+      margin: 0 0 15px 0;
+      color: var(--accent-primary);
+    }
 
-        .app-card-btn:hover {
-            background-color: var(--btn-hover);
-            color: #FFFFFF;
-            transform: scale(1.05);
-        }
+    .app-card-desc {
+      font-size: 1.1em;
+      margin: 0 0 25px 0;
+      color: var(--text-color);
+      flex-grow: 1;
+    }
 
-        @media (min-width: 768px) {
-            .app-card {
-                flex-direction: row;
-            }
-            .app-card-img {
-                width: 45%;
-                height: auto;
-                border-bottom: none;
-                border-right: 1px solid var(--border-color);
-            }
-            .app-card-content {
-                width: 55%;
-            }
-        }
+    .app-card-btn {
+      align-self: flex-start;
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
+      padding: 12px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
 
-        footer {
-            margin-top: auto;
-            padding: 30px;
-            font-size: 0.9em;
-            color: var(--text-muted);
-            text-align: center;
-            width: 100%;
-            border-top: 1px solid var(--border-color);
-        }
-    </style>
+    .app-card:hover .app-card-btn {
+      background-color: var(--btn-hover);
+      color: #FFFFFF;
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 768px) {
+      .app-card {
+        flex-direction: row;
+      }
+
+      .app-card-img {
+        width: 45%;
+        height: auto;
+        border-bottom: none;
+        border-right: 1px solid var(--border-color);
+      }
+
+      .app-card-content {
+        width: 55%;
+      }
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 30px;
+      font-size: 0.9em;
+      color: var(--text-muted);
+      text-align: center;
+      width: 100%;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-secondary);
+    }
+  </style>
 </head>
 <body>
 
 <div class="controls-container">
-    <button id="lang-btn" class="control-btn" aria-label="Sprache wechseln">🇬🇧 EN</button>
-    <button id="theme-btn" class="control-btn" aria-label="Erscheinungsbild anpassen">
-        <span id="theme-icon">🌓</span> <span data-i18n="themeBtnText">Modus</span>
-    </button>
+  <button id="lang-btn" class="control-btn" aria-label="Sprache wechseln">🇬🇧 EN</button>
+  <button id="theme-btn" class="control-btn" aria-label="Erscheinungsbild anpassen">
+    <span id="theme-icon">🌓</span> <span data-i18n="themeBtnText">Modus</span>
+  </button>
 </div>
 
 <div class="container">
-    <div class="hero-banner">
-        <img src="website_header.jpg" alt="neuro / dev - neurodivergent software developer">
-    </div>
+  <div class="hero-banner">
+    <img src="website_header.jpg" alt="neuro / dev - neurodivergent software developer">
+  </div>
 
-    <div class="mission-section">
-        <h1 data-i18n="missionTitle">Digitale Safe Spaces.</h1>
-        <p data-i18n="missionText1">Ich bin ein neurodivergenter Entwickler mit einer klaren Mission: Digitale Rückzugsorte zu schaffen. In einer Welt voller Reizüberflutung baue ich Apps, die Ruhe bringen.</p>
-        <p data-i18n="missionText2">Keine blinkende Werbung, keine manipulativen Dopamin-Fallen, kein künstlicher Stress. Nur reine, sichere Erlebnisse für sensible Köpfe.</p>
-        
-        <div class="core-values">
-            <div class="value-badge" data-i18n="value1">🚫 100% Werbefrei</div>
-            <div class="value-badge" data-i18n="value2">🧘 Kein Zeitdruck</div>
-            <div class="value-badge" data-i18n="value3">🌿 Reizarm (Neuro-Inklusiv)</div>
+  <div class="mission-section">
+    <h1 data-i18n="missionTitle">Digitale Safe Spaces.</h1>
+    <p data-i18n="missionText1">Ich bin ein neurodivergenter Entwickler mit einer klaren Mission: Digitale Rückzugsorte
+      zu schaffen. In einer Welt voller Reizüberflutung baue ich Apps, die Ruhe bringen.</p>
+    <p data-i18n="missionText2">Keine blinkende Werbung, keine manipulativen Dopamin-Fallen, kein künstlicher Stress.
+      Nur reine, sichere Erlebnisse für sensible Köpfe.</p>
+
+    <div class="core-values">
+      <div class="value-badge" data-i18n="value1">🚫 100% Werbefrei</div>
+      <div class="value-badge" data-i18n="value2">🧘 Kein Zeitdruck</div>
+      <div class="value-badge" data-i18n="value3">🌿 Reizarm (Neuro-Inklusiv)</div>
+    </div>
+  </div>
+
+  <div class="apps-section">
+    <h2 data-i18n="appsHeader">Meine Apps</h2>
+
+    <div class="apps-grid">
+      <a href="/asmr-color-reveal-kids/" class="app-card">
+        <img src="asmr-color-reveal-kids/header-de.webp" alt="ASMR Color Reveal Kids" class="app-card-img" id="app1-img">
+        <div class="app-card-content">
+          <h3 class="app-card-title">ASMR Color Reveal Kids</h3>
+          <p class="app-card-desc" data-i18n="app1Desc">Ein reizarmes, stressfreies Ausmal-Abenteuer für
+            Kinder und Erwachsene. Wecke eine Welt voller Farben auf – ganz ohne Druck und Game Over.</p>
+          <span class="app-card-btn" data-i18n="app1Btn">Zur App Webseite</span>
         </div>
+      </a>
     </div>
-
-    <div class="apps-section">
-        <h2 data-i18n="appsHeader">Meine Apps</h2>
-        
-        <div class="apps-grid">
-            <div class="app-card">
-                <img src="asmr-color-reveal-kids/header-de.webp" alt="ASMR Color Reveal Kids" class="app-card-img" id="app1-img">
-                <div class="app-card-content">
-                    <h3 class="app-card-title">ASMR Color Reveal Kids</h3>
-                    <p class="app-card-desc" data-i18n="app1Desc">Ein reizarmes, stressfreies Ausmal-Abenteuer für Kinder und Erwachsene. Wecke eine Welt voller Farben auf – ganz ohne Druck und Game Over.</p>
-                    <a href="/asmr-color-reveal-kids/" class="app-card-btn" data-i18n="app1Btn">Zur App Webseite</a>
-                </div>
-            </div>
-            
-            </div>
-    </div>
+  </div>
 </div>
 
-<footer data-i18n="footerText">
-    Ein Herzensprojekt von neuro / dev.
-</footer>
+  <footer>
+    <span data-i18n="footerCopyright">© 2026 neuro / dev. Alle Rechte vorbehalten.</span><br>
+    <div class="footer-links">
+      <a href="/impressum.html" data-i18n="footerImprint">Impressum</a> |
+      <a href="/datenschutz.html" data-i18n="footerPrivacy">Datenschutz</a>
+    </div>
+  </footer>
 
-<script>
+  <script>
     const i18n = {
-        de: {
-            pageTitle: "neuro / dev - neurodivergent software developer",
-            themeBtnText: "Modus",
-            langBtnText: "🇬🇧 EN",
-            missionTitle: "Digitale Safe Spaces.",
-            missionText1: "Ich bin ein neurodivergenter Solo-Entwickler mit einer klaren Mission: Digitale Rückzugsorte zu schaffen. In einer Welt voller Reizüberflutung baue ich Apps, die Ruhe bringen.",
-            missionText2: "Keine blinkende Werbung, keine manipulativen Dopamin-Fallen, kein künstlicher Stress. Nur reine, sichere Erlebnisse für sensible Köpfe und neurodivergente Kinder.",
-            value1: "🚫 100% Werbefrei",
-            value2: "🧘 Kein Zeitdruck",
-            value3: "🌿 Reizarm (Neuro-Inklusiv)",
-            appsHeader: "Meine Apps",
-            app1Desc: "Ein reizarmes, stressfreies Ausmal-Abenteuer für Kinder und Erwachsene. Wecke eine Welt voller Farben auf – ganz ohne Druck und Game Over.",
-            app1Btn: "Zur App Webseite",
-            app1ImgSrc: "asmr-color-reveal-kids/header-de.webp",
-            footerText: "Ein Herzensprojekt von neuro / dev."
-        },
-        en: {
-            pageTitle: "neuro / dev - neurodivergent software developer",
-            themeBtnText: "Mode",
-            langBtnText: "🇩🇪 DE",
-            missionTitle: "Digital Safe Spaces.",
-            missionText1: "I am a neurodivergent solo developer on a clear mission: creating digital retreats. In a world full of sensory overload, I build apps that bring peace.",
-            missionText2: "No flashy ads, no manipulative dopamine traps, no artificial stress. Just pure, safe experiences designed for sensitive minds and neurodivergent kids.",
-            value1: "🚫 100% Ad-Free",
-            value2: "🧘 Zero Pressure",
-            value3: "🌿 Low-Stimulation",
-            appsHeader: "My Apps",
-            app1Desc: "A low-stimulation, stress-free coloring adventure for kids and adults. Wake up a world of colors — with no pressure and no game over.",
-            app1Btn: "View App Website",
-            app1ImgSrc: "asmr-color-reveal-kids/header-en.webp",
-            footerText: "A heartfelt project by neuro / dev."
-        }
+      de: {
+        pageTitle: "neuro / dev - neurodivergent software developer",
+        themeBtnText: "Modus",
+        langBtnText: "🇬🇧 EN",
+        missionTitle: "Digitale Safe Spaces.",
+        missionText1: "Ich bin ein neurodivergenter Solo-Entwickler mit einer klaren Mission: Digitale Rückzugsorte zu schaffen. In einer Welt voller Reizüberflutung baue ich Apps, die Ruhe bringen.",
+        missionText2: "Keine blinkende Werbung, keine manipulativen Dopamin-Fallen, kein künstlicher Stress. Nur reine, sichere Erlebnisse für sensible Köpfe und neurodivergente Kinder.",
+        value1: "🚫 100% Werbefrei",
+        value2: "🧘 Kein Zeitdruck",
+        value3: "🌿 Reizarm (Neuro-Inklusiv)",
+        appsHeader: "Meine Apps",
+        app1Desc: "Ein reizarmes, stressfreies Ausmal-Abenteuer für Kinder und Erwachsene. Wecke eine Welt voller Farben auf – ganz ohne Druck und Game Over.",
+        app1Btn: "Zur App Webseite",
+        app1ImgSrc: "asmr-color-reveal-kids/header-de.webp",
+        footerText: "Ein Herzensprojekt von neuro / dev.",
+        footerCopyright: "© 2026 neuro / dev. Alle Rechte vorbehalten.",
+        footerImprint: "Impressum",
+        footerPrivacy: "Datenschutz"
+      },
+      en: {
+        pageTitle: "neuro / dev - neurodivergent software developer",
+        themeBtnText: "Mode",
+        langBtnText: "🇩🇪 DE",
+        missionTitle: "Digital Safe Spaces.",
+        missionText1: "I am a neurodivergent solo developer on a clear mission: creating digital retreats. In a world full of sensory overload, I build apps that bring peace.",
+        missionText2: "No flashy ads, no manipulative dopamine traps, no artificial stress. Just pure, safe experiences designed for sensitive minds and neurodivergent kids.",
+        value1: "🚫 100% Ad-Free",
+        value2: "🧘 Zero Pressure",
+        value3: "🌿 Low-Stimulation",
+        appsHeader: "My Apps",
+        app1Desc: "A low-stimulation, stress-free coloring adventure for kids and adults. Wake up a world of colors — with no pressure and no game over.",
+        app1Btn: "View App Website",
+        app1ImgSrc: "asmr-color-reveal-kids/header-en.webp",
+        footerText: "A heartfelt project by neuro / dev.",
+        footerCopyright: "© 2026 neuro / dev. All rights reserved.",
+        footerImprint: "Legal Notice",
+        footerPrivacy: "Privacy Policy"
+      }
     };
 
     const langBtn = document.getElementById('lang-btn');
     let currentLang = localStorage.getItem('lang');
 
     if (!currentLang) {
-        const browserLang = navigator.language || navigator.userLanguage;
-        currentLang = browserLang.startsWith('de') ? 'de' : 'en';
+      const browserLang = navigator.language || navigator.userLanguage;
+      currentLang = browserLang.startsWith('de') ? 'de' : 'en';
     }
 
     function applyLanguage(lang) {
-        document.getElementById('html-tag').lang = lang;
-        document.getElementById('page-title').textContent = i18n[lang].pageTitle;
-        langBtn.textContent = i18n[lang].langBtnText;
+      document.getElementById('html-tag').lang = lang;
+      document.getElementById('page-title').textContent = i18n[lang].pageTitle;
+      langBtn.textContent = i18n[lang].langBtnText;
 
-        const app1Img = document.getElementById('app1-img');
-        if(app1Img) {
-            app1Img.src = i18n[lang].app1ImgSrc;
+      const app1Img = document.getElementById('app1-img');
+      if (app1Img) {
+        app1Img.src = i18n[lang].app1ImgSrc;
+      }
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang][key]) {
+          el.innerHTML = i18n[lang][key];
         }
-
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (i18n[lang][key]) {
-                el.innerHTML = i18n[lang][key];
-            }
-        });
+      });
     }
 
     langBtn.addEventListener('click', () => {
-        currentLang = currentLang === 'de' ? 'en' : 'de';
-        localStorage.setItem('lang', currentLang);
-        applyLanguage(currentLang);
+      currentLang = currentLang === 'de' ? 'en' : 'de';
+      localStorage.setItem('lang', currentLang);
+      applyLanguage(currentLang);
     });
 
     applyLanguage(currentLang);
@@ -392,21 +425,21 @@
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     let currentTheme = localStorage.getItem('theme');
     if (!currentTheme) {
-        currentTheme = prefersDark ? 'dark' : 'light';
+      currentTheme = prefersDark ? 'dark' : 'light';
     }
 
     function applyTheme(theme) {
-        root.setAttribute('data-theme', theme);
-        themeIcon.textContent = theme === 'dark' ? '🌙' : '☀️';
+      root.setAttribute('data-theme', theme);
+      themeIcon.textContent = theme === 'dark' ? '🌙' : '☀️';
     }
 
     themeBtn.addEventListener('click', () => {
-        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        localStorage.setItem('theme', currentTheme);
-        applyTheme(currentTheme);
+      currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', currentTheme);
+      applyTheme(currentTheme);
     });
 
     applyTheme(currentTheme);
-</script>
+  </script>
 </body>
 </html>
