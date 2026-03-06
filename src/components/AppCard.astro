@@ -1,0 +1,84 @@
+---
+import { Image } from 'astro:assets';
+
+export interface Props {
+  href: string;
+  imgSrc: any;
+  imgAlt: string;
+  title: string;
+  description: string;
+  btnText: string;
+}
+
+const { href, imgSrc, imgAlt, title, description, btnText } = Astro.props;
+---
+<a href={href} class="app-card">
+  <Image src={imgSrc} alt={imgAlt} class="app-card-img" />
+  <div class="app-card-content">
+    <h3 class="app-card-title">{title}</h3>
+    <p class="app-card-desc">{description}</p>
+    <span class="app-card-btn">{btnText}</span>
+  </div>
+</a>
+
+<style>
+  .app-card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+  .app-card:hover {
+    transform: translateY(-5px);
+  }
+  .app-card:hover .app-card-btn {
+    background-color: var(--btn-hover);
+    color: #FFFFFF;
+    transform: scale(1.05);
+  }
+  .app-card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .app-card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .app-card-title {
+    font-size: 1.8em;
+    margin: 0 0 15px 0;
+    color: var(--accent-primary);
+  }
+  .app-card-desc {
+    font-size: 1.1em;
+    margin: 0 0 25px 0;
+    color: var(--text-color);
+    flex-grow: 1;
+  }
+  .app-card-btn {
+    align-self: flex-start;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  @media (min-width: 768px) {
+    .app-card { flex-direction: row; }
+    .app-card-img { width: 45%; height: auto; border-bottom: none; border-right: 1px solid var(--border-color); }
+    .app-card-content { width: 55%; }
+  }
+</style>

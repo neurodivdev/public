@@ -1,0 +1,24 @@
+---
+// index.astro
+// Redirect to user's locale. Defaulting to en.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="0;url=/en/" />
+
+  <script is:inline>
+    const browserLang = navigator.language || navigator.userLanguage;
+
+    if (browserLang.startsWith('de')) {
+      window.location.replace('/de/');
+    } else {
+      window.location.replace('/en/');
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>

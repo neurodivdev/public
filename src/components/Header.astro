@@ -1,0 +1,51 @@
+---
+import LangToggle from './LangToggle.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import { getLangFromUrl } from '../i18n/utils';
+
+export interface Props {
+  backUrl?: string;
+}
+
+const { backUrl } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const backText = lang === 'de' ? 'Zurück' : 'Back';
+---
+<div class="controls-container">
+  {backUrl && (
+    <a href={backUrl} class="back-link">
+      <span>←</span> {backText}
+    </a>
+  )}
+  <div class="control-group">
+    <LangToggle />
+    <ThemeToggle />
+  </div>
+</div>
+
+<style>
+  .controls-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+  }
+  .back-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.2s ease;
+  }
+  .back-link:hover {
+    color: var(--accent-primary);
+  }
+  .control-group {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+  }
+</style>

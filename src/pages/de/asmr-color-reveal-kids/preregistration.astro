@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import FeatureSection from '../../../components/FeatureSection.astro';
+import FeatureItem from '../../../components/FeatureItem.astro';
+import CtaSection from '../../../components/CtaSection.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import HeroBanner from '../../../components/HeroBanner.astro';
+import FeaturesGrid from '../../../components/FeaturesGrid.astro';
+import RewardSection from '../../../components/RewardSection.astro';
+import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
+import headerImg from '../../../assets/asmr-color-reveal-kids/header-de.webp';
+import giftImg from '../../../assets/asmr-color-reveal-kids/prereg-gift.webp';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout 
+  title={t('prereg.pageTitle')} 
+  description={t('prereg.pageDesc')}
+  backUrl="/de/asmr-color-reveal-kids/"
+>
+  <PageHeader title={t('asmr.title')} subtitle={t('asmr.subtitle')} />
+
+  <HeroBanner imgSrc={headerImg} imgAlt={t('asmr.heroImgAlt')} isImageHero={true} />
+
+  <FeatureSection title={t('asmr.mechTitle')} intro={t('asmr.mechIntro')}>
+    <FeaturesGrid>
+      <FeatureItem title={t('asmr.mech1Title')} description={t('asmr.mech1Desc')} />
+      <FeatureItem title={t('asmr.mech2Title')} description={t('asmr.mech2Desc')} />
+      <FeatureItem title={t('asmr.mech3Title')} description={t('asmr.mech3Desc')} />
+    </FeaturesGrid>
+  </FeatureSection>
+
+  <FeatureSection title={t('asmr.safeTitle')} intro={t('asmr.safeIntro')}>
+    <ul class="custom-list">
+      <li set:html={t('asmr.safe1')} />
+      <li set:html={t('asmr.safe2')} />
+      <li set:html={t('asmr.safe3')} />
+      <li set:html={t('asmr.safe4')} />
+      <li set:html={t('asmr.safe5')} />
+    </ul>
+  </FeatureSection>
+
+  <RewardSection
+    title={t('prereg.rewardTitle')}
+    desc={t('prereg.rewardDesc')}
+    imgSrc={giftImg}
+    imgAlt="Starter Pack Gift"
+    tcText={t('prereg.rewardTc')}
+    tcLink={`/${lang}/asmr-color-reveal-kids/prereg-terms`}
+  />
+
+  <CtaSection 
+    title={t('asmr.ctaTitle')} 
+    description={t('prereg.ctaDesc')} 
+    btnText={t('prereg.ctaBtn')} 
+    btnLink="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor" 
+  />
+</BaseLayout>

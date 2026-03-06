@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageDocument from '../../components/PageDocument.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const name = "Dennis Hartrampf";
+const street = "Priorter Dorfstr. 33";
+const city = "14641 Wustermark";
+const email = "info@neurodiv.dev";
+---
+
+<BaseLayout title={t('imprint.title')} backUrl="javascript:history.back()">
+  <PageDocument title={t('imprint.title')}>
+    <h2>{t('imprint.heading1')}</h2>
+    <p>
+      {name}<br>
+      neuro / dev<br>
+      {street}<br>
+      {city}<br>
+      {t('imprint.country')}
+    </p>
+    <h2>{t('imprint.heading2')}</h2>
+    <p>E-Mail: {email}</p>
+    <h2>{t('imprint.heading3')}</h2>
+    <p>{t('imprint.disputeText')}</p>
+  </PageDocument>
+</BaseLayout>

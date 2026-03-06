@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageDocument from '../../../components/PageDocument.astro';
+import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout title={t('preregTerms.title')} backUrl="/en/asmr-color-reveal-kids/">
+  <PageDocument title={t('preregTerms.title')}>
+    <p class="text-muted">{t('preregTerms.lastUpdated')}</p>
+
+    <h2>{t('preregTerms.h1')}</h2>
+    <p set:html={t('preregTerms.p1')} />
+
+    <h2>{t('preregTerms.h2')}</h2>
+    <p set:html={t('preregTerms.p2')} />
+
+    <h2>{t('preregTerms.h3')}</h2>
+    <p>{t('preregTerms.p3')}</p>
+    <ul class="custom-list">
+        <li>{t('preregTerms.li3_1')}</li>
+        <li set:html={t('preregTerms.li3_2')} />
+    </ul>
+    <p>{t('preregTerms.p3_2')}</p>
+
+    <h2>{t('preregTerms.h4')}</h2>
+    <ul class="custom-list">
+        <li>{t('preregTerms.li4_1')}</li>
+        <li>{t('preregTerms.li4_2')}</li>
+        <li>{t('preregTerms.li4_3')}</li>
+    </ul>
+
+    <h2>{t('preregTerms.h5')}</h2>
+    <p>{t('preregTerms.p5')}</p>
+
+    <h2 style="margin-top: 30px;">{t('privacy.h7')}</h2>
+    <p>{t('privacy.p7')}</p>
+    <p><a href="mailto:android-support@neurodiv.dev">android-support@neurodiv.dev</a></p>
+  </PageDocument>
+</BaseLayout>

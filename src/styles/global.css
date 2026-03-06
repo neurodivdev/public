@@ -1,0 +1,64 @@
+/* =========================================
+   GLOBAL CSS - neuro / dev
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #FAFAFA;
+  --card-bg: #FFFFFF;
+  --text-color: #2D2D2D;
+  --text-muted: #777777;
+  --accent-primary: #00B4D8;
+  --accent-secondary: #9D4EDD;
+  --btn-bg: #00B4D8;
+  --btn-text: #FFFFFF;
+  --btn-hover: #9D4EDD;
+  --border-color: #EEEEEE;
+
+  /* ASMR Titel Farben */
+  --title-text: #FFFFFF;
+  --title-outline: #7C4DFF;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1A1A2E;
+  --card-bg: #16213E;
+  --text-color: #FFFFE0;
+  --text-muted: #A0A0A0;
+  --accent-primary: #03DAC6;
+  --accent-secondary: #BB86FC;
+  --btn-bg: #03DAC6;
+  --btn-text: #1A1A2E;
+  --btn-hover: #9D4EDD;
+  --border-color: #2D2D2D;
+
+  /* ASMR Titel Farben (Dark) */
+  --title-text: #1C1B1F;
+  --title-outline: #CDA8FF;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px 20px 60px 20px;
+  flex-grow: 1;
+}

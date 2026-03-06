@@ -1,0 +1,23 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+<div class="feature-item">
+  <h3>{title}</h3>
+  <p>{description}</p>
+</div>
+
+<style>
+  h3 {
+    color: var(--accent-secondary);
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+  }
+  p {
+    margin: 0;
+  }
+</style>
