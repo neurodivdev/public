@@ -25,40 +25,10 @@ export const ui = {
     'footerPrivacy': "Privacy Policy",
     
     // Impressum
-    'imprint.title': "Legal Notice (Impressum)",
-    'imprint.heading1': "Information pursuant to § 5 DDG (German Digital Services Act)",
-    'imprint.heading2': "Contact",
-    'imprint.heading3': "Dispute Resolution",
-    'imprint.disputeText': "We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.",
-    'imprint.country': "Germany",
+    'imprint.url': "legal-notice-impressum",
 
     // Privacy Policy
-    'privacy.title': "Privacy Policy",
-    'privacy.lastUpdated': "Last updated: January 2026",
-    'privacy.intro': 'ASMR Color Reveal Kids ("the App") is committed to protecting your privacy. This policy explains what information we collect and how we use it.',
-    'privacy.h1': "Information We Collect",
-    'privacy.p1': "The App collects minimal data to provide you with a great experience:",
-    'privacy.li1_1': "<strong>Game Progress:</strong> Your coloring progress, completed images, and earned coins are stored locally on your device.",
-    'privacy.li1_2': "<strong>Preferences:</strong> Settings like sound and haptic feedback preferences are stored locally on your device.",
-    'privacy.li1_3': "<strong>Purchase Information:</strong> If you make in-app purchases, the transaction is handled by Google Play. We only store whether you have unlocked premium features.",
-    'privacy.h2': "Data Storage",
-    'privacy.p2': "All your game data and preferences are stored <strong>locally on your device</strong>. We do not collect, transmit, or store your personal information on external servers.",
-    'privacy.h3': "Third-Party Services",
-    'privacy.p3': "The App uses the following third-party services:",
-    'privacy.li3_1': "<strong>Google AdMob:</strong> Displays advertisements. AdMob may collect device identifiers and usage data for ad personalization. You can opt out of personalized ads in your device settings.",
-    'privacy.li3_2': "<strong>Google Play Billing:</strong> Processes in-app purchases securely. Google handles all payment information.",
-    'privacy.p3_2': "These services have their own privacy policies that govern their data collection practices.",
-    'privacy.h4': "Children's Privacy",
-    'privacy.p4': "ASMR Color Reveal Kids is designed to be family-friendly. We do not knowingly collect personal information from children under 13. The App complies with COPPA (Children's Online Privacy Protection Act) guidelines.",
-    'privacy.h5': "Your Rights",
-    'privacy.p5': "You have control over your data:",
-    'privacy.li5_1': "Clear the App's data through your device settings to remove all locally stored information.",
-    'privacy.li5_2': "Opt out of personalized advertisements in your device's privacy settings.",
-    'privacy.li5_3': "Uninstall the App at any time to remove all associated data from your device.",
-    'privacy.h6': "Changes to This Policy",
-    'privacy.p6': "We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated revision date.",
-    'privacy.h7': "Contact Us",
-    'privacy.p7': "If you have any questions about this privacy policy or the App, please contact us at:",
+    'privacy.url': "privacy-policy",
 
     // ASMR General
     'asmr.pageTitle': "ASMR Color Reveal Kids - Wake Up a World of Color!",
@@ -66,6 +36,8 @@ export const ui = {
     'asmr.title': "ASMR Color Reveal Kids",
     'asmr.subtitle': "Wake up a world of color. Low-stimulation, safe, and 100% stress-free.",
     'asmr.heroImgAlt': "Wake up the colors! ASMR Color Reveal Kids",
+
+    'asmr.privacy.url': "asmr-color-reveal-kids/privacy-policy",
     
     'asmr.mechTitle': "🎨 Unique Ways to Reveal",
     'asmr.mechIntro': "The world looks a bit sleepy — covered in a gray shadow. It is waiting for your touch. Every tap and swipe brings the image to life. There are NO wrong moves. Just pure, colorful fun!",
@@ -134,40 +106,10 @@ export const ui = {
     'footerPrivacy': "Datenschutz",
 
     // Impressum
-    'imprint.title': "Impressum",
-    'imprint.heading1': "Angaben gemäß § 5 DDG",
-    'imprint.heading2': "Kontakt",
-    'imprint.heading3': "Verbraucher­streit­beilegung/Universal­schlichtungs­stelle",
-    'imprint.disputeText': "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
-    'imprint.country': "Deutschland",
+    'imprint.url': "impressum",
 
     // Privacy Policy
-    'privacy.title': "Datenschutzerklärung",
-    'privacy.lastUpdated': "Zuletzt aktualisiert: Januar 2026",
-    'privacy.intro': 'ASMR Color Reveal Kids ("die App") nimmt den Schutz Ihrer Privatsphäre sehr ernst. Diese Richtlinie erklärt, welche Informationen wir sammeln und wie wir sie verwenden.',
-    'privacy.h1': "Informationen, die wir sammeln",
-    'privacy.p1': "Die App sammelt minimale Daten, um Ihnen ein großartiges Erlebnis zu bieten:",
-    'privacy.li1_1': "<strong>Spielfortschritt:</strong> Ihr Ausmal-Fortschritt, abgeschlossene Bilder und verdiente Münzen werden lokal auf Ihrem Gerät gespeichert.",
-    'privacy.li1_2': "<strong>Einstellungen:</strong> Einstellungen wie Ton und haptisches Feedback werden lokal auf Ihrem Gerät gespeichert.",
-    'privacy.li1_3': "<strong>Kaufinformationen:</strong> Wenn Sie In-App-Käufe tätigen, wird die Transaktion von Google Play abgewickelt. Wir speichern nur, ob Sie Premium-Funktionen freigeschaltet haben.",
-    'privacy.h2': "Datenspeicherung",
-    'privacy.p2': "Alle Ihre Spieldaten und Einstellungen werden <strong>lokal auf Ihrem Gerät gespeichert</strong>. Wir sammeln, übertragen oder speichern Ihre persönlichen Informationen nicht auf externen Servern.",
-    'privacy.h3': "Dienste von Drittanbietern",
-    'privacy.p3': "Die App nutzt die folgenden Dienste von Drittanbietern:",
-    'privacy.li3_1': "<strong>Google AdMob:</strong> Zeigt Werbung an. AdMob kann Gerätekennungen und Nutzungsdaten für die Anzeigenpersonalisierung erfassen. Sie können personalisierte Anzeigen in Ihren Geräteeinstellungen deaktivieren.",
-    'privacy.li3_2': "<strong>Google Play Billing:</strong> Verarbeitet In-App-Käufe sicher. Google verarbeitet alle Zahlungsinformationen.",
-    'privacy.p3_2': "Diese Dienste haben ihre eigenen Datenschutzrichtlinien, die ihre Datenerfassungspraktiken regeln.",
-    'privacy.h4': "Datenschutz von Kindern",
-    'privacy.p4': "ASMR Color Reveal Kids ist familienfreundlich gestaltet. Wir sammeln wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren. Die App entspricht den COPPA (Children's Online Privacy Protection Act) Richtlinien.",
-    'privacy.h5': "Ihre Rechte",
-    'privacy.p5': "Sie haben die Kontrolle über Ihre Daten:",
-    'privacy.li5_1': "Löschen Sie die App-Daten über Ihre Geräteeinstellungen, um alle lokal gespeicherten Informationen zu entfernen.",
-    'privacy.li5_2': "Deaktivieren Sie personalisierte Werbung in den Datenschutzeinstellungen Ihres Geräts.",
-    'privacy.li5_3': "Deinstallieren Sie die App jederzeit, um alle zugehörigen Daten von Ihrem Gerät zu entfernen.",
-    'privacy.h6': "Änderungen dieser Richtlinie",
-    'privacy.p6': "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Alle Änderungen werden auf dieser Seite mit einem aktualisierten Revisionsdatum angezeigt.",
-    'privacy.h7': "Kontakt",
-    'privacy.p7': "Wenn Sie Fragen zu dieser Datenschutzerklärung oder der App haben, kontaktieren Sie uns bitte unter:",
+    'privacy.url': "datenschutz",
 
     // ASMR General
     'asmr.pageTitle': "ASMR Color Reveal Kids - Wecke eine Welt voller Farben auf!",
@@ -175,6 +117,8 @@ export const ui = {
     'asmr.title': "ASMR Color Reveal Kids",
     'asmr.subtitle': "Wecke eine Welt voller Farben auf. Reizarm, sicher und 100% stressfrei.",
     'asmr.heroImgAlt': "Weck die Farben auf! ASMR Color Reveal Kids",
+
+    'asmr.privacy.url': "asmr-color-reveal-kids/datenschutz",
 
     'asmr.mechTitle': "🎨 Einzigartige Aufdeck-Arten",
     'asmr.mechIntro': "Die Welt liegt unter einem grauen Schleier und wartet auf deine Berührung. Mit jedem Tippen und Wischen blühen die Farben auf. Es gibt keine falschen Züge – nur puren, bunten Spaß!",

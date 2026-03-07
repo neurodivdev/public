@@ -1,23 +1,50 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { ui } from '../i18n/ui';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// Dynamischer Link zum Übersetzen der aktuellen URL in die andere Sprache.
 const targetLang = lang === 'de' ? 'en' : 'de';
-
 const pathname = new URL(Astro.url).pathname;
 
-// Der Regex ersetzt genau den /lang/ oder /lang am Ende Teil sicher.
-let targetPath = pathname.replace(new RegExp(`^\\/${lang}(\\/|$)`), `/${targetLang}$1`);
+// 1. Pfad ohne das Sprach-Präfix extrahieren (z. B. "legal-notice" oder "asmr-color-reveal-kids/")
+let pathWithoutLang = pathname.replace(new RegExp(`^\\/${lang}(\\/|$)`), '');
 
-if (targetPath === pathname) {
-  // Falls die URL unerwarteterweise kein Sprachpräfix hat, hängen wir es an
-  targetPath = `/${targetLang}${pathname}`;
+// Schrägstriche am Anfang/Ende entfernen, um den Suchbegriff sauber mit der ui.ts vergleichen zu können
+const cleanPath = pathWithoutLang.replace(/^\/|\/$/g, '');
+
+// 2. Rückwärtssuche: Prüfen, ob dieser Pfad im Wörterbuch der AKTUELLEN Sprache steht
+let translationKey = null;
+const currentDict = (ui as any)[lang];
+
+for (const key in currentDict) {
+  // Wir suchen nur in den Schlüsseln, die auf '.url' enden (wie 'privacy.url')
+  if (key.endsWith('.url') && currentDict[key] === cleanPath) {
+    translationKey = key;
+    break;
+  }
+}
+
+// 3. Baue die neue Ziel-URL zusammen
+let targetPath = `/${targetLang}/`;
+
+if (translationKey) {
+  // A) Die URL wurde übersetzt -> Nimm das übersetzte Wort aus der Zielsprache
+  targetPath += (ui as any)[targetLang][translationKey];
+} else {
+  // B) Die URL ist in beiden Sprachen gleich (z.B. App-Name) -> Hänge den alten Pfad wieder an
+  targetPath += pathWithoutLang;
 }
 ---
-<a href={targetPath} id="lang-btn" class="control-btn" aria-label="Sprache wechseln" style="text-decoration: none;" onclick="event.preventDefault(); window.location.replace(this.href);">
+<a
+  href={targetPath}
+  id="lang-btn"
+  class="control-btn"
+  aria-label="Sprache wechseln"
+  style="text-decoration: none;"
+  onclick="event.preventDefault(); window.location.replace(this.href);"
+>
   {t('langBtnText')}
 </a>
 

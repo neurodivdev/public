@@ -7,8 +7,8 @@ const t = useTranslations(lang);
 <footer>
   <span>{t('footerCopyright')}</span><br>
   <div class="footer-links">
-    <a href={`/${lang}/impressum`}>{t('footerImprint')}</a> |
-    <a href={`/${lang}/datenschutz`}>{t('footerPrivacy')}</a>
+    <a href={`/${lang}/${t('imprint.url')}`}>{t('footerImprint')}</a> |
+    <a href={`/${lang}/${t('privacy.url')}`}>{t('footerPrivacy')}</a>
   </div>
 </footer>
 

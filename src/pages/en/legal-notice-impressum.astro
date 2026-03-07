@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageDocument from '../../components/PageDocument.astro';
+
+const name = "Dennis Hartrampf";
+const street = "Priorter Dorfstr. 33";
+const city = "14641 Wustermark";
+const email = "info@neurodiv.dev";
+---
+
+<BaseLayout title="Legal Notice (Impressum) - neuro / dev" backUrl="javascript:history.back()">
+  <PageDocument title="Legal Notice (Impressum)">
+    <h2>Information pursuant to § 5 DDG (German Digital Services Act)</h2>
+    <p>
+      {name}<br>
+      neuro / dev<br>
+      {street}<br>
+      {city}<br>
+      Germany
+    </p>
+
+    <h2>Contact</h2>
+    <p>Email: {email}</p>
+
+    <h2>Dispute Resolution</h2>
+    <p>We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+  </PageDocument>
+</BaseLayout>
