@@ -86,6 +86,12 @@ export const ui = {
     'preregTerms.li4_3': "If you uninstall the app or clear your app data before the reward has been successfully registered to your account upon the first launch, you may lose the reward.",
     'preregTerms.h5': "5. General Conditions",
     'preregTerms.p5': "The developer reserves the right to modify, suspend, cancel, or terminate the pre-registration campaign and these terms at any time without prior notice, particularly in the event of technical errors, fraud, or circumstances beyond our control. By participating in the pre-registration, you agree to these terms.",
+
+    // 404
+    '404.routing': "Routing to your language...",
+    '404.title': "404 - Page not found",
+    '404.desc': "Oops! The page you are looking for does not exist.",
+    '404.btn': "Go to Homepage",
   },
   de: {
     'pageTitle': "neuro / dev - neurodivergent software developer",
@@ -167,5 +173,11 @@ export const ui = {
     'preregTerms.li4_3': "Wenn die App deinstalliert oder die App-Daten gelöscht werden, bevor die Prämie beim ersten Start erfolgreich auf dem Konto registriert wurde, kann die Prämie verloren gehen.",
     'preregTerms.h5': "5. Allgemeine Bedingungen",
     'preregTerms.p5': "Der Entwickler behält sich das Recht vor, die Vorregistrierungsaktion und diese Bedingungen jederzeit und ohne vorherige Ankündigung zu ändern, auszusetzen, abzubrechen oder zu beenden, insbesondere im Falle von technischen Fehlern, Betrug oder Umständen, die außerhalb unserer Kontrolle liegen. Durch die Teilnahme an der Vorregistrierung wird diesen Bedingungen zugestimmt.",
+
+    // 404
+    '404.routing': "Leite zur passenden Sprache weiter...",
+    '404.title': "404 - Seite nicht gefunden",
+    '404.desc': "Hoppla! Die von dir gesuchte Seite existiert leider nicht.",
+    '404.btn': "Zur Startseite",
   },
 } as const;

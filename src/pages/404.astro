@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ui, defaultLang } from '../i18n/ui';
+
+// 1. Alle unterstützen Sprachen als Array ['en', 'de']
+const supportedLangs = Object.keys(ui);
+
+// 2. Wir extrahieren zur Compile-Zeit nur die 404-Strings,
+// damit wir nicht das gigantische, komplette Wörterbuch ans Browser-JS schicken müssen.
+const errorDict = {};
+for (const lang of supportedLangs) {
+  errorDict[lang] = {
+    routing: ui[lang]['404.routing'],
+    title: ui[lang]['404.title'],
+    desc: ui[lang]['404.desc'],
+    btn: ui[lang]['404.btn']
+  };
+}
+---
+
+<BaseLayout title={errorDict[defaultLang].title}>
+  <div class="content-section error-container">
+    <h1 id="error-title"></h1>
+    <p id="error-desc"></p>
+    <a href="/" id="error-btn" class="cta-button" style="display: none;"></a>
+  </div>
+
+  <style>
+    .error-container {
+      text-align: center;
+      margin-top: 10vh;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 15px 35px;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+    .cta-button:hover {
+      background-color: var(--btn-hover);
+      color: #FFFFFF;
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+  </style>
+
+  <script is:inline define:vars={{ supportedLangs, defaultLang, errorDict }}>
+    const path = window.location.pathname;
+    const search = window.location.search;
+    const hash = window.location.hash;
+
+    // 1. URL in saubere Segmente zerteilen (z.B. "/de/impressum/" -> ["de", "impressum"])
+    const pathSegments = path.split('/').filter(Boolean);
+    const firstSegment = pathSegments.length > 0 ? pathSegments[0] : '';
+
+    // 2. Logische Prüfung ohne Regex: Ist das erste Segment eine unterstützte Sprache?
+    const hasLangPrefix = supportedLangs.includes(firstSegment);
+
+    // 3. Zielsprache robust ermitteln
+    let targetLang = defaultLang;
+
+    if (hasLangPrefix) {
+      targetLang = firstSegment;
+    } else {
+      const browserLang = (navigator.language || navigator.userLanguage).split('-')[0];
+      if (supportedLangs.includes(browserLang)) {
+        targetLang = browserLang;
+      }
+    }
+
+    const t = errorDict[targetLang];
+
+    if (!hasLangPrefix) {
+      // Fehlendes Präfix -> Weiterleitung
+      document.getElementById('error-desc').innerText = t.routing;
+      const cleanPath = path === '/' ? '' : path;
+      window.location.replace('/' + targetLang + cleanPath + search + hash);
+    } else {
+      // Echter 404 -> UI in der passenden Sprache anzeigen
+      document.title = t.title; // Hier überschreiben wir den Fallback aus dem <BaseLayout>!
+      document.getElementById('error-title').innerText = '404';
+      document.getElementById('error-desc').innerText = t.desc;
+
+      const btn = document.getElementById('error-btn');
+      btn.innerText = t.btn;
+      btn.href = '/' + targetLang + '/';
+      btn.style.display = 'inline-block';
+    }
+  </script>
+</BaseLayout>
