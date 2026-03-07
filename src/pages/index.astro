@@ -1,12 +1,12 @@
 ---
-// index.astro
-// Redirect to user's locale. Defaulting to en.
+// src/pages/index.astro
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <title>neuro / dev</title>
+
   <meta http-equiv="refresh" content="0;url=/en/" />
 
   <script is:inline>
@@ -18,6 +18,18 @@
       window.location.replace('/en/');
     }
   </script>
+
+  <style>
+    body {
+      background-color: #1A1A2E;
+      margin: 0;
+    }
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: #FAFAFA;
+      }
+    }
+  </style>
 </head>
 <body>
 </body>
