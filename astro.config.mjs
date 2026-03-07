@@ -15,9 +15,6 @@ export default defineConfig({
       redirectToDefaultLocale: false
     }
   },
-  redirects: {
-    '/public/asmr-color-reveal-kids/privacy-policy.html': '/en/asmr-color-reveal-kids/privacy-policy'
-  },
 
   integrations: [sitemap()]
 });
