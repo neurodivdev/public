@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import FeatureSection from '../../../components/FeatureSection.astro';
+import FeatureItem from '../../../components/FeatureItem.astro';
+import CtaSection from '../../../components/CtaSection.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import HeroBanner from '../../../components/HeroBanner.astro';
+import FeaturesGrid from '../../../components/FeaturesGrid.astro';
+import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
+import headerImg from '../../../assets/asmr-color-reveal-kids/header-en.webp';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout 
+  title={t('asmr.pageTitle')} 
+  description={t('asmr.pageDesc')}
+  backUrl="/en/"
+>
+  <PageHeader title={t('asmr.title')} subtitle={t('asmr.subtitle')} />
+
+  <HeroBanner imgSrc={headerImg} imgAlt={t('asmr.heroImgAlt')} />
+
+  <FeatureSection title={t('asmr.mechTitle')} intro={t('asmr.mechIntro')}>
+    <FeaturesGrid>
+      <FeatureItem title={t('asmr.mech1Title')} description={t('asmr.mech1Desc')} />
+      <FeatureItem title={t('asmr.mech2Title')} description={t('asmr.mech2Desc')} />
+      <FeatureItem title={t('asmr.mech3Title')} description={t('asmr.mech3Desc')} />
+    </FeaturesGrid>
+  </FeatureSection>
+
+  <FeatureSection title={t('asmr.safeTitle')} intro={t('asmr.safeIntro')}>
+    <ul class="custom-list">
+      <li set:html={t('asmr.safe1')} />
+      <li set:html={t('asmr.safe2')} />
+      <li set:html={t('asmr.safe3')} />
+      <li set:html={t('asmr.safe4')} />
+      <li set:html={t('asmr.safe5')} />
+    </ul>
+  </FeatureSection>
+
+  <CtaSection 
+    title={t('asmr.ctaTitle')} 
+    description={t('asmr.ctaDesc')} 
+    btnText={t('asmr.ctaBtn')} 
+    btnLink="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor" 
+  />
+</BaseLayout>

@@ -1,0 +1,45 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  btnText: string;
+  btnLink: string;
+}
+
+const { title, description, btnText, btnLink } = Astro.props;
+---
+<div class="cta-section">
+  <h2>{title}</h2>
+  <p>{description}</p>
+  <a href={btnLink} target="_blank" rel="noopener noreferrer" class="cta-button">
+    {btnText}
+  </a>
+</div>
+
+<style>
+  .cta-section {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  .cta-button:hover {
+    background-color: var(--btn-hover);
+    color: #FFFFFF;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  h2 {
+    color: var(--text-color);
+  }
+</style>

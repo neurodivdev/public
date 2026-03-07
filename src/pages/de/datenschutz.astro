@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageDocument from '../../components/PageDocument.astro';
+
+const name = "Dennis Hartrampf";
+const email = "info@neurodiv.dev";
+---
+
+<BaseLayout title="Datenschutzerklärung - neuro / dev" backUrl="javascript:history.back()">
+  <PageDocument title="Datenschutzerklärung">
+    <h2>1. Datenschutz auf einen Blick</h2>
+    <h3>Allgemeine Hinweise</h3>
+    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen oder unsere Apps nutzen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+
+    <h2>2. Hosting (GitHub Pages)</h2>
+    <p>Wir hosten unsere Website bei GitHub Pages. Anbieter ist die GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA. Wenn Sie unsere Website besuchen, erfasst GitHub technisch notwendige Daten (z. B. IP-Adressen in Server-Logfiles), um die Website auszuliefern und vor Angriffen zu schützen. Weitere Informationen finden Sie in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von GitHub</a>.</p>
+
+    <h2>3. Datenschutz in unseren Apps (insb. ASMR Color Reveal Kids)</h2>
+    <p>Als Entwickler von Software für sensible Zielgruppen und Kinder nehmen wir den Datenschutz extrem ernst. Für unsere App "ASMR Color Reveal Kids" gilt strikt:</p>
+    <ul class="custom-list">
+        <li><strong>Keine Datenerhebung:</strong> Die App sammelt, speichert oder überträgt keinerlei personenbezogene Nutzerdaten an uns oder Dritte.</li>
+        <li><strong>Lokale Speicherung:</strong> Wenn Nutzer eigene Fotos in der App hochladen, um eigene Level zu erstellen, werden diese Fotos <strong>ausschließlich lokal</strong> auf dem Endgerät des Nutzers verarbeitet. Sie verlassen das Gerät zu keinem Zeitpunkt.</li>
+        <li><strong>Kein Tracking & Keine Werbung:</strong> Wir verwenden keine Analyse-Tools (Tracking) und spielen keine Werbeanzeigen von Drittanbietern ein.</li>
+        <li><strong>Offline-Nutzung:</strong> Die App erfordert für ihre Kernfunktionen keine aktive Internetverbindung.</li>
+    </ul>
+
+    <h2>4. Kontakt & Verantwortlicher</h2>
+    <p>Verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br>
+    {name}<br>
+    E-Mail: {email}</p>
+  </PageDocument>
+</BaseLayout>

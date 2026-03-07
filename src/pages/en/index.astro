@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AppCard from '../../components/AppCard.astro';
+import PageDocument from '../../components/PageDocument.astro';
+import ValueBadge from '../../components/ValueBadge.astro';
+import HeroBanner from '../../components/HeroBanner.astro';
+import CoreValues from '../../components/CoreValues.astro';
+import AppsSection from '../../components/AppsSection.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import websiteHeaderImg from '../../assets/website_header.jpg';
+import app1Img from '../../assets/asmr-color-reveal-kids/header-en.webp';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<BaseLayout>
+  <HeroBanner imgSrc={websiteHeaderImg} imgAlt="neuro / dev - neurodivergent software developer" />
+
+  <PageDocument title={t('missionTitle')}>
+    <p>{t('missionText1')}</p>
+    <p>{t('missionText2')}</p>
+
+    <CoreValues>
+      <ValueBadge text={t('value1')} />
+      <ValueBadge text={t('value2')} />
+      <ValueBadge text={t('value3')} />
+    </CoreValues>
+  </PageDocument>
+
+  <AppsSection title={t('appsHeader')}>
+    <AppCard 
+      href={`/${lang}/asmr-color-reveal-kids`}
+      imgSrc={app1Img}
+      imgAlt={t('app1Title')}
+      title={t('app1Title')}
+      description={t('app1Desc')}
+      btnText={t('app1Btn')}
+    />
+  </AppsSection>
+</BaseLayout>

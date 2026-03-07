@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+
+export interface Props {
+  imgSrc: any;
+  imgAlt: string;
+  isImageHero?: boolean;
+}
+
+const { imgSrc, imgAlt, isImageHero = false } = Astro.props;
+---
+<div class={isImageHero ? "image-hero" : "hero-banner"}>
+  <Image src={imgSrc} alt={imgAlt} />
+</div>
+
+<style>
+  .hero-banner {
+    width: 100%;
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  .hero-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .image-hero {
+    width: 100%;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    font-size: 0.9em;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+  .image-hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: none;
+  }
+</style>

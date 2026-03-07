@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageDocument from '../../components/PageDocument.astro';
+
+const name = "Dennis Hartrampf";
+const email = "info@neurodiv.dev";
+---
+
+<BaseLayout title="Privacy Policy - neuro / dev" backUrl="javascript:history.back()">
+  <PageDocument title="Privacy Policy">
+    <h2>1. An overview of data protection</h2>
+    <h3>General information</h3>
+    <p>The following notes provide a simple overview of what happens to your personal data when you visit this website or use our apps. Personal data refers to any data with which you could be personally identified.</p>
+
+    <h2>2. Hosting (GitHub Pages)</h2>
+    <p>We host our website with GitHub Pages. The provider is GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA. When you visit our website, GitHub collects technically necessary data (e.g., IP addresses in server log files) to deliver the website and protect it from attacks. For more information, please refer to the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+
+    <h2>3. Privacy in our Apps (esp. ASMR Color Reveal Kids)</h2>
+    <p>As a developer of software designed for sensitive audiences and children, we take privacy extremely seriously. For our app "ASMR Color Reveal Kids", the following strictly applies:</p>
+    <ul class="custom-list">
+        <li><strong>No data collection:</strong> The app does not collect, store, or transmit any personal user data to us or third parties.</li>
+        <li><strong>Local storage only:</strong> If users upload their own photos within the app to create custom levels, these photos are processed <strong>exclusively locally</strong> on the user's device. They never leave the device at any time.</li>
+        <li><strong>No tracking & No ads:</strong> We do not use analytics tools (tracking) and do not display third-party advertisements.</li>
+        <li><strong>Offline capability:</strong> The app does not require an active internet connection for its core features.</li>
+    </ul>
+
+    <h2>4. Contact & Data Controller</h2>
+    <p>The data controller responsible for processing data on this website is:<br>
+    {name}<br>
+    Email: {email}</p>
+  </PageDocument>
+</BaseLayout>

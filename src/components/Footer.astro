@@ -1,0 +1,37 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<footer>
+  <span>{t('footerCopyright')}</span><br>
+  <div class="footer-links">
+    <a href={`/${lang}/${t('imprint.url')}`}>{t('footerImprint')}</a> |
+    <a href={`/${lang}/${t('privacy.url')}`}>{t('footerPrivacy')}</a>
+  </div>
+</footer>
+
+<style>
+  footer {
+    margin-top: auto;
+    padding: 30px;
+    font-size: 0.9em;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+  }
+  footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  footer a:hover {
+    color: var(--accent-primary);
+  }
+  .footer-links {
+    margin-top: 10px;
+  }
+</style>

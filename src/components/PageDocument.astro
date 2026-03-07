@@ -1,0 +1,74 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+<div class="content-section">
+  <h1>{title}</h1>
+  <slot />
+</div>
+
+<style>
+  .content-section {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease;
+  }
+  @media (min-width: 768px) {
+    .content-section {
+      padding: 40px;
+    }
+  }
+  h1 {
+    color: var(--accent-primary);
+    margin-top: 0;
+  }
+  :global(.content-section h2) {
+    color: var(--accent-primary);
+    margin-top: 0;
+    border-bottom: 3px solid var(--accent-primary);
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  :global(.content-section h3) {
+    color: var(--accent-secondary);
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 1.15em;
+  }
+  :global(.content-section a) {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  :global(.content-section a:hover) {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+  }
+  :global(.content-section ul.custom-list) {
+    list-style: none;
+    padding: 0;
+  }
+  :global(.content-section ul.custom-list li) {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+  }
+  :global(.content-section ul.custom-list li::before) {
+    content: "•";
+    color: var(--accent-primary);
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+</style>

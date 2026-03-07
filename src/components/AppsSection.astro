@@ -1,0 +1,30 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+<div class="apps-section">
+  <h2>{title}</h2>
+  <div class="apps-grid">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .apps-section h2 {
+    font-size: 2em;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    text-align: left;
+    border-bottom: 3px solid var(--accent-primary);
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  .apps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+</style>

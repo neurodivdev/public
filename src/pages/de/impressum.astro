@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageDocument from '../../components/PageDocument.astro';
+
+const name = "Dennis Hartrampf";
+const street = "Priorter Dorfstr. 33";
+const city = "14641 Wustermark";
+const email = "info@neurodiv.dev";
+---
+
+<BaseLayout title="Impressum - neuro / dev" backUrl="javascript:history.back()">
+  <PageDocument title="Impressum">
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <p>
+      {name}<br>
+      neuro / dev<br>
+      {street}<br>
+      {city}<br>
+      Deutschland
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>E-Mail: {email}</p>
+
+    <h2>Verbraucher­streit­beilegung / Universal­schlichtungs­stelle</h2>
+    <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+  </PageDocument>
+</BaseLayout>

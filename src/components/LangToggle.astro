@@ -1,0 +1,70 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { ui } from '../i18n/ui';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const targetLang = lang === 'de' ? 'en' : 'de';
+const pathname = new URL(Astro.url).pathname;
+
+// 1. Pfad ohne das Sprach-Präfix extrahieren (z. B. "legal-notice" oder "asmr-color-reveal-kids/")
+let pathWithoutLang = pathname.replace(new RegExp(`^\\/${lang}(\\/|$)`), '');
+
+// Schrägstriche am Anfang/Ende entfernen, um den Suchbegriff sauber mit der ui.ts vergleichen zu können
+const cleanPath = pathWithoutLang.replace(/^\/|\/$/g, '');
+
+// 2. Rückwärtssuche: Prüfen, ob dieser Pfad im Wörterbuch der AKTUELLEN Sprache steht
+let translationKey = null;
+const currentDict = (ui as any)[lang];
+
+for (const key in currentDict) {
+  // Wir suchen nur in den Schlüsseln, die auf '.url' enden (wie 'privacy.url')
+  if (key.endsWith('.url') && currentDict[key] === cleanPath) {
+    translationKey = key;
+    break;
+  }
+}
+
+// 3. Baue die neue Ziel-URL zusammen
+let targetPath = `/${targetLang}/`;
+
+if (translationKey) {
+  // A) Die URL wurde übersetzt -> Nimm das übersetzte Wort aus der Zielsprache
+  targetPath += (ui as any)[targetLang][translationKey];
+} else {
+  // B) Die URL ist in beiden Sprachen gleich (z.B. App-Name) -> Hänge den alten Pfad wieder an
+  targetPath += pathWithoutLang;
+}
+---
+<a
+  href={targetPath}
+  id="lang-btn"
+  class="control-btn"
+  aria-label="Sprache wechseln"
+  style="text-decoration: none;"
+  onclick="event.preventDefault(); window.location.replace(this.href);"
+>
+  {t('langBtnText')}
+</a>
+
+<style>
+  .control-btn {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--accent-primary);
+    border-radius: 50px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+  }
+  .control-btn:hover {
+    transform: scale(1.05);
+    border-color: var(--accent-secondary);
+  }
+</style>
