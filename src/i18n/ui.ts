@@ -82,6 +82,9 @@ export const ui = {
     'preregTerms.h5': "5. General Conditions",
     'preregTerms.p5': "The developer reserves the right to modify, suspend, cancel, or terminate the pre-registration campaign and these terms at any time without prior notice, particularly in the event of technical errors, fraud, or circumstances beyond our control. By participating in the pre-registration, you agree to these terms.",
 
+    // nalua
+    'nalua.privacy.url': "nalua/privacy-policy",
+
     // 404
     '404.routing': "Routing to your language...",
     '404.title': "404 - Page not found",
@@ -168,6 +171,9 @@ export const ui = {
     'preregTerms.li4_3': "Wenn die App deinstalliert oder die App-Daten gelöscht werden, bevor die Prämie beim ersten Start erfolgreich auf dem Konto registriert wurde, kann die Prämie verloren gehen.",
     'preregTerms.h5': "5. Allgemeine Bedingungen",
     'preregTerms.p5': "Der Entwickler behält sich das Recht vor, die Vorregistrierungsaktion und diese Bedingungen jederzeit und ohne vorherige Ankündigung zu ändern, auszusetzen, abzubrechen oder zu beenden, insbesondere im Falle von technischen Fehlern, Betrug oder Umständen, die außerhalb unserer Kontrolle liegen. Durch die Teilnahme an der Vorregistrierung wird diesen Bedingungen zugestimmt.",
+
+    // nalua
+    'nalua.privacy.url': "nalua/datenschutz",
 
     // 404
     '404.routing': "Leite zur passenden Sprache weiter...",
