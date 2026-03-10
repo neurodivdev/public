@@ -1,11 +1,12 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import Copyright from './Copyright.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 <footer>
-  <span>{t('footerCopyright')}</span><br>
+  <Copyright /><br>
   <div class="footer-links">
     <a href={`/${lang}/${t('imprint.url')}`}>{t('footerImprint')}</a> |
     <a href={`/${lang}/${t('privacy.url')}`}>{t('footerPrivacy')}</a>

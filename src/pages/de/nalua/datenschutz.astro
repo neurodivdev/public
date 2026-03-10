@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageDocument from '../../../components/PageDocument.astro';
+import Brand from '../../../components/Brand.astro';
+---
+
+<BaseLayout title="Datenschutzerklärung - nalua" backUrl="/de/nalua/">
+  <PageDocument title="Datenschutzerklärung">
+    <p class="text-muted">Zuletzt aktualisiert: März 2026</p>
+
+    <p>nalua ("die App") ist als "Safe Space" für Ihr Wohlbefinden konzipiert und nimmt den Schutz Ihrer Privatsphäre
+      sehr ernst. Diese Richtlinie erklärt, wie wir mit Daten umgehen – nämlich am liebsten gar nicht.</p>
+
+    <h2>Informationen, die wir verarbeiten</h2>
+    <p>nalua ist ein Offline-First-Erlebnis. Die App verarbeitet nur absolute Minimal-Daten, um zu funktionieren:</p>
+    <ul class="custom-list">
+      <li><strong>Lokale Einstellungen:</strong> Ihre Präferenzen (wie z.B. gewählte Vibrationsintensität oder visuelle
+        Anpassungen) werden ausschließlich lokal auf Ihrem Gerät gespeichert.
+      </li>
+      <li><strong>Käufe & Spenden:</strong> Wenn Sie Funktionen freischalten oder uns unterstützen (In-App-Käufe), wird
+        die Transaktion vollständig und sicher von Google Play abgewickelt. Wir speichern lediglich lokal auf dem Gerät,
+        dass eine Funktion freigeschaltet wurde.
+      </li>
+    </ul>
+
+    <h2>Keine Datenspeicherung auf unseren Servern</h2>
+    <p>Alle Ihre Einstellungen werden <strong>ausschließlich lokal auf Ihrem Smartphone gespeichert</strong>. Wir
+      sammeln, übertragen, analysieren oder speichern Ihre persönlichen Informationen zu keinem Zeitpunkt auf externen
+      Servern. Es gibt kein Tracking und keine versteckte Analytik.</p>
+
+    <h2>Dienste von Drittanbietern</h2>
+    <p>Die App nutzt lediglich den folgenden Basis-Dienst:</p>
+    <ul class="custom-list">
+      <li><strong>Google Play Billing:</strong> Verarbeitet In-App-Käufe (Spenden/Freischaltungen) sicher. Google
+        verarbeitet und verwaltet dabei alle Zahlungsinformationen nach eigenen Datenschutzrichtlinien. Wir
+        (<Brand />) erhalten niemals Zugriff auf Ihre Zahlungs- oder Namensdaten.
+      </li>
+    </ul>
+
+    <h2>App-Berechtigungen</h2>
+    <p>nalua erfordert die Berechtigung zur Steuerung des Vibrationsmotors Ihres Geräts (<code>VIBRATE</code>), um die
+      taktile Kernfunktion (somatisches Feedback) bereitzustellen. Hierbei werden keinerlei Daten ausgelesen oder
+      übertragen.</p>
+
+    <h2>Ihre Rechte</h2>
+    <p>Da wir keine Daten auf unseren Servern haben, haben Sie die volle Kontrolle direkt auf Ihrem Gerät:</p>
+    <ul class="custom-list">
+      <li>Löschen Sie die App-Daten über Ihre Geräteeinstellungen, um alle lokal gespeicherten Präferenzen restlos zu
+        entfernen.
+      </li>
+      <li>Deinstallieren Sie die App jederzeit, um nalua und alle zugehörigen lokalen Daten von Ihrem Gerät zu
+        löschen.
+      </li>
+    </ul>
+
+    <h2>Änderungen dieser Richtlinie</h2>
+    <p>Wir behalten uns vor, diese Datenschutzerklärung von Zeit zu Zeit zu aktualisieren. Alle Änderungen werden auf
+      dieser Seite mit einem aktualisierten Revisionsdatum oben rechts angezeigt.</p>
+
+    <h2 style="margin-top: 30px;">Kontakt</h2>
+    <p>Wenn Sie rechtliche oder datenschutzbezogene Fragen zur App haben, kontaktieren Sie uns bitte unter:</p>
+    <p><a href="mailto:android-support@neurodiv.dev">android-support@neurodiv.dev</a></p>
+  </PageDocument>
+</BaseLayout>

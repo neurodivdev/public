@@ -1,0 +1,8 @@
+---
+import Brand from './Brand.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<span>&copy; 2026 <Brand />. {t('footerCopyright')}</span>

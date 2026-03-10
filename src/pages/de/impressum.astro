@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageDocument from '../../components/PageDocument.astro';
+import Brand from '../../components/Brand.astro';
 
 const name = "Dennis Hartrampf";
 const street = "Priorter Dorfstr. 33";
@@ -13,7 +14,7 @@ const email = "info@neurodiv.dev";
     <h2>Angaben gemäß § 5 DDG</h2>
     <p>
       {name}<br>
-      neuro / dev<br>
+      <Brand /><br>
       {street}<br>
       {city}<br>
       Deutschland

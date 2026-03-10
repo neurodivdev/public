@@ -1,8 +1,3 @@
-export const languages = {
-  en: 'English',
-  de: 'Deutsch',
-};
-
 export const defaultLang = 'en';
 
 export const ui = {
@@ -20,7 +15,7 @@ export const ui = {
     'app1Title': "ASMR Color Reveal Kids",
     'app1Desc': "A low-stimulation, stress-free coloring adventure for kids and adults. Wake up a world of colors — with no pressure and no game over.",
     'app1Btn': "View App Website",
-    'footerCopyright': "© 2026 neuro / dev. All rights reserved.",
+    'footerCopyright': "All rights reserved.",
     'footerImprint': "Legal Notice",
     'footerPrivacy': "Privacy Policy",
     
@@ -107,7 +102,7 @@ export const ui = {
     'app1Title': "ASMR Color Reveal Kids",
     'app1Desc': "Ein reizarmes, stressfreies Ausmal-Abenteuer für Kinder und Erwachsene. Wecke eine Welt voller Farben auf – ganz ohne Druck und Game Over.",
     'app1Btn': "Zur App Webseite",
-    'footerCopyright': "© 2026 neuro / dev. Alle Rechte vorbehalten.",
+    'footerCopyright': "Alle Rechte vorbehalten.",
     'footerImprint': "Impressum",
     'footerPrivacy': "Datenschutz",
 

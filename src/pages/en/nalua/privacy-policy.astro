@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageDocument from '../../../components/PageDocument.astro';
+import Brand from '../../../components/Brand.astro';
+---
+
+<BaseLayout title="Privacy Policy - nalua" backUrl="/en/nalua/">
+  <PageDocument title="Privacy Policy">
+    <p class="text-muted">Last updated: March 2026</p>
+
+    <p>nalua ("the App") is designed as a "Safe Space" for your well-being and takes the protection of your privacy very seriously. This policy explains how we handle data – preferably not at all.</p>
+
+    <h2>Information We Process</h2>
+    <p>nalua is an offline-first experience. The app processes only the absolute minimum data required to function:</p>
+    <ul class="custom-list">
+      <li><strong>Local Settings:</strong> Your preferences (e.g., selected vibration intensity or visual adjustments) are stored exclusively locally on your device.
+      </li>
+      <li><strong>Purchases & Donations:</strong> If you unlock features or support us (In-App Purchases), the transaction is processed entirely and securely by Google Play. We only store locally on the device that a feature has been unlocked.
+      </li>
+    </ul>
+
+    <h2>No Data Storage on Our Servers</h2>
+    <p>All your settings are <strong>stored exclusively locally on your smartphone</strong>. We do not collect, transmit, analyze, or store your personal information on external servers at any time. There is no tracking and no hidden analytics.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>The app only uses the following basic service:</p>
+    <ul class="custom-list">
+      <li><strong>Google Play Billing:</strong> Securely processes in-app purchases (donations/unlocks). Google processes and manages all payment information according to its own privacy policies. We (<Brand />) never receive access to your payment or name data.
+      </li>
+    </ul>
+
+    <h2>App Permissions</h2>
+    <p>nalua requires permission to control your device's vibration motor (<code>VIBRATE</code>) to provide the core tactile function (somatic feedback). No data is read or transmitted during this process.</p>
+
+    <h2>Your Rights</h2>
+    <p>Since we do not have any data on our servers, you have full control directly on your device:</p>
+    <ul class="custom-list">
+      <li>Clear the app data via your device settings to completely remove all locally stored preferences.
+      </li>
+      <li>Uninstall the app at any time to delete nalua and all associated local data from your device.
+      </li>
+    </ul>
+
+    <h2>Changes to This Policy</h2>
+    <p>We reserve the right to update this privacy policy from time to time. All changes will be posted on this page with an updated revision date at the top right.</p>
+
+    <h2 style="margin-top: 30px;">Contact</h2>
+    <p>If you have legal or privacy-related questions about the app, please contact us at:</p>
+    <p><a href="mailto:android-support@neurodiv.dev">android-support@neurodiv.dev</a></p>
+  </PageDocument>
+</BaseLayout>
