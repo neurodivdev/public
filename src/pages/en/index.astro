@@ -13,7 +13,7 @@ import app1Img from '../../assets/asmr-color-reveal-kids/header-en.webp';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
-<BaseLayout>
+<BaseLayout description={t('pageDesc')}>
   <HeroBanner imgSrc={websiteHeaderImg} imgAlt="neuro / dev - neurodivergent software developer" />
 
   <PageDocument title={t('missionTitle')}>

@@ -2,12 +2,13 @@ export const defaultLang = 'en';
 
 export const ui = {
   en: {
-    'pageTitle': "neuro / dev - neurodivergent software developer",
+    'pageTitle': "neuro / dev | Digital Retreats & Peaceful Apps",
+    'pageDesc': "Digital retreats with zero sensory overload. I build peaceful apps free from ads and dopamine traps, designed for neurodivergent minds and anyone seeking calm.",
     'themeBtnText': "Mode",
     'langBtnText': "🇩🇪 DE",
-    'missionTitle': "Digital Safe Spaces.",
-    'missionText1': "I am a neurodivergent solo developer on a clear mission: creating digital retreats. In a world full of sensory overload, I build apps that bring peace.",
-    'missionText2': "No flashy ads, no manipulative dopamine traps, no artificial stress. Just pure, safe experiences designed for sensitive minds and neurodivergent kids.",
+    'missionTitle': "Digital Retreats. Zero sensory overload.",
+    'missionText1': "My mission as a neurodivergent developer is simple: creating digital retreats. In a world full of sensory overload, I build apps that bring peace.",
+    'missionText2': "No flashy ads, no manipulative dopamine traps, no artificial stress. Just pure, safe experiences tailored to the needs of neurodivergent people — and a breath of fresh air for everyone else.",
     'value1': "🚫 100% Ad-Free",
     'value2': "🧘 Zero Pressure",
     'value3': "♾️ Low-Stimulation",
@@ -56,6 +57,7 @@ export const ui = {
     'asmr.ctaBtn': "Get it on Google Play",
 
     // Preregistration
+    'prereg.pageTitle': "ASMR Color Reveal Kids",
     'prereg.pageDesc': "A neuro-inclusive digital safe space for kids. 100% stress-free, ad-free, and gently stimulating. Pre-register now to claim your reward!",
     'prereg.rewardTitle': "🎁 Exclusive Reward!",
     'prereg.rewardDesc': 'Get the <strong>"Starter Pack"</strong> featuring 2 exclusive premium worlds (<em>"Wild Animals"</em> and <em>"Toy Box"</em>) for free when you pre-register today!',
@@ -92,12 +94,13 @@ export const ui = {
     '404.btn': "Go to Homepage",
   },
   de: {
-    'pageTitle': "neuro / dev - neurodivergent software developer",
+    'pageTitle': "neuro / dev | Digitale Rückzugsorte. Null Reizüberflutung.",
+    'pageDesc': "Digitale Rückzugsorte. Null Reizüberflutung. Ich entwickle ruhige Apps ohne Werbung und Dopamin-Fallen – für neurodivergente Menschen und alle, die Ruhe suchen.",
     'themeBtnText': "Modus",
     'langBtnText': "🇬🇧 EN",
-    'missionTitle': "Digitale Safe Spaces.",
-    'missionText1': "Ich bin ein neurodivergenter Solo-Entwickler mit einer klaren Mission: Digitale Rückzugsorte zu schaffen. In einer Welt voller Reizüberflutung baue ich Apps, die Ruhe bringen.",
-    'missionText2': "Keine blinkende Werbung, keine manipulativen Dopamin-Fallen, kein künstlicher Stress. Nur reine, sichere Erlebnisse für sensible Köpfe und neurodivergente Kinder.",
+    'missionTitle': "Digitale Rückzugsorte. Null Reizüberflutung.",
+    'missionText1': "Meine Mission als neurodivergenter Entwickler ist klar: Ich erschaffe digitale Rückzugsorte. In einer Welt voller Reizüberflutung entwickle ich Apps, die Ruhe bringen.",
+    'missionText2': "Keine aufdringliche Werbung, keine manipulativen Dopamin-Fallen, kein künstlicher Stress. Einfach pure, sichere Erlebnisse, die auf die Bedürfnisse neurodivergenter Menschen zugeschnitten sind — und ein echtes Aufatmen für jeden.",
     'value1': "🚫 100% Werbefrei",
     'value2': "🧘 Kein Zeitdruck",
     'value3': "♾️ Reizarm (Neuro-Inklusiv)",
@@ -146,6 +149,7 @@ export const ui = {
     'asmr.ctaBtn': "Jetzt bei Google Play herunterladen",
 
     // Preregistration
+    'prereg.pageTitle': "ASMR Color Reveal Kids",
     'prereg.pageDesc': "Ein reizarmes, digitales Safe Space für Kinder. 100% stressfrei. Jetzt vorregistrieren und Prämie sichern!",
     'prereg.rewardTitle': "🎁 Exklusiver Bonus!",
     'prereg.rewardDesc': 'Erhalte das <strong>"Starter-Paket"</strong> mit 2 exklusiven Premium-Welten (<em>"Wilde Tiere"</em> und <em>"Spielzeugkiste"</em>) kostenlos, wenn du dich jetzt vorregistrierst.',
