@@ -6,7 +6,7 @@ export const ui = {
     'pageDesc': "Digital retreats with zero sensory overload. I build peaceful apps free from ads and dopamine traps, designed for neurodivergent minds and anyone seeking calm.",
     'themeBtnText': "Mode",
     'langBtnText': "🇩🇪 DE",
-    'missionTitle': "Digital Retreats. <br class='mobile-break'>Zero sensory overload.",
+    'missionTitle': "Digital Retreats. <br class='mobile-break'>Zero Sensory Overload.",
     'missionText1': "My mission as a neurodivergent developer is simple: creating digital retreats. In a world full of sensory overload, I build apps that bring peace.",
     'missionText2': "No flashy ads, no manipulative dopamine traps, no artificial stress. Just pure, safe experiences tailored to the needs of neurodivergent people — and a breath of fresh air for everyone else.",
     'value1': "🚫 100% Ad-Free",
