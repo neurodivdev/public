@@ -28,7 +28,7 @@ export const ui = {
 
     // ASMR General
     'asmr.pageTitle': "ASMR Color Reveal Kids - Wake Up a World of Color!",
-    'asmr.pageDesc': "A neuro-inclusive digital safe space for kids. 100% stress-free, ad-free, and gently stimulating.",
+    'asmr.pageDesc': "A neuro-inclusive digital retreat for kids. 100% stress-free, ad-free, and gently stimulating.",
     'asmr.title': "ASMR Color Reveal Kids",
     'asmr.subtitle': "Wake up a world of color. Low-stimulation, safe, and 100% stress-free.",
     'asmr.heroImgAlt': "Wake up the colors! ASMR Color Reveal Kids",
@@ -36,7 +36,7 @@ export const ui = {
     'asmr.privacy.url': "asmr-color-reveal-kids/privacy-policy",
     
     'asmr.mechTitle': "🎨 Unique Ways to Reveal",
-    'asmr.mechIntro': "The world looks a bit sleepy — covered in a gray shadow. It is waiting for your touch. Every tap and swipe brings the image to life. There are NO wrong moves. Just pure, colorful fun!",
+    'asmr.mechIntro': "The world looks a bit sleepy — covered in a gray shadow. It is waiting for your touch. Every tap and swipe brings the image to life. There are no wrong moves. Just pure, relaxing fun!",
     'asmr.mech1Title': "Wonderful Watercolor",
     'asmr.mech1Desc': "Watch colors spread like real paint!",
     'asmr.mech2Title': "Super Swipes",
@@ -44,8 +44,8 @@ export const ui = {
     'asmr.mech3Title': "Gorgeous Grids",
     'asmr.mech3Desc': "Pop the squares and sparkling diamonds one by one to see what’s hiding.",
     
-    'asmr.safeTitle': "♾️ A Digital Safe Space",
-    'asmr.safeIntro': "As a neurodivergent developer, creating a calming digital retreat was a project close to my heart. This app was designed specifically with the needs of neurodivergent children in mind (such as those with ADHD or on the Autism spectrum).",
+    'asmr.safeTitle': "♾️ A Digital Retreat",
+    'asmr.safeIntro': "As a neurodivergent developer, creating a calming digital retreat was a project close to my heart. This app was designed specifically with the needs of neurodivergent children in mind (such as those with ADHD or on the Autism spectrum)—and it provides a peaceful, relaxing experience for any child.",
     'asmr.safe1': "<strong>Gentle Sensory Experience:</strong> No flashing lights, overstimulating colors, or sudden surprises.",
     'asmr.safe2': "<strong>Calming Repetition:</strong> Predictable movements and gentle ASMR sounds create a relaxing environment.",
     'asmr.safe3': "<strong>Full Control:</strong> A safe design where the child sets their own pace. Completely stress-free, with no timers and no mistakes.",
@@ -119,33 +119,33 @@ export const ui = {
     'privacy.url': "datenschutz",
 
     // ASMR General
-    'asmr.pageTitle': "ASMR Color Reveal Kids - Wecke eine Welt voller Farben auf!",
-    'asmr.pageDesc': "Ein reizarmes, digitales Safe Space für Kinder. 100% stressfrei, werbefrei und sanft stimulierend.",
+    'asmr.pageTitle': "ASMR Color Reveal Kids - Weck eine Welt voller Farben!",
+    'asmr.pageDesc': "Ein reizarmer, digitaler Rückzugsort für Kinder. 100% stressfrei, werbefrei und sanft stimulierend.",
     'asmr.title': "ASMR Color Reveal Kids",
-    'asmr.subtitle': "Wecke eine Welt voller Farben auf. Reizarm, sicher und 100% stressfrei.",
-    'asmr.heroImgAlt': "Weck die Farben auf! ASMR Color Reveal Kids",
+    'asmr.subtitle': "Weck eine Welt voller Farben. Reizarm, sicher und 100% stressfrei.",
+    'asmr.heroImgAlt': "Weck die Farben! ASMR Color Reveal Kids",
 
     'asmr.privacy.url': "asmr-color-reveal-kids/datenschutz",
 
-    'asmr.mechTitle': "🎨 Einzigartige Aufdeck-Arten",
-    'asmr.mechIntro': "Die Welt liegt unter einem grauen Schleier und wartet auf deine Berührung. Mit jedem Tippen und Wischen blühen die Farben auf. Es gibt keine falschen Züge – nur puren, bunten Spaß!",
+    'asmr.mechTitle': "🎨 Verschiedene Wege, die Farben zu wecken",
+    'asmr.mechIntro': "Die Welt liegt unter einem grauen Schleier und wartet auf deine Berührung. Mit jedem Tippen und Wischen blühen die Farben auf. Es gibt keine falschen Züge – nur puren, entspannten Spaß!",
     'asmr.mech1Title': "Fließendes Aquarell",
     'asmr.mech1Desc': "Beobachte, wie sich die Farben wie echte Wasserfarben ausbreiten.",
     'asmr.mech2Title': "Zickzack & Streifen",
-    'asmr.mech2Desc': "Enthülle die Bilder durch Tippen und Wischen.",
+    'asmr.mech2Desc': "Enthülle die versteckten Bilder durch sanftes Tippen und Wischen.",
     'asmr.mech3Title': "Coole Raster & Diamanten",
     'asmr.mech3Desc': "Lass Vierecke und funkelnde Rauten aufpoppen, um zu entdecken, was sich dahinter verbirgt.",
 
-    'asmr.safeTitle': "♾️ Ein digitaler Safe Space",
-    'asmr.safeIntro': "Als neurodivergenter Entwickler war es für mich eine Herzensangelegenheit, einen beruhigenden digitalen Rückzugsort zu erschaffen. Diese App wurde speziell für sensible Köpfe und neurodivergente Kinder (z. B. mit ADHS oder Autismus) entwickelt.",
-    'asmr.safe1': "<strong>Sanftes Erlebnis:</strong> Keine blinkenden Lichter, keine Reizüberflutung, keine lauten Überraschungen.",
+    'asmr.safeTitle': "♾️ Ein digitaler Rückzugsort",
+    'asmr.safeIntro': "Als neurodivergenter Entwickler war es mir eine Herzensangelegenheit, diesen beruhigenden digitalen Rückzugsort zu erschaffen. Diese App wurde speziell für die Bedürfnisse neurodivergenter Kinder (z. B. auf dem Autismus-Spektrum oder mit ADHS) entwickelt – und ist eine Wohltat für alle anderen.",
+    'asmr.safe1': "<strong>Sanftes Erlebnis:</strong> Keine blinkenden Lichter, keine grellen Farben, keine lauten Überraschungen.",
     'asmr.safe2': "<strong>Beruhigende Wiederholung:</strong> Vorhersehbare Bewegungen und sanfte ASMR-Sounds fördern den Fokus und helfen beim Entspannen.",
-    'asmr.safe3': "<strong>Volle Kontrolle:</strong> Keine Timer, keine Highscores und kein \"Game Over\". Jedes Kind spielt im eigenen Tempo.",
-    'asmr.safe4': "<strong>100% Werbefrei & Offline:</strong> Keine Unterbrechungen durch Anzeigen. Perfekt für Flugreisen oder Autofahrten.",
-    'asmr.safe5': "<strong>Deine eigenen, geheimen Level:</strong> Nutze eigene Fotos (z.B. vom Haustier oder Lieblingsspielzeug). 100% privat – die Fotos verlassen niemals dein Gerät.",
+    'asmr.safe3': "<strong>Volle Kontrolle:</strong> Keine Timer, keine Highscores und kein \"Game Over\". Jedes Kind spielt im ganz eigenen Tempo.",
+    'asmr.safe4': "<strong>100% Werbefrei & Offline:</strong> Keine nervigen Unterbrechungen. Perfekt für lange Autofahrten oder Flüge.",
+    'asmr.safe5': "<strong>Deine eigenen, geheimen Level:</strong> Nutze eigene Fotos (z. B. vom Haustier oder Lieblingsspielzeug). 100 % privat – die Fotos verlassen niemals dein Gerät.",
 
-    'asmr.ctaTitle': "Bereit für dein farbenfrohes Abenteuer?",
-    'asmr.ctaDesc': "ASMR Color Reveal Kids ist ab sofort verfügbar. Lade es dir jetzt herunter und entdecke entspannenden Malspaß!",
+    'asmr.ctaTitle': "Bereit für ein farbenfrohes Abenteuer?",
+    'asmr.ctaDesc': "ASMR Color Reveal Kids ist ab sofort verfügbar. Lade es dir jetzt herunter und entdecke den entspanntesten Malspaß!",
     'asmr.ctaBtn': "Jetzt bei Google Play herunterladen",
 
     // Preregistration
