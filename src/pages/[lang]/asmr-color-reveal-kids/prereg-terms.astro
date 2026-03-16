@@ -1,13 +1,17 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageDocument from '../../../components/PageDocument.astro';
-import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
+import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
+
+export function getStaticPaths() {
+  return getStaticPathsFromUi();
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<BaseLayout title={t('preregTerms.title')} backUrl="/de/asmr-color-reveal-kids/">
+<BaseLayout title={t('preregTerms.title')} backUrl="/en/asmr-color-reveal-kids/">
   <PageDocument title={t('preregTerms.title')}>
     <p class="text-muted">{t('preregTerms.lastUpdated')}</p>
 

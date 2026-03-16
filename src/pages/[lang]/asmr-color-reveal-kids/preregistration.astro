@@ -7,9 +7,13 @@ import PageHeader from '../../../components/PageHeader.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
 import FeaturesGrid from '../../../components/FeaturesGrid.astro';
 import RewardSection from '../../../components/RewardSection.astro';
-import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
+import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import headerImg from '../../../assets/asmr-color-reveal-kids/header-en.webp';
 import giftImg from '../../../assets/asmr-color-reveal-kids/prereg-gift.webp';
+
+export function getStaticPaths() {
+  return getStaticPathsFromUi();
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

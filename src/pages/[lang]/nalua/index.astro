@@ -3,12 +3,16 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageDocument from '../../../components/PageDocument.astro';
 import FeatureSection from '../../../components/FeatureSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
-import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
+import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import headerImg from '../../../assets/nalua/header.webp';
 import BetaCTA from '../../../components/BetaCTA.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+export function getStaticPaths() {
+  return getStaticPathsFromUi();
+}
 
 const backUrl = `/${lang}/`;
 ---

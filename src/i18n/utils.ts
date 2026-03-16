@@ -12,6 +12,10 @@ export function useTranslations(lang: keyof typeof ui) {
   }
 }
 
+export function getStaticPathsFromUi() {
+  return Object.keys(ui).map((lang) => ({ params: { lang } }));
+}
+
 export function getRouteFromUrl(url: URL): string | undefined {
   const pathname = new URL(url).pathname;
   const parts = pathname?.split('/');

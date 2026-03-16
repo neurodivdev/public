@@ -6,9 +6,13 @@ import ValueBadge from '../../components/ValueBadge.astro';
 import HeroBanner from '../../components/HeroBanner.astro';
 import CoreValues from '../../components/CoreValues.astro';
 import AppsSection from '../../components/AppsSection.astro';
-import {getLangFromUrl, useTranslations} from '../../i18n/utils';
+import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../i18n/utils';
 import websiteHeaderImg from '../../assets/website_header.jpg';
 import {ui, defaultLang} from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return getStaticPathsFromUi();
+}
 
 type TranslationKey = keyof typeof ui[typeof defaultLang];
 
