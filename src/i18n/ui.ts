@@ -85,6 +85,26 @@ export const ui = {
     'preregTerms.p5': "The developer reserves the right to modify, suspend, cancel, or terminate the pre-registration campaign and these terms at any time without prior notice, particularly in the event of technical errors, fraud, or circumstances beyond our control. By participating in the pre-registration, you agree to these terms.",
 
     // nalua
+    'nalua.pageTitle': "nalua | Sensory Breathing App & Digital Retreat",
+    'nalua.pageDesc': "Feel your breath without looking at the screen. nalua is a calming app designed for neurodivergent minds and sensory overload. 100% ad-free.",
+    'nalua.heroImgAlt': "nalua app - A dark smartphone screen showing visual silence and sensory feedback for deep relaxation",
+
+    'nalua.title': "nalua",
+    'nalua.intro': "<strong>Feel your breath without ever looking at the screen.</strong> nalua is a calm, sensory tool for deep relaxation—designed for neurodivergent minds, and a peaceful retreat for everyone else. No setup, no noise—just you and your breath.",
+
+    'nalua.h2_1': "Effortless & Low-Stimulation",
+    'nalua.p_1': "Unlike other breathing apps that pressure you with streaks and notifications, or overwhelm you with complex settings, nalua respects your peace:",
+    'nalua.li_1_1': "<strong>Effortless Start:</strong> No accounts, no onboarding, no pressure. Open the app and find your rhythm with a single tap.",
+    'nalua.li_1_2': "<strong>Feel the Breath:</strong> Experience gentle, organic vibrations that simulate the expansion of your lungs. Designed to be used with your eyes closed.",
+    'nalua.li_1_3': "<strong>Visual Silence:</strong> A radically low-stimulation design on a deep black OLED background. No distractions, no sharp edges—just calm.",
+
+    'nalua.h2_2': "Your Digital Retreat",
+    'nalua.li_2_1': "<strong>Endless Mode:</strong> No timers, no goals. nalua helps you fall asleep or manage sensory overload with zero artificial limits, for as long as you need.",
+    'nalua.li_2_2': "<strong>Gentle Fade-Out:</strong> If you fall asleep, nalua fades out gently to keep your environment quiet and save your battery.",
+    'nalua.li_2_3': "<strong>Ethical & Private:</strong> 100% ad-free and no trackers. nalua works completely offline and respects your data.",
+
+    'nalua.h2_3': "Honest Appreciation",
+    'nalua.p_3': "nalua is and always will be <strong>completely free</strong>. If the app helps you, you can support a solo developer with a simple \"pay-what-you-want\" donation. No paywalls, just honest appreciation.",
     'nalua.privacy.url': "nalua/privacy-policy",
 
     // 404
@@ -177,6 +197,26 @@ export const ui = {
     'preregTerms.p5': "Der Entwickler behält sich das Recht vor, die Vorregistrierungsaktion und diese Bedingungen jederzeit und ohne vorherige Ankündigung zu ändern, auszusetzen, abzubrechen oder zu beenden, insbesondere im Falle von technischen Fehlern, Betrug oder Umständen, die außerhalb unserer Kontrolle liegen. Durch die Teilnahme an der Vorregistrierung wird diesen Bedingungen zugestimmt.",
 
     // nalua
+    'nalua.pageTitle': "nalua | Spürbare Atem-App gegen Reizüberflutung",
+    'nalua.pageDesc': "SSpüre deinen Atem, ohne auf den Bildschirm zu schauen. nalua ist eine ruhige Atem-App – entwickelt für neurodivergente Menschen und gegen Reizüberflutung.",
+    'nalua.heroImgAlt': "nalua App - Ein dunkles Smartphone-Display, das visuelle Stille und fühlbares Feedback zur Entspannung zeigt",
+
+    'nalua.title': "nalua",
+    'nalua.intro': "<strong>Spüre deinen Atem, ohne jemals auf den Bildschirm zu schauen.</strong> nalua ist ein ruhiges, sensorisches Werkzeug für tiefe Entspannung – entwickelt für neurodivergente Menschen und ein echtes Aufatmen für jeden, der einen Moment der Ruhe sucht. Keine Einrichtung, kein Lärm – nur du und dein Atem.",
+
+    'nalua.h2_1': "Mühelos & Reizarm",
+    'nalua.p_1': "Im Gegensatz zu anderen Atem-Apps, die dich mit Streaks und Benachrichtigungen unter Druck setzen oder mit komplexen Einstellungen überfordern, respektiert nalua deinen Frieden:",
+    'nalua.li_1_1': "<strong>Müheloser Start:</strong> Keine Konten, kein Onboarding, kein Druck. Öffne die App und komme mit einem einzigen Tippen zur Ruhe.",
+    'nalua.li_1_2': "<strong>Spüre deinen Atem:</strong> Erlebe sanfte, organische Vibrationen, die die Ausdehnung deiner Lungen simulieren. Entwickelt, um mit geschlossenen Augen genutzt zu werden.",
+    'nalua.li_1_3': "<strong>Visuelle Stille:</strong> Ein radikal reizarmes Design auf einem tiefschwarzen OLED-Hintergrund. Keine Ablenkungen, keine scharfen Kanten – einfach nur Ruhe.",
+
+    'nalua.h2_2': "Dein digitaler Rückzugsort",
+    'nalua.li_2_1': "<strong>Endlos-Modus:</strong> Keine Timer, keine Ziele. nalua hilft dir beim Einschlafen oder bei der Bewältigung von Reizüberflutung, völlig ohne künstliche Grenzen.",
+    'nalua.li_2_2': "<strong>Sanftes Ausblenden:</strong> Wenn du einschläfst, blendet nalua sanft aus, um deinen Akku zu schonen und deine Umgebung ruhig zu halten.",
+    'nalua.li_2_3': "<strong>Ethisch & Privat:</strong> 100 % werbefrei und ohne Tracker. nalua funktioniert komplett offline und respektiert deine Daten.",
+
+    'nalua.h2_3': "Ehrliche Wertschätzung",
+    'nalua.p_3': "nalua ist und bleibt <strong>komplett kostenlos</strong>. Wenn dir die App hilft, kannst du einen Solo-Entwickler mit einer einfachen \"Zahl-was-du-willst\"-Spende unterstützen. Keine Paywalls, nur ehrliche Wertschätzung.",
     'nalua.privacy.url': "nalua/datenschutz",
 
     // 404
