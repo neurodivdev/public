@@ -1,0 +1,201 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+// Falls du den Type-Check aus dem vorherigen Schritt hast:
+// import { ui, defaultLang } from '../i18n/ui';
+// type TranslationKey = keyof typeof ui[typeof defaultLang];
+
+export interface Props {
+  appName: string;
+  googleGroupUrl: string;
+  playStoreUrl: string;
+  // Optionale Overrides, falls eine App mal völlig andere Texte braucht
+  titleKey?: any;
+  introKey?: any;
+}
+
+const {
+  appName,
+  googleGroupUrl,
+  playStoreUrl,
+  titleKey = 'beta.title',
+  introKey = 'beta.intro'
+} = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Hilfsfunktion, um {appName} in den i18n-Strings dynamisch zu ersetzen
+const insertAppName = (text: string) => text.replace('{appName}', appName);
+---
+
+<div class="beta-cta-card">
+  <h2>{insertAppName(t(titleKey))}</h2>
+  <p class="intro-text">
+    {insertAppName(t(introKey))}
+  </p>
+
+  <div class="beta-steps">
+    <div class="beta-step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h3>{t('beta.step1.title')}</h3>
+        <p>{t('beta.step1.desc')}</p>
+        <a href={googleGroupUrl} class="btn-primary js-step1-btn" target="_blank" rel="noopener noreferrer">
+          {t('beta.step1.btn')}
+        </a>
+      </div>
+    </div>
+
+    <div class="beta-step">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h3>{t('beta.step2.title')}</h3>
+        <p>{insertAppName(t('beta.step2.desc'))}</p>
+        <a href={playStoreUrl} class="btn-secondary js-step2-btn btn-disabled" target="_blank" rel="noopener noreferrer">
+          {t('beta.step2.btn')}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .beta-cta-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px solid var(--accent-primary);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .beta-cta-card h2 {
+    color: var(--accent-primary);
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-wrap: balance;
+  }
+
+  .intro-text {
+    margin-bottom: 30px;
+  }
+
+  /* Flexbox-Layout für die Schritte */
+  .beta-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .beta-step {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  /* Die runden Zahlen-Badges */
+  .step-number {
+    background-color: var(--accent-primary);
+    color: var(--card-bg);
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .step-content h3 {
+    margin: 0 0 8px 0;
+    color: var(--text-color);
+    font-size: 1.1em;
+  }
+
+  .step-content p {
+    margin: 0 0 15px 0;
+    font-size: 0.95em;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  /* --- Button Styling --- */
+  .btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+    width: 100%;
+  }
+
+  /* Primär-Button (Ausgefüllt) für Schritt 1 */
+  .btn-primary {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: 2px solid var(--btn-bg);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--btn-hover);
+    border-color: var(--btn-hover);
+    color: var(--btn-text);
+  }
+
+  /* Sekundär-Button (Outline) für Schritt 2 */
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--btn-bg);
+    border: 2px solid var(--btn-bg);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--btn-hover);
+    border-color: var(--btn-hover);
+    color: var(--btn-text);
+  }
+
+  .btn-disabled {
+    opacity: 0.4;
+    filter: grayscale(100%);
+  }
+
+  /* Desktop-Ansicht: Schritte nebeneinander */
+  @media (min-width: 768px) {
+    .beta-cta-card {
+      padding: 40px;
+    }
+    .beta-steps {
+      flex-direction: row;
+      gap: 40px;
+    }
+    .beta-step {
+      flex: 1; /* Beide Schritte nehmen exakt 50% des Platzes ein */
+    }
+    .btn-primary, .btn-secondary {
+      width: auto; /* Auf Desktop nicht die volle Breite erzwingen */
+    }
+  }
+</style>
+
+<script>
+  const betaCards = document.querySelectorAll('.beta-cta-card');
+
+  betaCards.forEach(card => {
+    const step1Btn = card.querySelector('.js-step1-btn');
+    const step2Btn = card.querySelector('.js-step2-btn');
+
+    if (step1Btn && step2Btn) {
+      step1Btn.addEventListener('click', () => {
+        step2Btn.classList.remove('btn-disabled', 'btn-secondary');
+        step2Btn.classList.add('btn-primary');
+      });
+    }
+  });
+</script>

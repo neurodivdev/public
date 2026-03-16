@@ -5,6 +5,7 @@ import FeatureSection from '../../../components/FeatureSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
 import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
 import headerImg from '../../../assets/nalua/header.webp';
+import BetaCTA from '../../../components/BetaCTA.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -43,4 +44,10 @@ const backUrl = `/${lang}/`;
   <FeatureSection title={t('nalua.h2_3')}>
     <p set:html={t('nalua.p_3')} />
   </FeatureSection>
+
+  <BetaCTA
+      appName="nalua"
+      googleGroupUrl="https://groups.google.com/g/nalua-testers"
+      playStoreUrl="https://play.google.com/store/apps/details?id=dev.neurodiv.nalua"
+  />
 </BaseLayout>

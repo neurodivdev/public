@@ -109,6 +109,15 @@ export const ui = {
     'nalua.p_3': "nalua is and always will be <strong>completely free</strong>. If the app helps you, you can support a solo developer with a simple \"pay-what-you-want\" donation. No paywalls, just honest appreciation.",
     'nalua.privacy.url': "nalua/privacy-policy",
 
+    'beta.title': 'Be Among the First to Try {appName}',
+    'beta.intro': '{appName} is currently in a closed beta phase. If you want to experience the app before the official release, I would love to welcome you as a tester! Just follow these two quick steps:',
+    'beta.step1.title': 'Get Access',
+    'beta.step1.desc': 'Join our testing group to unlock the download for your Google account.',
+    'beta.step1.btn': '1. Join Google Group',
+    'beta.step2.title': 'Download the App',
+    'beta.step2.desc': 'Once you\'re in the group, you can download {appName} right away.',
+    'beta.step2.btn': '2. Download on Google Play',
+
     // 404
     '404.routing': "Routing to your language...",
     '404.title': "404 - Page not found",
@@ -222,6 +231,15 @@ export const ui = {
     'nalua.h2_3': "Ehrliche Wertschätzung",
     'nalua.p_3': "nalua ist und bleibt <strong>komplett kostenlos</strong>. Wenn dir die App hilft, kannst du einen Solo-Entwickler mit einer einfachen \"Zahl-was-du-willst\"-Spende unterstützen. Keine Paywalls, nur ehrliche Wertschätzung.",
     'nalua.privacy.url': "nalua/datenschutz",
+
+    'beta.title': 'Gehöre zu den Ersten, die {appName} testen',
+    'beta.intro': '{appName} befindet sich aktuell in einer geschlossenen Beta-Phase. Wenn du die App schon vor dem offiziellen Release ausprobieren möchtest, freue ich mich riesig über dich als Tester! So einfach geht\'s:',
+    'beta.step1.title': 'Zugang freischalten',
+    'beta.step1.desc': 'Tritt der Tester-Gruppe bei, um den Download für dein Google-Konto zu aktivieren.',
+    'beta.step1.btn': '1. Google Group beitreten',
+    'beta.step2.title': 'App herunterladen',
+    'beta.step2.desc': 'Sobald du in der Gruppe bist, kannst du {appName} direkt installieren.',
+    'beta.step2.btn': '2. Bei Google Play laden',
 
     // 404
     '404.routing': "Leite zur passenden Sprache weiter...",
