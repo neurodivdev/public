@@ -20,10 +20,8 @@ const t = useTranslations(lang);
 >
   <HeroBanner imgSrc={headerImg} imgAlt={t('asmr.heroImgAlt')} />
 
-  <PageDocument title={`<span class="asmr-title">${t('asmr.title')}</span>`}>
-    <p class="asmr-subtitle">
-      {t('asmr.subtitle')}
-    </p>
+  <PageDocument title={t('asmr.title')}>
+    <p set:html={t('asmr.subtitle')} />
   </PageDocument>
 
   <FeatureSection title={t('asmr.mechTitle')} intro={t('asmr.mechIntro')}>
@@ -51,22 +49,3 @@ const t = useTranslations(lang);
       btnLink="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor"
   />
 </BaseLayout>
-<style>
-  /* Holt den poppigen ASMR-Font in die weiße Karte zurück */
-  :global(.asmr-title) {
-    font-family: 'Luckiest Guy', system-ui, sans-serif;
-    color: var(--title-text);
-    -webkit-text-stroke: 1.5px var(--title-outline);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  /* Korrigiert die Farbe des Untertitels (Dunkelgrau/Hellgrau je nach Theme statt Blau) */
-  .asmr-subtitle {
-    font-size: 1.15em;
-    font-weight: 500;
-    color: var(--text-color);
-    margin-top: -10px;
-    opacity: 0.85;
-  }
-</style>
