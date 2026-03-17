@@ -3,20 +3,43 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
-import socialPreview from '../assets/website_social_media_preview.jpg';
+import defaultSocialPreview from '../assets/website_social_media_preview.jpg';
 
 export interface Props {
   title?: string;
   description?: string;
   backUrl?: string;
+  socialImage?: ImageMetadata | string;
 }
 
-const { title, description, backUrl } = Astro.props;
+const { title, description, backUrl, socialImage } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const pageTitle = title || t('pageTitle');
 const pageDesc = description || t('missionText1');
+
+const autoImages = import.meta.glob<{ default: ImageMetadata }>('../assets/*/social_media_preview.{jpg,jpeg,png,webp}', { eager: true });
+
+const pathSegments = Astro.url.pathname.split('/').filter(Boolean);
+const slug = pathSegments[1];
+
+let autoSocialImage = null;
+if (slug) {
+  const matchKey = Object.keys(autoImages).find(path => path.includes(`/${slug}/social_media_preview`));
+  if (matchKey) {
+    autoSocialImage = autoImages[matchKey].default;
+  }
+}
+
+let finalImageUrl = new URL(defaultSocialPreview.src, Astro.site);
+
+if (socialImage) {
+  const src = typeof socialImage === 'string' ? socialImage : socialImage.src;
+  finalImageUrl = new URL(src, Astro.site);
+} else if (autoSocialImage) {
+  finalImageUrl = new URL(autoSocialImage.src, Astro.site);
+}
 ---
 <!DOCTYPE html>
 <html lang={lang} data-theme="light">
@@ -34,13 +57,13 @@ const pageDesc = description || t('missionText1');
   <meta property="og:url" content={Astro.url}>
   <meta property="og:title" content={pageTitle}>
   <meta property="og:description" content={pageDesc}>
-  <meta property="og:image" content={new URL(socialPreview.src, Astro.site)}>
+  <meta property="og:image" content={finalImageUrl}>
 
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content={Astro.url}>
   <meta property="twitter:title" content={pageTitle}>
   <meta property="twitter:description" content={pageDesc}>
-  <meta property="twitter:image" content={new URL(socialPreview.src, Astro.site)}>
+  <meta property="twitter:image" content={finalImageUrl}>
 
   <script is:inline>
     // FOUC Prevention für Dark Mode
@@ -55,10 +78,10 @@ const pageDesc = description || t('missionText1');
   </script>
 </head>
 <body>
-  <Header backUrl={backUrl} />
-  <div class="container">
-    <slot />
-  </div>
-  <Footer />
+<Header backUrl={backUrl} />
+<div class="container">
+  <slot />
+</div>
+<Footer />
 </body>
 </html>
