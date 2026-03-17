@@ -211,11 +211,11 @@ export const ui = {
 
     // nalua
     'nalua.pageTitle': "nalua | Spürbare Atem-App gegen Reizüberflutung",
-    'nalua.pageDesc': "SSpüre deinen Atem, ohne auf den Bildschirm zu schauen. nalua ist eine ruhige Atem-App – entwickelt für neurodivergente Menschen und gegen Reizüberflutung.",
+    'nalua.pageDesc': "Spüre deinen Atem, ohne auf den Bildschirm zu schauen. nalua ist eine ruhige Atem-App – entwickelt für neurodivergente Menschen und gegen Reizüberflutung.",
     'nalua.heroImgAlt': "nalua App - Ein dunkles Smartphone-Display, das visuelle Stille und fühlbares Feedback zur Entspannung zeigt",
 
     'nalua.title': "nalua",
-    'nalua.intro': "<strong>Spüre deinen Atem, ohne jemals auf den Bildschirm zu schauen.</strong> nalua ist ein ruhiges, sensorisches Werkzeug für tiefe Entspannung – entwickelt für neurodivergente Menschen und ein echtes Aufatmen für jeden, der einen Moment der Ruhe sucht. Keine Einrichtung, kein Lärm – nur du und dein Atem.",
+    'nalua.intro': "<strong>Spüre deinen Atem, ohne auf den Bildschirm zu schauen.</strong> nalua ist ein ruhiges, sensorisches Werkzeug für tiefe Entspannung – entwickelt für neurodivergente Menschen und ein echtes Aufatmen für jeden, der einen Moment der Ruhe sucht. Keine Einrichtung, kein Lärm – nur du und dein Atem.",
 
     'nalua.h2_1': "Mühelos & Reizarm",
     'nalua.p_1': "Im Gegensatz zu anderen Atem-Apps, die dich mit Streaks und Benachrichtigungen unter Druck setzen oder mit komplexen Einstellungen überfordern, respektiert nalua deinen Frieden:",
