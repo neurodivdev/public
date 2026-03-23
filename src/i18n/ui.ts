@@ -18,6 +18,8 @@ export const ui = {
     'app_nalua_desc': 'A sensory breathing app for deep relaxation and managing sensory overload. Find your rhythm with your eyes closed — with no screen, no pressure, and zero distractions.',
     'app_asmr-color-reveal-kids_title': "ASMR Color Reveal Kids",
     'app_asmr-color-reveal-kids_desc': "A low-stimulation, stress-free coloring adventure for kids and adults. Wake up a world of colors — with no pressure and no game over.",
+    'app_yurua_title': 'yurua',
+    'app_yurua_desc': 'Resolve decision paralysis without pressure. A neuro-inclusive, calming tool to help you filter options and make everyday choices at your own pace.',
     'footerCopyright': "All rights reserved.",
     'footerImprint': "Legal Notice",
     'footerPrivacy': "Privacy Policy",
@@ -118,6 +120,29 @@ export const ui = {
     'beta.step2.desc': 'Once you\'re in the group, you can download {appName} right away.',
     'beta.step2.btn': '2. Download on Google Play',
 
+    // --- yurua Unterseite ---
+    'yurua.pageTitle': "yurua | Decide with Ease & Resolve Paralysis",
+    'yurua.pageDesc': "Resolve decision paralysis without pressure. yurua is a calming, neuro-inclusive app designed to guide you through daily choices gently.",
+    'yurua.heroImgAlt': "yurua app - A calm, dark smartphone screen showing two soft cards and a gentle fade animation",
+
+    'yurua.title': "yurua",
+    'yurua.intro': "<strong>Resolve decision paralysis without pressure.</strong> yurua is a digital retreat designed to help neurodivergent minds (AuDHD, Autism, ADHD) and anyone overwhelmed by choices make everyday decisions—at their own pace, without timers, and with full autonomy.",
+
+    'yurua.h2_1': "Zero Pressure & PDA-Friendly",
+    'yurua.p_1': "Most decision apps are loud, flashy, and add artificial pressure. yurua does the exact opposite:",
+    'yurua.li_1_1': "<strong>Infinite Time:</strong> No countdowns, no auto-forwarding. The app waits for your confirmation as long as you need.",
+    'yurua.li_1_2': "<strong>Silent Veto Right:</strong> If the app makes a suggestion and your body says 'no' (PDA reflex), you can silently override it with a single tap. No warnings, no 'Are you sure?' prompts.",
+    'yurua.li_1_3': "<strong>Visual Silence:</strong> A radically low-stimulation UI with 'Soft Slate' and 'Paper Light' themes that respect your sensory needs and prevent eye strain.",
+
+    'yurua.h2_2': "The Capacity Funnel",
+    'yurua.li_2_1': "<strong>State over Content:</strong> Instead of asking what you want, yurua asks what you can handle right now (Energy, Sensory Tolerance, Cognitive Load) to filter down endless options.",
+    'yurua.li_2_2': "<strong>Alexithymia Safety Net:</strong> Can't feel what you need right now? Tap the soft 'decide for me' button and let the app gently suggest a path to react to.",
+    'yurua.li_2_3': "<strong>100% Private & Ad-Free:</strong> No trackers, no accounts, fully offline. Your choices stay purely on your device.",
+
+    'yurua.h2_3': "Honest Appreciation",
+    'yurua.p_3': "yurua is and always will be <strong>completely free</strong>. If the app helps you find clarity, you can support a solo developer with a simple \"pay-what-you-want\" donation. No paywalls, just honest appreciation.",
+    'yurua.privacy.url': "yurua/privacy-policy",
+
     // 404
     '404.routing': "Routing to your language...",
     '404.title': "404 - Page not found",
@@ -141,6 +166,8 @@ export const ui = {
     'app_nalua_desc': 'Eine spürbare Atem-App für tiefe Entspannung und gegen Reizüberflutung. Finde deinen Rhythmus mit geschlossenen Augen – ganz ohne Bildschirm, Druck oder Ablenkung.',
     'app_asmr-color-reveal-kids_title': "ASMR Color Reveal Kids",
     'app_asmr-color-reveal-kids_desc': "Ein reizarmes, stressfreies Ausmal-Abenteuer für Kinder und Erwachsene. Wecke eine Welt voller Farben auf – ganz ohne Druck und Game Over.",
+    'app_yurua_title': 'yurua',
+    'app_yurua_desc': 'Entscheidungsparalyse auflösen – ganz ohne Druck. Ein reizarmes, neuro-inklusives Tool, das dir hilft, Alltagsentscheidungen im eigenen Tempo zu treffen.',
     'footerCopyright': "Alle Rechte vorbehalten.",
     'footerImprint': "Impressum",
     'footerPrivacy': "Datenschutz",
@@ -240,6 +267,29 @@ export const ui = {
     'beta.step2.title': 'App herunterladen',
     'beta.step2.desc': 'Sobald du in der Gruppe bist, kannst du {appName} direkt installieren.',
     'beta.step2.btn': '2. Bei Google Play laden',
+
+    // --- yurua Unterseite ---
+    'yurua.pageTitle': "yurua | Entspannt entscheiden",
+    'yurua.pageDesc': "Löse Entscheidungsparalyse ganz ohne Druck. yurua ist eine reizarme, neuro-inklusive App, die dich sanft durch Alltagsentscheidungen führt.",
+    'yurua.heroImgAlt': "yurua App - Ein ruhiges, dunkles Smartphone-Display, das zwei sanfte Karten und eine sanfte Fade-Animation zeigt",
+
+    'yurua.title': "yurua",
+    'yurua.intro': "<strong>Entscheidungsparalyse auflösen, ganz ohne Druck.</strong> yurua ist ein digitaler Rückzugsort, der neurodivergenten Menschen (AuDHD, Autismus, ADHS) und allen, die von Auswahlmöglichkeiten überfordert sind, hilft, Alltagsentscheidungen zu treffen – im eigenen Tempo, ohne Timer und mit voller Autonomie.",
+
+    'yurua.h2_1': "Zero Pressure & PDA-freundlich",
+    'yurua.p_1': "Die meisten Entscheidungs-Apps (Glücksräder) sind laut, bunt und bauen künstlichen Druck auf. yurua macht genau das Gegenteil:",
+    'yurua.li_1_1': "<strong>Unendliche Zeit:</strong> Keine Countdowns, keine automatische Weiterleitung. Die App wartet auf deine Bestätigung, solange du brauchst.",
+    'yurua.li_1_2': "<strong>Lautloses Veto-Recht:</strong> Wenn die App einen Vorschlag macht und dein Körper sich wehrt (PDA-Reflex), kannst du ihn mit einem einzigen Tippen überschreiben. Ohne Warnung, ohne Fehlermeldung.",
+    'yurua.li_1_3': "<strong>Visuelle Stille:</strong> Ein radikal reizarmes UI mit 'Soft Slate' und 'Paper Light' Themes, das deine Augen und dein Nervensystem schont.",
+
+    'yurua.h2_2': "Der Kapazitäts-Trichter",
+    'yurua.li_2_1': "<strong>Zustand statt Inhalt:</strong> Statt zu fragen, was du willst, fragt yurua, was du gerade bewältigen kannst (Energie, Sensorik, Kognitive Last), um 100 Optionen schmerzfrei auf 2-5 einzugrenzen.",
+    'yurua.li_2_2': "<strong>Alexithymie-Sicherheitsnetz:</strong> Du spürst gerade nicht, was du brauchst? Tippe auf den sanften 'Nimm mir das ab'-Button und lass dir von der App einen Weg vorschlagen, auf den du nur noch reagieren musst.",
+    'yurua.li_2_3': "<strong>100% Privat & Werbefrei:</strong> Keine Tracker, keine Konten, komplett offline. Deine Entscheidungen bleiben zu 100 % auf deinem Gerät.",
+
+    'yurua.h2_3': "Ehrliche Wertschätzung",
+    'yurua.p_3': "yurua ist und bleibt <strong>komplett kostenlos</strong>. Wenn dir die App hilft, Klarheit zu finden, kannst du einen Solo-Entwickler mit einer einfachen \"Zahl-was-du-willst\"-Spende unterstützen. Keine Paywalls, nur ehrliche Wertschätzung.",
+    'yurua.privacy.url': "yurua/datenschutz",
 
     // 404
     '404.routing': "Leite zur passenden Sprache weiter...",
