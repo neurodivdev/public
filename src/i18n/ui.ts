@@ -111,6 +111,10 @@ export const ui = {
     'nalua.p_3': "nalua is and always will be <strong>completely free</strong>. If the app helps you, you can support a solo developer with a simple \"pay-what-you-want\" donation. No paywalls, just honest appreciation.",
     'nalua.privacy.url': "nalua/privacy-policy",
 
+    'nalua.ctaTitle': "Ready to feel your breath?",
+    'nalua.ctaDesc': "nalua is available now. Download today and experience deep relaxation!",
+    'nalua.ctaBtn': "Get it on Google Play",
+
     'beta.title': 'Be Among the First to Try {appName}',
     'beta.intro': '{appName} is currently in a closed beta phase. If you want to experience the app before the official release, I would love to welcome you as a tester! Just follow these two quick steps:',
     'beta.step1.title': 'Get Access',
@@ -258,6 +262,10 @@ export const ui = {
     'nalua.h2_3': "Ehrliche Wertschätzung",
     'nalua.p_3': "nalua ist und bleibt <strong>komplett kostenlos</strong>. Wenn dir die App hilft, kannst du einen Solo-Entwickler mit einer einfachen \"Zahl-was-du-willst\"-Spende unterstützen. Keine Paywalls, nur ehrliche Wertschätzung.",
     'nalua.privacy.url': "nalua/datenschutz",
+
+    'nalua.ctaTitle': "Bereit deinen Atem zu spüren?",
+    'nalua.ctaDesc': "nalua ist ab sofort verfügbar. Lade es dir jetzt herunter und erlebe Tiefenentspannung!",
+    'nalua.ctaBtn': "Jetzt bei Google Play herunterladen",
 
     'beta.title': 'Gehöre zu den Ersten, die {appName} testen',
     'beta.intro': '{appName} befindet sich aktuell in einer geschlossenen Beta-Phase. Wenn du die App schon vor dem offiziellen Release ausprobieren möchtest, freue ich mich riesig über dich als Tester! So einfach geht\'s:',
