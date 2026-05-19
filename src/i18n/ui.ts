@@ -114,6 +114,8 @@ export const ui = {
     'nalua.ctaTitle': "Ready to feel your breath?",
     'nalua.ctaDesc': "nalua is available now. Download today and experience deep relaxation!",
     'nalua.ctaBtn': "Get it on Google Play",
+    'nalua.only_eu.badge.url': "https://only-eu.eu/en/categories/health-software/nalua?ref=badge",
+    'nalua.only_eu.badge.alt': "Listed on only-eu.eu",
 
     'beta.title': 'Be Among the First to Try {appName}',
     'beta.intro': '{appName} is currently in a closed beta phase. If you want to experience the app before the official release, I would love to welcome you as a tester! Just follow these two quick steps:',
@@ -266,6 +268,8 @@ export const ui = {
     'nalua.ctaTitle': "Bereit deinen Atem zu spüren?",
     'nalua.ctaDesc': "nalua ist ab sofort verfügbar. Lade es dir jetzt herunter und erlebe Tiefenentspannung!",
     'nalua.ctaBtn': "Jetzt bei Google Play herunterladen",
+    'nalua.only_eu.badge.url': "https://only-eu.eu/kategorien/gesundheit-software/nalua?ref=badge",
+    'nalua.only_eu.badge.alt': "Auf only-eu.eu gelistet",
 
     'beta.title': 'Gehöre zu den Ersten, die {appName} testen',
     'beta.intro': '{appName} befindet sich aktuell in einer geschlossenen Beta-Phase. Wenn du die App schon vor dem offiziellen Release ausprobieren möchtest, freue ich mich riesig über dich als Tester! So einfach geht\'s:',

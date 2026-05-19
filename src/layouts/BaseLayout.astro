@@ -82,6 +82,8 @@ if (socialImage) {
 <div class="container">
   <slot />
 </div>
-<Footer />
+<Footer>
+  <slot name="footer-extra" slot="footer-extra" />
+</Footer>
 </body>
 </html>

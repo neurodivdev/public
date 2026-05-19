@@ -5,7 +5,6 @@ import FeatureSection from '../../../components/FeatureSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import headerImg from '../../../assets/nalua/header.webp';
-import BetaCTA from '../../../components/BetaCTA.astro';
 import CtaSection from "../../../components/CtaSection.astro";
 
 const lang = getLangFromUrl(Astro.url);
@@ -55,4 +54,34 @@ const backUrl = `/${lang}/`;
       btnText={t('nalua.ctaBtn')}
       btnLink="https://play.google.com/store/apps/details?id=dev.neurodiv.nalua"
   />
-</BaseLayout>
+
+  <div slot="footer-extra" class="footer-badge-wrapper">
+    <a href={t('nalua.only_eu.badge.url')} target="_blank" rel="noopener noreferrer" class="badge-link" aria-label={t('nalua.only_eu.badge.alt')}>
+      <span class="badge-mask"></span>
+    </a>
+  </div>
+  </BaseLayout>
+
+  <style>
+  .footer-badge-wrapper .badge-link {
+    display: inline-block;
+  }
+  .footer-badge-wrapper .badge-mask {
+    display: block;
+    width: 220px;
+    height: 56px;
+    background-color: var(--text-muted);
+    -webkit-mask-image: url('https://only-eu.eu/badge/badge_monochrom.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-image: url('https://only-eu.eu/badge/badge_monochrom.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: background-color 0.2s ease;
+  }
+  .footer-badge-wrapper .badge-link:hover .badge-mask {
+    background-color: var(--accent-primary);
+  }
+  </style>

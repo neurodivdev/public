@@ -6,10 +6,16 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 <footer>
-  <Copyright /><br>
-  <div class="footer-links">
-    <a href={`/${lang}/${t('imprint.url')}`}>{t('footerImprint')}</a> |
-    <a href={`/${lang}/${t('privacy.url')}`}>{t('footerPrivacy')}</a>
+  <div class="footer-extra-container">
+    <slot name="footer-extra" />
+  </div>
+
+  <div class="footer-legal">
+    <Copyright /><br>
+    <div class="footer-links">
+      <a href={`/${lang}/${t('imprint.url')}`}>{t('footerImprint')}</a> |
+      <a href={`/${lang}/${t('privacy.url')}`}>{t('footerPrivacy')}</a>
+    </div>
   </div>
 </footer>
 
@@ -23,16 +29,34 @@ const t = useTranslations(lang);
     border-top: 1px solid var(--border-color);
     color: var(--text-muted);
   }
+
+  .footer-extra-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .footer-extra-container:empty {
+    display: none;
+    margin-bottom: 0;
+  }
+
+  .footer-legal {
+    line-height: 1.5;
+  }
+
   footer a {
     color: var(--text-muted);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.2s ease;
   }
+
   footer a:hover {
     color: var(--accent-primary);
   }
+
   .footer-links {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 </style>
