@@ -1,0 +1,75 @@
+---
+import FaqItem from './FaqItem.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { ui, defaultLang } from '../i18n/ui';
+
+interface Props {
+  title?: string;
+  prefix: string; // e.g. 'nalua.faq_'
+}
+
+const { title, prefix } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+type TranslationKey = keyof typeof ui[typeof defaultLang];
+
+// Dynamically generate FAQ list based on ui.ts keys
+const faqKeys = Object.keys(ui[defaultLang])
+  .filter(key => key.startsWith(prefix) && key.endsWith('_q'))
+  .map(key => key.substring(0, key.length - 2)) // remove '_q'
+  .sort(); // ensures they are in alphabetical/numerical order (e.g., faq_1, faq_2)
+
+---
+<div class="content-section">
+  {title && <h2>{title}</h2>}
+  
+  <div class="faq-list">
+    {faqKeys.map(baseKey => {
+      const qKey = `${baseKey}_q` as TranslationKey;
+      const aKey = `${baseKey}_a` as TranslationKey;
+      return (
+        <FaqItem 
+          question={t(qKey)} 
+          answer={t(aKey)} 
+        />
+      );
+    })}
+  </div>
+</div>
+
+<style>
+  .content-section {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  @media (min-width: 768px) {
+    .content-section {
+      padding: 40px;
+      margin-top: 60px;
+    }
+  }
+
+  h2 {
+    color: var(--accent-primary);
+    margin-top: 0;
+    border-bottom: 3px solid var(--accent-primary);
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+</style>

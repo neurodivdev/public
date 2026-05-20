@@ -6,6 +6,7 @@ import HeroBanner from '../../../components/HeroBanner.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import headerImg from '../../../assets/nalua/header.webp';
 import CtaSection from "../../../components/CtaSection.astro";
+import FaqSection from "../../../components/FaqSection.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -53,6 +54,11 @@ const backUrl = `/${lang}/`;
       description={t('nalua.ctaDesc')}
       btnText={t('nalua.ctaBtn')}
       btnLink="https://play.google.com/store/apps/details?id=dev.neurodiv.nalua"
+  />
+
+  <FaqSection 
+      title={t('nalua.faq_title')} 
+      prefix="nalua.faq_" 
   />
 
   <div slot="footer-extra" class="footer-badge-wrapper">

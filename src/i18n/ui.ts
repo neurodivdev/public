@@ -23,7 +23,7 @@ export const ui = {
     'footerCopyright': "All rights reserved.",
     'footerImprint': "Legal Notice",
     'footerPrivacy': "Privacy Policy",
-    
+
     // Impressum
     'imprint.url': "legal-notice-impressum",
 
@@ -38,7 +38,7 @@ export const ui = {
     'asmr.heroImgAlt': "Wake up the colors! ASMR Color Reveal Kids",
 
     'asmr.privacy.url': "asmr-color-reveal-kids/privacy-policy",
-    
+
     'asmr.mechTitle': "🎨 Unique Ways to Reveal",
     'asmr.mechIntro': "The world looks a bit sleepy — covered in a gray shadow. It is waiting for your touch. Every tap and swipe brings the image to life. There are no wrong moves. Just pure, relaxing fun!",
     'asmr.mech1Title': "Wonderful Watercolor",
@@ -47,7 +47,7 @@ export const ui = {
     'asmr.mech2Desc': "Reveal the picture in cool stripes and zig-zags.",
     'asmr.mech3Title': "Gorgeous Grids",
     'asmr.mech3Desc': "Pop the squares and sparkling diamonds one by one to see what’s hiding.",
-    
+
     'asmr.safeTitle': "♾️ A Digital Retreat",
     'asmr.safeIntro': "As a neurodivergent developer, creating a calming digital retreat was a project close to my heart. This app was designed specifically with the needs of neurodivergent children in mind (such as those with ADHD or on the Autism spectrum)—and it provides a peaceful, relaxing experience for any child.",
     'asmr.safe1': "<strong>Gentle Sensory Experience:</strong> No flashing lights, overstimulating colors, or sudden surprises.",
@@ -55,7 +55,7 @@ export const ui = {
     'asmr.safe3': "<strong>Full Control:</strong> A safe design where the child sets their own pace. Completely stress-free, with no timers and no mistakes.",
     'asmr.safe4': "<strong>100% Ad-Free & Offline:</strong> No annoying ads. Take your colors on car rides or plane trips.",
     'asmr.safe5': "<strong>Your Own Secret Levels:</strong> Use your own photos to create custom levels! 100% private—photos never leave your device.",
-    
+
     'asmr.ctaTitle': "Ready to see what's hiding?",
     'asmr.ctaDesc': "ASMR Color Reveal Kids is available now. Download today and start your relaxing coloring adventure!",
     'asmr.ctaBtn': "Get it on Google Play",
@@ -116,6 +116,22 @@ export const ui = {
     'nalua.ctaBtn': "Get it on Google Play",
     'nalua.only_eu.badge.url': "https://only-eu.eu/en/categories/health-software/nalua?ref=badge",
     'nalua.only_eu.badge.alt': "Listed on only-eu.eu",
+
+    'nalua.faq_title': "FAQ",
+    'nalua.faq_1_q': "What is nalua and who is it for?",
+    'nalua.faq_1_a': "nalua is a calming, sensory breathing app for deep relaxation. It is specifically designed for neurodivergent minds to help manage sensory overload, but it also serves as a peaceful digital retreat for anyone seeking calm.",
+    'nalua.faq_2_q': "How does the app work if I never look at the screen?",
+    'nalua.faq_2_a': "The app uses gentle, organic vibrations to simulate the expansion of your lungs. You can simply hold your phone, close your eyes, and feel your breathing rhythm without any visual distractions.",
+    'nalua.faq_3_q': "Do I need to create an account or go through a complex setup?",
+    'nalua.faq_3_a': "No. nalua is completely free of accounts and complex settings. The only thing the app asks on your very first start is permission for notifications. This is strictly necessary so the app can continue running and vibrating seamlessly while your screen is turned off. After that, you can find your rhythm with a single tap.",
+    'nalua.faq_4_q': "Are there timers, push notifications, or streaks?",
+    'nalua.faq_4_a': "No. Unlike other apps, nalua intentionally avoids any form of pressure. There are no push notifications to remind you to breathe, and no streaks to maintain. The \"Endless Mode\" runs without timers or artificial limits for exactly as long as you need it.",
+    'nalua.faq_5_q': "What happens if I fall asleep while using the app?",
+    'nalua.faq_5_a': "nalua features a \"Gentle Fade-Out\". If you fall asleep, the app smoothly fades out the vibrations to keep your environment quiet and preserve your phone's battery.",
+    'nalua.faq_6_q': "Does the app require an internet connection or collect my data?",
+    'nalua.faq_6_a': "nalua works 100% offline. The app completely respects your privacy: there are no trackers, no data collection, and absolutely zero ads.",
+    'nalua.faq_7_q': "Is nalua really free, or are there hidden subscriptions?",
+    'nalua.faq_7_a': "nalua is and always will be completely free. There are no paywalls, no subscriptions, and no hidden costs. The app is built by a solo developer and is supported entirely by an optional \"pay-what-you-want\" donation model. Just honest appreciation.",
 
     'beta.title': 'Be Among the First to Try {appName}',
     'beta.intro': '{appName} is currently in a closed beta phase. If you want to experience the app before the official release, I would love to welcome you as a tester! Just follow these two quick steps:',
@@ -270,6 +286,22 @@ export const ui = {
     'nalua.ctaBtn': "Jetzt bei Google Play herunterladen",
     'nalua.only_eu.badge.url': "https://only-eu.eu/kategorien/gesundheit-software/nalua?ref=badge",
     'nalua.only_eu.badge.alt': "Auf only-eu.eu gelistet",
+
+    'nalua.faq_title': "FAQ",
+    'nalua.faq_1_q': "Was ist nalua und für wen ist die App gedacht?",
+    'nalua.faq_1_a': "nalua ist eine beruhigende, sensorische Atem-App für tiefe Entspannung. Sie wurde speziell für neurodivergente Menschen entwickelt, um bei Reizüberflutung (Sensory Overload) zu helfen, ist aber gleichzeitig ein digitaler Rückzugsort für jeden, der Ruhe sucht.",
+    'nalua.faq_2_q': "Wie funktioniert die App, wenn ich nicht auf den Bildschirm schaue?",
+    'nalua.faq_2_a': "Die App arbeitet mit sanften, organischen Vibrationen, welche die Ausdehnung der Lunge simulieren. Du kannst dein Telefon einfach halten, die Augen schließen und deinen Atemrhythmus spüren, ohne visuell abgelenkt zu werden.",
+    'nalua.faq_3_q': "Muss ich ein Konto erstellen oder Einstellungen vornehmen?",
+    'nalua.faq_3_a': "Nein. nalua verzichtet komplett auf Accounts und komplexe Einstellungen. Die App fragt dich beim ersten Start nur nach einer einzigen Berechtigung: Dir Benachrichtigungen schicken zu dürfen. nalua benötigt diese Berechtigung, damit die Atemübungen (insbesondere die Vibrationen) nahtlos weiterlaufen, wenn du deinen Bildschirm sperrst. Das ist eine strikte Vorgabe von Android. Danach kannst du deine Lieblings-Atemübung mit einem einzigen Tippen starten.",
+    'nalua.faq_4_q': "Gibt es Timer, Benachrichtigungen oder Streaks (Ziele)?",
+    'nalua.faq_4_a': "Nein. Anders als viele andere Apps verzichtet nalua bewusst auf Druck. Es gibt keine Push-Benachrichtigungen und keine Streaks. Der „Endless Mode“ läuft ohne Timer oder künstliche Grenzen genau so lange, wie du ihn brauchst.",
+    'nalua.faq_5_q': "Was passiert, wenn ich mit der App einschlafe?",
+    'nalua.faq_5_a': "nalua verfügt über eine „Gentle Fade-Out“-Funktion. Solltest du einschlafen, blendet die App die Vibrationen sanft aus, damit deine Umgebung ruhig bleibt und der Akku deines Smartphones geschont wird.",
+    'nalua.faq_6_q': "Braucht die App eine Internetverbindung oder sammelt sie Daten?",
+    'nalua.faq_6_a': "nalua funktioniert zu 100 % offline. Die App respektiert deine Privatsphäre absolut: Es gibt keine Tracker, keine Datensammlung und keinerlei Werbung.",
+    'nalua.faq_7_q': "Ist nalua wirklich kostenlos oder gibt es versteckte Abos?",
+    'nalua.faq_7_a': "nalua ist und bleibt komplett kostenlos. Es gibt keine Paywalls, keine Abos und keine versteckten Kosten. Die App wird von einem Solo-Entwickler betrieben und finanziert sich ausschließlich über ein freiwilliges „Pay-what-you-want“-Spendenmodell.",
 
     'beta.title': 'Gehöre zu den Ersten, die {appName} testen',
     'beta.intro': '{appName} befindet sich aktuell in einer geschlossenen Beta-Phase. Wenn du die App schon vor dem offiziellen Release ausprobieren möchtest, freue ich mich riesig über dich als Tester! So einfach geht\'s:',
