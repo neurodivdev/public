@@ -60,6 +60,18 @@ export const ui = {
     'calm.ctaDesc': "Calm Color Reveal is available now. Download today and start your relaxing coloring adventure!",
     'calm.ctaBtn': "Get it on Google Play",
 
+    'calm.faq_title': "FAQ",
+    'calm.faq_1_q': "Is Calm Color Reveal only for neurodivergent kids?",
+    'calm.faq_1_a': "Originally, the app was designed specifically with the needs of neurodivergent children in mind (such as those with ADHD or on the Autism spectrum). However, its radically low-stimulation environment makes it a perfect, calming digital retreat for any child. It is especially helpful for gently regulating the nervous system after a long, loud day at school.",
+    'calm.faq_2_q': "Are there ads, hidden costs, or subscriptions?",
+    'calm.faq_2_a': "No. The app is 100% ad-free and contains zero trackers. The base game is completely free to play. There is only a single, transparent one-time in-app purchase. This unlocks the custom photo levels as well as the remaining 9 levels in our special Premium Worlds. We believe in fair transparency: the first level of every Premium World is completely free for everyone to try out. No subscription traps, ever.",
+    'calm.faq_3_q': "What makes this app \"neuro-inclusive\" and safe?",
+    'calm.faq_3_a': "Many kids' apps are loud, flashy, and rely on the stress of timers or \"Game Over\" screens. Calm Color Reveal completely removes these elements (\"Visual Silence\"). There are no sudden pop-ups, no flashing lights, and no wrong moves. The predictable movements and gentle responses to tapping and swiping create a safe, low-stimulation environment that is also friendly for safe stimming.",
+    'calm.faq_4_q': "How do the custom photo levels work?",
+    'calm.faq_4_a': "Once the premium feature is unlocked, you can use your own images (like a favorite toy, a beloved pet, or family members) to create custom levels. I take privacy seriously: All photos are processed 100% locally on your device and never leave your smartphone or tablet.",
+    'calm.faq_5_q': "Does the app require an internet connection?",
+    'calm.faq_5_a': "Absolutely not. Calm Color Reveal works completely offline. This makes it perfect for long car rides, flights, or any situation where you don't have a stable connection but your child needs a calming, safe activity.",
+
     // Preregistration
     'prereg.pageTitle': "Calm Color Reveal",
     'prereg.pageDesc': "A neuro-inclusive digital safe space for kids. 100% stress-free, ad-free, and gently stimulating. Pre-register now to claim your reward!",
@@ -233,6 +245,18 @@ export const ui = {
     'calm.ctaTitle': "Bereit für ein farbenfrohes Abenteuer?",
     'calm.ctaDesc': "Calm Color Reveal ist ab sofort verfügbar. Lade es dir jetzt herunter und entdecke den entspanntesten Malspaß!",
     'calm.ctaBtn': "Jetzt bei Google Play herunterladen",
+
+    'calm.faq_title': "FAQ",
+    'calm.faq_1_q': "Ist Calm Color Reveal nur für neurodivergente Kinder geeignet?",
+    'calm.faq_1_a': "Ursprünglich wurde die App speziell für die Bedürfnisse von neurodivergenten Kindern (z. B. mit ADHS oder im Autismus-Spektrum) entwickelt. Die radikale Reizarmut macht sie jedoch zu einem perfekten, beruhigenden Rückzugsort für jedes Kind. Besonders nach einem langen, lauten Tag in der Schule oder im Kindergarten hilft die App dabei, das Nervensystem sanft wieder zu regulieren.",
+    'calm.faq_2_q': "Gibt es versteckte Kosten, Werbung oder Abos?",
+    'calm.faq_2_a': "Nein. Die App ist zu 100 % werbefrei und enthält keinerlei Tracker. Das Basisspiel ist völlig kostenlos spielbar. Es gibt lediglich einen einzigen, transparenten In-App-Kauf. Dieser schaltet die Funktion für eigene Fotos (\"Geheim-Level\") frei sowie die restlichen 9 Level unserer speziellen Premium-Welten. Faire Transparenz ist uns wichtig: Das erste Level jeder Premium-Welt kann von jedem Kind kostenlos gespielt werden, um die Mechanik auszuprobieren. Keine Abofallen, versprochen.",
+    'calm.faq_3_q': "Was macht die App \"neuroinklusiv\" und reizarm?",
+    'calm.faq_3_a': "Viele Kinder-Apps sind laut, grell und setzen auf Stress durch Timer oder \"Game Over\"-Bildschirme. Calm Color Reveal verzichtet komplett darauf (\"Visual Silence\"). Es gibt keine plötzlichen Pop-ups, keine blinkenden Lichter und keine falschen Züge. Die vorhersehbaren Bewegungen und sanften Reaktionen auf das Wischen und Tippen schaffen eine sichere, reizarme Umgebung, die auch Stimming-freundlich ist.",
+    'calm.faq_4_q': "Wie funktioniert die Funktion mit den eigenen Fotos (\"Geheim-Level\")?",
+    'calm.faq_4_a': "Nach dem Freischalten der Premium-Funktion können Sie eigene Bilder (z. B. das Lieblingsspielzeug, das Haustier oder Familienmitglieder) in die App laden und als Level nutzen. Ich weiß, wie wichtig Privatsphäre ist: Alle Fotos werden zu 100 % lokal auf Ihrem Gerät verarbeitet und verlassen Ihr Smartphone oder Tablet niemals.",
+    'calm.faq_5_q': "Braucht die App eine aktive Internetverbindung?",
+    'calm.faq_5_a': "Absolut nicht. Calm Color Reveal funktioniert komplett offline. Sie eignet sich also perfekt für lange Autofahrten, Flüge oder Situationen, in denen keine stabile Verbindung verfügbar ist, das Kind aber eine beruhigende, sichere Beschäftigung braucht.",
 
     // Preregistration
     'prereg.pageTitle': "Calm Color Reveal",

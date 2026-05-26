@@ -6,6 +6,7 @@ import FeatureItem from '../../../components/FeatureItem.astro';
 import CtaSection from '../../../components/CtaSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
 import FeaturesGrid from '../../../components/FeaturesGrid.astro';
+import FaqSection from '../../../components/FaqSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import headerImg from '../../../assets/calm-color-reveal/header-en.webp';
 
@@ -51,5 +52,10 @@ const t = useTranslations(lang);
       description={t('calm.ctaDesc')}
       btnText={t('calm.ctaBtn')}
       btnLink="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor"
+  />
+
+  <FaqSection
+      title={t('calm.faq_title')}
+      prefix="calm.faq_"
   />
 </BaseLayout>
