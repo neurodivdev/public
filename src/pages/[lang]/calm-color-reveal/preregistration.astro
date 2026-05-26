@@ -8,8 +8,8 @@ import HeroBanner from '../../../components/HeroBanner.astro';
 import FeaturesGrid from '../../../components/FeaturesGrid.astro';
 import RewardSection from '../../../components/RewardSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
-import headerImg from '../../../assets/asmr-color-reveal-kids/header-en.webp';
-import giftImg from '../../../assets/asmr-color-reveal-kids/prereg-gift.webp';
+import headerImg from '../../../assets/calm-color-reveal/header-en.webp';
+import giftImg from '../../../assets/calm-color-reveal/prereg-gift.webp';
 
 export function getStaticPaths() {
   return getStaticPathsFromUi();
@@ -22,27 +22,27 @@ const t = useTranslations(lang);
 <BaseLayout 
   title={t('prereg.pageTitle')} 
   description={t('prereg.pageDesc')}
-  backUrl="/en/asmr-color-reveal-kids/"
+  backUrl="/en/calm-color-reveal/"
 >
-  <PageHeader title={t('asmr.title')} subtitle={t('asmr.subtitle')} />
+  <PageHeader title={t('calm.title')} subtitle={t('calm.subtitle')} />
 
-  <HeroBanner imgSrc={headerImg} imgAlt={t('asmr.heroImgAlt')} />
+  <HeroBanner imgSrc={headerImg} imgAlt={t('calm.heroImgAlt')} />
 
-  <FeatureSection title={t('asmr.mechTitle')} intro={t('asmr.mechIntro')}>
+  <FeatureSection title={t('calm.mechTitle')} intro={t('calm.mechIntro')}>
     <FeaturesGrid>
-      <FeatureItem title={t('asmr.mech1Title')} description={t('asmr.mech1Desc')} />
-      <FeatureItem title={t('asmr.mech2Title')} description={t('asmr.mech2Desc')} />
-      <FeatureItem title={t('asmr.mech3Title')} description={t('asmr.mech3Desc')} />
+      <FeatureItem title={t('calm.mech1Title')} description={t('calm.mech1Desc')} />
+      <FeatureItem title={t('calm.mech2Title')} description={t('calm.mech2Desc')} />
+      <FeatureItem title={t('calm.mech3Title')} description={t('calm.mech3Desc')} />
     </FeaturesGrid>
   </FeatureSection>
 
-  <FeatureSection title={t('asmr.safeTitle')} intro={t('asmr.safeIntro')}>
+  <FeatureSection title={t('calm.safeTitle')} intro={t('calm.safeIntro')}>
     <ul class="custom-list">
-      <li set:html={t('asmr.safe1')} />
-      <li set:html={t('asmr.safe2')} />
-      <li set:html={t('asmr.safe3')} />
-      <li set:html={t('asmr.safe4')} />
-      <li set:html={t('asmr.safe5')} />
+      <li set:html={t('calm.safe1')} />
+      <li set:html={t('calm.safe2')} />
+      <li set:html={t('calm.safe3')} />
+      <li set:html={t('calm.safe4')} />
+      <li set:html={t('calm.safe5')} />
     </ul>
   </FeatureSection>
 
@@ -52,11 +52,11 @@ const t = useTranslations(lang);
     imgSrc={giftImg}
     imgAlt="Starter Pack Gift"
     tcText={t('prereg.rewardTc')}
-    tcLink={`/${lang}/asmr-color-reveal-kids/prereg-terms`}
+    tcLink={`/${lang}/calm-color-reveal/prereg-terms`}
   />
 
   <CtaSection 
-    title={t('asmr.ctaTitle')} 
+    title={t('calm.ctaTitle')} 
     description={t('prereg.ctaDesc')} 
     btnText={t('prereg.ctaBtn')} 
     btnLink="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor" 

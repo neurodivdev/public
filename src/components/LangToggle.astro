@@ -8,7 +8,7 @@ const t = useTranslations(lang);
 const targetLang = lang === 'de' ? 'en' : 'de';
 const pathname = new URL(Astro.url).pathname;
 
-// 1. Pfad ohne das Sprach-Präfix extrahieren (z. B. "legal-notice" oder "asmr-color-reveal-kids/")
+// 1. Pfad ohne das Sprach-Präfix extrahieren (z. B. "legal-notice" oder "calm-color-reveal/")
 let pathWithoutLang = pathname.replace(new RegExp(`^\\/${lang}(\\/|$)`), '');
 
 // Schrägstriche am Anfang/Ende entfernen, um den Suchbegriff sauber mit der ui.ts vergleichen zu können

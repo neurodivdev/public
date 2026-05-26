@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageDocument from '../../../components/PageDocument.astro';
+import FeatureSection from '../../../components/FeatureSection.astro';
+import FeatureItem from '../../../components/FeatureItem.astro';
+import CtaSection from '../../../components/CtaSection.astro';
+import HeroBanner from '../../../components/HeroBanner.astro';
+import FeaturesGrid from '../../../components/FeaturesGrid.astro';
+import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
+import headerImg from '../../../assets/calm-color-reveal/header-en.webp';
+
+export function getStaticPaths() {
+  return getStaticPathsFromUi();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+    title={t('calm.pageTitle')}
+    description={t('calm.pageDesc')}
+    backUrl={`/${lang}/`}
+>
+  <HeroBanner imgSrc={headerImg} imgAlt={t('calm.heroImgAlt')} />
+
+  <PageDocument title={t('calm.title')}>
+    <p set:html={t('calm.subtitle')} />
+  </PageDocument>
+
+  <FeatureSection title={t('calm.mechTitle')} intro={t('calm.mechIntro')}>
+    <FeaturesGrid>
+      <FeatureItem title={t('calm.mech1Title')} description={t('calm.mech1Desc')} />
+      <FeatureItem title={t('calm.mech2Title')} description={t('calm.mech2Desc')} />
+      <FeatureItem title={t('calm.mech3Title')} description={t('calm.mech3Desc')} />
+    </FeaturesGrid>
+  </FeatureSection>
+
+  <FeatureSection title={t('calm.safeTitle')} intro={t('calm.safeIntro')}>
+    <ul class="custom-list">
+      <li set:html={t('calm.safe1')} />
+      <li set:html={t('calm.safe2')} />
+      <li set:html={t('calm.safe3')} />
+      <li set:html={t('calm.safe4')} />
+      <li set:html={t('calm.safe5')} />
+    </ul>
+  </FeatureSection>
+
+  <CtaSection
+      title={t('calm.ctaTitle')}
+      description={t('calm.ctaDesc')}
+      btnText={t('calm.ctaBtn')}
+      btnLink="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor"
+  />
+</BaseLayout>
