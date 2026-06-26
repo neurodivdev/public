@@ -1,8 +1,5 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
-// Falls du den Type-Check aus dem vorherigen Schritt hast:
-// import { ui, defaultLang } from '../i18n/ui';
-// type TranslationKey = keyof typeof ui[typeof defaultLang];
 
 export interface Props {
   appName: string;
@@ -23,6 +20,11 @@ const {
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const badges = import.meta.glob<{ default: ImageMetadata }>('../assets/store-badges/*.svg', { eager: true });
+const localizedPath = `../assets/store-badges/play_store_${lang}.svg`;
+const defaultPath = `../assets/store-badges/play_store_en.svg`;
+const playStoreBadge = badges[localizedPath]?.default || badges[defaultPath]?.default;
 
 // Hilfsfunktion, um {appName} in den i18n-Strings dynamisch zu ersetzen
 const insertAppName = (text: string) => text.replace('{appName}', appName);
@@ -51,8 +53,8 @@ const insertAppName = (text: string) => text.replace('{appName}', appName);
       <div class="step-content">
         <h3>{t('beta.step2.title')}</h3>
         <p>{insertAppName(t('beta.step2.desc'))}</p>
-        <a href={playStoreUrl} class="btn-secondary js-step2-btn btn-disabled" target="_blank" rel="noopener noreferrer">
-          {t('beta.step2.btn')}
+        <a href={playStoreUrl} class="beta-badge-link js-step2-btn btn-disabled" target="_blank" rel="noopener noreferrer">
+          <img src={playStoreBadge.src} alt={t('badge.playStoreAlt')} class="beta-badge" />
         </a>
       </div>
     </div>
@@ -124,7 +126,7 @@ const insertAppName = (text: string) => text.replace('{appName}', appName);
   }
 
   /* --- Button Styling --- */
-  .btn-primary, .btn-secondary {
+  .btn-primary {
     display: inline-block;
     padding: 12px 20px;
     border-radius: 8px;
@@ -133,10 +135,6 @@ const insertAppName = (text: string) => text.replace('{appName}', appName);
     text-align: center;
     transition: all 0.2s ease;
     width: 100%;
-  }
-
-  /* Primär-Button (Ausgefüllt) für Schritt 1 */
-  .btn-primary {
     background-color: var(--btn-bg);
     color: var(--btn-text);
     border: 2px solid var(--btn-bg);
@@ -148,22 +146,27 @@ const insertAppName = (text: string) => text.replace('{appName}', appName);
     color: var(--btn-text);
   }
 
-  /* Sekundär-Button (Outline) für Schritt 2 */
-  .btn-secondary {
-    background-color: transparent;
-    color: var(--btn-bg);
-    border: 2px solid var(--btn-bg);
+  /* Badge-Link für Schritt 2 */
+  .beta-badge-link {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
   }
-
-  .btn-secondary:hover {
-    background-color: var(--btn-hover);
-    border-color: var(--btn-hover);
-    color: var(--btn-text);
+  .beta-badge-link:hover {
+    transform: scale(1.05);
+  }
+  .beta-badge-link:active {
+    transform: scale(0.98);
+  }
+  .beta-badge {
+    height: 48px;
+    width: auto;
+    display: block;
   }
 
   .btn-disabled {
     opacity: 0.4;
     filter: grayscale(100%);
+    pointer-events: none;
   }
 
   /* Desktop-Ansicht: Schritte nebeneinander */
@@ -178,7 +181,7 @@ const insertAppName = (text: string) => text.replace('{appName}', appName);
     .beta-step {
       flex: 1; /* Beide Schritte nehmen exakt 50% des Platzes ein */
     }
-    .btn-primary, .btn-secondary {
+    .btn-primary {
       width: auto; /* Auf Desktop nicht die volle Breite erzwingen */
     }
   }
@@ -193,8 +196,7 @@ const insertAppName = (text: string) => text.replace('{appName}', appName);
 
     if (step1Btn && step2Btn) {
       step1Btn.addEventListener('click', () => {
-        step2Btn.classList.remove('btn-disabled', 'btn-secondary');
-        step2Btn.classList.add('btn-primary');
+        step2Btn.classList.remove('btn-disabled');
       });
     }
   });

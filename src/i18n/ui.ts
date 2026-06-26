@@ -23,6 +23,8 @@ export const ui = {
     'footerCopyright': "All rights reserved.",
     'footerImprint': "Legal Notice",
     'footerPrivacy': "Privacy Policy",
+    'badge.playStoreAlt': "Get it on Google Play",
+    'badge.appStoreAlt': "Download on the App Store",
 
     // Impressum
     'imprint.url': "legal-notice-impressum",
@@ -58,7 +60,7 @@ export const ui = {
 
     'calm.ctaTitle': "Ready to see what's hiding?",
     'calm.ctaDesc': "Calm Color Reveal is available now. Download today and start your relaxing coloring adventure!",
-    'calm.ctaBtn': "Get it on Google Play",
+
 
     'calm.faq_title': "FAQ",
     'calm.faq_1_q': "Is Calm Color Reveal only for neurodivergent kids?",
@@ -79,7 +81,7 @@ export const ui = {
     'prereg.rewardDesc': 'Get the <strong>"Starter Pack"</strong> featuring 2 exclusive premium worlds (<em>"Wild Animals"</em> and <em>"Toy Box"</em>) for free when you pre-register today!',
     'prereg.rewardTc': "*Terms & Conditions apply",
     'prereg.ctaDesc': "Calm Color Reveal is launching soon. Pre-register now to dive in first and claim your Starter Pack!",
-    'prereg.ctaBtn': "Pre-register now on Google Play",
+
 
     // Prereg Terms
     'preregTerms.title': "Pre-Registration Reward Terms",
@@ -125,7 +127,8 @@ export const ui = {
 
     'nalua.ctaTitle': "Ready to feel your breath?",
     'nalua.ctaDesc': "nalua is available now. Download today and experience deep relaxation!",
-    'nalua.ctaBtn': "Get it on Google Play",
+
+    'nalua.appStoreLink': "https://apps.apple.com/us/app/nalua-calming-breathwork/id6777740916",
     'nalua.only_eu.badge.url': "https://only-eu.eu/en/categories/health-software/nalua?ref=badge",
     'nalua.only_eu.badge.alt': "Listed on only-eu.eu",
 
@@ -209,6 +212,8 @@ export const ui = {
     'footerCopyright': "Alle Rechte vorbehalten.",
     'footerImprint': "Impressum",
     'footerPrivacy': "Datenschutz",
+    'badge.playStoreAlt': "Jetzt bei Google Play",
+    'badge.appStoreAlt': "Laden im App Store",
 
     // Impressum
     'imprint.url': "impressum",
@@ -244,7 +249,7 @@ export const ui = {
 
     'calm.ctaTitle': "Bereit für ein farbenfrohes Abenteuer?",
     'calm.ctaDesc': "Calm Color Reveal ist ab sofort verfügbar. Lade es dir jetzt herunter und entdecke den entspanntesten Malspaß!",
-    'calm.ctaBtn': "Jetzt bei Google Play herunterladen",
+
 
     'calm.faq_title': "FAQ",
     'calm.faq_1_q': "Ist Calm Color Reveal nur für neurodivergente Kinder geeignet?",
@@ -265,7 +270,7 @@ export const ui = {
     'prereg.rewardDesc': 'Erhalte das <strong>"Starter-Paket"</strong> mit 2 exklusiven Premium-Welten (<em>"Wilde Tiere"</em> und <em>"Spielzeugkiste"</em>) kostenlos, wenn du dich jetzt vorregistrierst.',
     'prereg.rewardTc': "*Nutzungsbedingungen gelten",
     'prereg.ctaDesc': "Calm Color Reveal steht kurz vor der Veröffentlichung. Melde dich jetzt an, um als Erstes einzutauchen und dir dein Starter-Paket zu sichern!",
-    'prereg.ctaBtn': "Jetzt im Play Store vorregistrieren",
+
 
     // Prereg Terms
     'preregTerms.title': "Teilnahmebedingungen für die Vorregistrierungs-Prämie",
@@ -311,7 +316,8 @@ export const ui = {
 
     'nalua.ctaTitle': "Bereit deinen Atem zu spüren?",
     'nalua.ctaDesc': "nalua ist ab sofort verfügbar. Lade es dir jetzt herunter und erlebe Tiefenentspannung!",
-    'nalua.ctaBtn': "Jetzt bei Google Play herunterladen",
+
+    'nalua.appStoreLink': "https://apps.apple.com/de/app/nalua-calming-breathwork/id6777740916",
     'nalua.only_eu.badge.url': "https://only-eu.eu/kategorien/gesundheit-software/nalua?ref=badge",
     'nalua.only_eu.badge.alt': "Auf only-eu.eu gelistet",
 

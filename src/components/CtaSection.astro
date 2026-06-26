@@ -1,19 +1,46 @@
 ---
+import { useTranslations, getLangFromUrl } from '../i18n/utils';
+
 export interface Props {
   title: string;
   description: string;
-  btnText: string;
-  btnLink: string;
+  playStoreLink?: string;
+  appStoreLink?: string;
 }
 
-const { title, description, btnText, btnLink } = Astro.props;
+const { title, description, playStoreLink, appStoreLink } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang as any);
+
+const hasPlayStore = !!playStoreLink;
+const hasAppStore = !!appStoreLink;
+
+const badges = import.meta.glob<{ default: ImageMetadata }>('../assets/store-badges/*.svg', { eager: true });
+
+const getBadge = (store: string) => {
+  const localizedPath = `../assets/store-badges/${store}_${lang}.svg`;
+  const defaultPath = `../assets/store-badges/${store}_en.svg`;
+  return badges[localizedPath]?.default || badges[defaultPath]?.default;
+};
+
+const playStoreBadge = getBadge('play_store');
+const appStoreBadge = getBadge('app_store');
 ---
 <div class="cta-section">
   <h2>{title}</h2>
   <p>{description}</p>
-  <a href={btnLink} target="_blank" rel="noopener noreferrer" class="cta-button">
-    {btnText}
-  </a>
+  <div class="cta-buttons">
+    {hasPlayStore && (
+      <a href={playStoreLink} target="_blank" rel="noopener noreferrer" class="cta-badge-link">
+        <img src={playStoreBadge.src} alt={t('badge.playStoreAlt')} class="cta-badge" />
+      </a>
+    )}
+    {hasAppStore && (
+      <a href={appStoreLink} target="_blank" rel="noopener noreferrer" class="cta-badge-link">
+        <img src={appStoreBadge.src} alt={t('badge.appStoreAlt')} class="cta-badge" />
+      </a>
+    )}
+  </div>
 </div>
 
 <style>
@@ -21,23 +48,28 @@ const { title, description, btnText, btnLink } = Astro.props;
     text-align: center;
     margin-top: 50px;
   }
-  .cta-button {
-    display: inline-block;
-    background-color: var(--btn-bg);
-    color: var(--btn-text);
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 15px 35px;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 20px;
   }
-  .cta-button:hover {
-    background-color: var(--btn-hover);
-    color: #FFFFFF;
+  .cta-badge-link {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .cta-badge-link:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  .cta-badge-link:active {
+    transform: scale(0.98);
+  }
+  .cta-badge {
+    height: 54px;
+    width: auto;
+    display: block;
   }
   h2 {
     color: var(--text-color);

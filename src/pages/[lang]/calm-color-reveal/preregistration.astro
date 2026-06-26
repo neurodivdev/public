@@ -8,7 +8,6 @@ import HeroBanner from '../../../components/HeroBanner.astro';
 import FeaturesGrid from '../../../components/FeaturesGrid.astro';
 import RewardSection from '../../../components/RewardSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
-import headerImg from '../../../assets/calm-color-reveal/header-en.webp';
 import giftImg from '../../../assets/calm-color-reveal/prereg-gift.webp';
 
 export function getStaticPaths() {
@@ -17,12 +16,17 @@ export function getStaticPaths() {
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const images = import.meta.glob<{ default: ImageMetadata }>('../../../assets/calm-color-reveal/header-*.webp', { eager: true });
+const localizedPath = `../../../assets/calm-color-reveal/header-${lang}.webp`;
+const defaultPath = `../../../assets/calm-color-reveal/header-en.webp`;
+const headerImg = images[localizedPath]?.default || images[defaultPath]?.default;
 ---
 
 <BaseLayout 
   title={t('prereg.pageTitle')} 
   description={t('prereg.pageDesc')}
-  backUrl="/en/calm-color-reveal/"
+  backUrl={`/${lang}/calm-color-reveal/`}
 >
   <PageHeader title={t('calm.title')} subtitle={t('calm.subtitle')} />
 
@@ -58,7 +62,6 @@ const t = useTranslations(lang);
   <CtaSection 
     title={t('calm.ctaTitle')} 
     description={t('prereg.ctaDesc')} 
-    btnText={t('prereg.ctaBtn')} 
-    btnLink="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor" 
+    playStoreLink="https://play.google.com/store/apps/details?id=dev.neurodiv.asmrcolor" 
   />
 </BaseLayout>
