@@ -18,6 +18,8 @@ export const ui = {
     'app_nalua_desc': 'A sensory breathing app for deep relaxation and managing sensory overload. Find your rhythm with your eyes closed — with no screen, no pressure, and zero distractions.',
     'app_calm-color-reveal_title': "Calm Color Reveal",
     'app_calm-color-reveal_desc': "A low-stimulation, stress-free coloring adventure for kids and adults. Wake up a world of colors — with no pressure and no game over.",
+    'app_koushi_title': 'koushi',
+    'app_koushi_desc': 'A minimalist, neuro-inclusive word fit puzzle. No ads, no time limits, no distractions. Just visual silence and pure cognitive flow.',
     'app_yurua_title': 'yurua',
     'app_yurua_desc': 'Resolve decision paralysis without pressure. A neuro-inclusive, calming tool to help you filter options and make everyday choices at your own pace.',
     'footerCopyright': "All rights reserved.",
@@ -184,6 +186,29 @@ export const ui = {
     'yurua.p_3': "yurua is and always will be <strong>completely free</strong>. If the app helps you find clarity, you can support a solo developer with a simple \"pay-what-you-want\" donation. No paywalls, just honest appreciation.",
     'yurua.privacy.url': "yurua/privacy-policy",
 
+    // --- koushi Unterseite ---
+    'koushi.pageTitle': 'koushi | Neuro-inclusive Word Fit Puzzle',
+    'koushi.pageDesc': 'A minimalist, neuro-inclusive word fit puzzle. No ads, no time limits, no distractions. Just visual silence and pure cognitive flow.',
+    'koushi.heroImgAlt': 'koushi App Screenshot',
+
+    'koushi.title': 'Visual Silence',
+    'koushi.intro': '<b>koushi</b> adapts the classic experience of analog puzzle books for mobile devices, radically eliminating all the disturbing factors of modern gaming apps. Completely free of ads, time pressure, gamification, and haptic feedback.',
+
+    'koushi.h2_1': 'Neuro-Inclusive Design',
+    'koushi.p_1': 'Features that support you:',
+    'koushi.li_1_1': '<b>Smart Dimming:</b> Reduces cognitive load by highlighting only relevant paths.',
+    'koushi.li_1_2': '<b>Draft Mode:</b> A safe space to experiment without the fear of making mistakes.',
+    'koushi.li_1_3': '<b>No FOMO:</b> The daily puzzle doesn\'t use streaks. Take a break anytime without losing progress.',
+
+    'koushi.h2_2': 'Ethical Monetization',
+    'koushi.p_2': 'No subscriptions, no in-app currencies.',
+    'koushi.li_2_1': '<b>Free Starter Pack:</b> Get started with 50 levels completely for free.',
+    'koushi.li_2_2': '<b>Daily Puzzles:</b> A new puzzle every day, forever free.',
+    'koushi.li_2_3': '<b>Honest Purchases:</b> Buy optional themed packs for a one-time fee to support the solo developer.',
+
+    'koushi.ctaTitle': 'Ready for pure cognitive flow?',
+    'koushi.ctaDesc': 'koushi is launching soon. Pre-register now to dive into the most peaceful puzzle experience!',
+
     // 404
     '404.routing': "Routing to your language...",
     '404.title': "404 - Page not found",
@@ -207,6 +232,8 @@ export const ui = {
     'app_nalua_desc': 'Eine spürbare Atem-App für tiefe Entspannung und gegen Reizüberflutung. Finde deinen Rhythmus mit geschlossenen Augen – ganz ohne Bildschirm, Druck oder Ablenkung.',
     'app_calm-color-reveal_title': "Calm Color Reveal",
     'app_calm-color-reveal_desc': "Ein reizarmes, stressfreies Ausmal-Abenteuer für Kinder und Erwachsene. Wecke eine Welt voller Farben auf – ganz ohne Druck und Game Over.",
+    'app_koushi_title': 'koushi',
+    'app_koushi_desc': 'Ein minimalistisches, neuro-inklusives Gitterrätsel. Keine Werbung, kein Zeitdruck, keine Ablenkungen. Einfach visuelle Stille und purer kognitiver Flow.',
     'app_yurua_title': 'yurua',
     'app_yurua_desc': 'Entscheidungsparalyse auflösen – ganz ohne Druck. Ein reizarmes, neuro-inklusives Tool, das dir hilft, Alltagsentscheidungen im eigenen Tempo zu treffen.',
     'footerCopyright': "Alle Rechte vorbehalten.",
@@ -372,6 +399,29 @@ export const ui = {
     'yurua.h2_3': "Ehrliche Wertschätzung",
     'yurua.p_3': "yurua ist und bleibt <strong>komplett kostenlos</strong>. Wenn dir die App hilft, Klarheit zu finden, kannst du einen Solo-Entwickler mit einer einfachen \"Zahl-was-du-willst\"-Spende unterstützen. Keine Paywalls, nur ehrliche Wertschätzung.",
     'yurua.privacy.url': "yurua/datenschutz",
+
+    // --- koushi Unterseite ---
+    'koushi.pageTitle': 'koushi | Neuro-inklusives Gitterrätsel',
+    'koushi.pageDesc': 'Ein minimalistisches, neuro-inklusives Gitterrätsel. Keine Werbung, kein Zeitdruck, keine Ablenkungen. Einfach visuelle Stille und purer kognitiver Flow.',
+    'koushi.heroImgAlt': 'koushi App Screenshot',
+
+    'koushi.title': 'Visuelle Stille',
+    'koushi.intro': '<b>koushi</b> adaptiert das klassische Erlebnis von analogen Rätselheften für mobile Endgeräte und eliminiert dabei radikal sämtliche Störfaktoren aktueller Spiele-Apps. Komplett ohne Werbung, Zeitdruck, Gamification und haptisches Feedback.',
+
+    'koushi.h2_1': 'Neuro-inklusives Design',
+    'koushi.p_1': 'Funktionen, die dich unterstützen:',
+    'koushi.li_1_1': '<b>Smart Dimming:</b> Reduziert die kognitive Last durch gezieltes Hervorheben passender Felder.',
+    'koushi.li_1_2': '<b>Entwurfs-Modus:</b> Ein "Safe Space" zum Ausprobieren ohne Angst vor Fehlern.',
+    'koushi.li_1_3': '<b>Kein FOMO:</b> Das tägliche Rätsel verzichtet auf Streaks. Mach jederzeit Pause, ohne Fortschritt zu verlieren.',
+
+    'koushi.h2_2': 'Ethische Monetarisierung',
+    'koushi.p_2': 'Keine Abos, keine In-App-Währungen.',
+    'koushi.li_2_1': '<b>Kostenloses Starter-Paket:</b> Starte direkt mit 50 kostenlosen Leveln.',
+    'koushi.li_2_2': '<b>Tägliche Rätsel:</b> Jeden Tag ein neues Rätsel, dauerhaft kostenlos.',
+    'koushi.li_2_3': '<b>Faire Einmalkäufe:</b> Unterstütze die Entwicklung durch den Kauf optionaler Themenpakete.',
+
+    'koushi.ctaTitle': 'Bereit für puren kognitiven Flow?',
+    'koushi.ctaDesc': 'koushi steht kurz vor der Veröffentlichung. Melde dich jetzt an, um als Erstes einzutauchen!',
 
     // 404
     '404.routing': "Leite zur passenden Sprache weiter...",

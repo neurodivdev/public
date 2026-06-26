@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageDocument from '../../../components/PageDocument.astro';
+import FeatureSection from '../../../components/FeatureSection.astro';
+import HeroBanner from '../../../components/HeroBanner.astro';
+import BetaCTA from '../../../components/BetaCTA.astro';
+import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
+import headerImg from '../../../assets/koushi/header.png';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export function getStaticPaths() {
+  return getStaticPathsFromUi();
+}
+
+const backUrl = `/${lang}/`;
+---
+
+<BaseLayout
+    title={t('koushi.pageTitle')}
+    description={t('koushi.pageDesc')}
+    backUrl={backUrl}
+>
+  <HeroBanner imgSrc={headerImg} imgAlt={t('koushi.heroImgAlt')} />
+
+  <PageDocument title={t('koushi.title')}>
+    <p set:html={t('koushi.intro')} />
+  </PageDocument>
+
+  <FeatureSection title={t('koushi.h2_1')} intro={t('koushi.p_1')}>
+    <ul class="custom-list">
+      <li set:html={t('koushi.li_1_1')} />
+      <li set:html={t('koushi.li_1_2')} />
+      <li set:html={t('koushi.li_1_3')} />
+    </ul>
+  </FeatureSection>
+
+  <FeatureSection title={t('koushi.h2_2')} intro={t('koushi.p_2')}>
+    <ul class="custom-list">
+      <li set:html={t('koushi.li_2_1')} />
+      <li set:html={t('koushi.li_2_2')} />
+      <li set:html={t('koushi.li_2_3')} />
+    </ul>
+  </FeatureSection>
+
+  <BetaCTA
+      appName="koushi"
+      googleGroupUrl="https://groups.google.com/g/nalua-testers"
+      playStoreUrl="https://play.google.com/store/apps/details?id=dev.neurodiv.koushi"
+  />
+</BaseLayout>
