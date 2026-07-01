@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageDocument from '../../components/PageDocument.astro';
+import Brand from '../../components/Brand.astro';
+---
+
+<BaseLayout title="About & Tech - neuro / dev" backUrl="javascript:history.back()">
+  
+  <PageDocument title="About neuro / dev">
+    <p>Hi, I'm Dennis Hartrampf, the founder and solo developer behind <Brand />.</p>
+    
+    <h2>My Mission</h2>
+    <p>My mission is to build digital retreats—safe, low-stimulation applications tailored to the needs of neurodivergent individuals (AuDHD, Autism, ADHD) and anyone seeking a break from the sensory overload of modern digital life.</p>
+    
+    <h2>Business Model</h2>
+    <p>Operating as an independent, bootstrapped startup in Brandenburg, Germany, <Brand /> is built on a foundation of ethical design and transparent monetization. To protect the user's cognitive flow, I strictly avoid ad networks, dark patterns, and hidden subscription traps. Instead, the business model relies on honest one-time premium purchases and "pay-what-you-want" donations. This ensures my apps remain true digital retreats while maintaining a sustainable and scalable business.</p>
+    
+    <p>If you are interested in neuro-inclusive design, sustainable app development, or just want to say hi, feel free to connect with me on <a href="https://www.linkedin.com/in/dennis-hartrampf/?locale=en-US" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </PageDocument>
+
+  <PageDocument title="Tech Stack & Architecture">
+    <p>To deliver high-quality, endlessly replayable experiences while operating as a lean solo startup, <Brand /> relies on a highly automated, AI-native engineering pipeline and a robust cross-platform architecture.</p>
+    
+    <h2>AI-Driven Engineering & Agentic Workflows</h2>
+    <p>Our core development velocity is driven by Google's advanced Large Language Models (Gemini). We heavily utilize the new Antigravity CLI to orchestrate local AI agents directly within the shell environment. This multi-agent orchestration allows us to automate complex code generation, conduct rapid prototyping, and scale our UI/UX implementation efficiently. By integrating Gemini seamlessly into our local development workflow, we maintain a highly agile production cycle for new features and visual assets.</p>
+    
+    <h2>Local Procedural Generation</h2>
+    <p>The complex logic puzzles (e.g., Word Fit grids) are generated using proprietary Constraint Satisfaction Problem (CSP) algorithms. To ensure rigorous quality control and neuro-inclusive design standards, this generation and validation pipeline runs entirely on local, dedicated hardware. The resulting validated puzzle datasets are then optimized, compressed into JSON payloads, and bundled directly with the application.</p>
+    
+    <h2>Cross-Platform Architecture</h2>
+    <p>Our applications are built using Kotlin Multiplatform (KMP), enabling a shared, highly tested business logic layer (MVI/MVVM state management) across both iOS and Android. This drastically reduces maintenance overhead and ensures behavioral consistency across platforms.</p>
+    
+    <h2>Native Presentation & Offline-First</h2>
+    <p>The presentation layer utilizes native declarative frameworks—Jetpack Compose for Android and SwiftUI for iOS. This ensures a stutter-free, 60fps rendering experience, which is critical for users with sensory sensitivities. By utilizing a "dumb client" architecture, the apps simply parse the pre-computed JSON datasets without running heavy algorithms during runtime. This approach guarantees 100% offline-first capability, maximizes battery efficiency, and ensures absolute data privacy on the device, as no tracking SDKs or active server connections are required.</p>
+  </PageDocument>
+
+</BaseLayout>

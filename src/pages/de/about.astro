@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageDocument from '../../components/PageDocument.astro';
+import Brand from '../../components/Brand.astro';
+---
+
+<BaseLayout title="Über mich & Tech - neuro / dev" backUrl="javascript:history.back()">
+  
+  <PageDocument title="Über neuro / dev">
+    <p>Hallo, ich bin Dennis Hartrampf, der Gründer und Solo-Entwickler hinter <Brand />.</p>
+    
+    <h2>Meine Mission</h2>
+    <p>Meine Mission ist es, digitale Rückzugsorte zu schaffen – sichere, reizarme Anwendungen, die auf die Bedürfnisse neurodivergenter Menschen (AuDHS, Autismus, ADHS) und aller zugeschnitten sind, die eine Pause von der Reizüberflutung des modernen digitalen Lebens suchen.</p>
+    
+    <h2>Geschäftsmodell</h2>
+    <p>Als unabhängiges, gebootstrapptes Startup in Brandenburg, Deutschland, basiert <Brand /> auf einem Fundament aus ethischem Design und transparenter Monetarisierung. Um den kognitiven Flow der Nutzer zu schützen, verzichte ich strikt auf Werbenetzwerke, Dark Patterns und versteckte Abo-Fallen. Stattdessen setzt das Geschäftsmodell auf ehrliche, einmalige Premium-Käufe und "Pay-what-you-want"-Spenden. Dies stellt sicher, dass meine Apps echte digitale Rückzugsorte bleiben und gleichzeitig ein nachhaltiges und skalierbares Geschäft ermöglichen.</p>
+    
+    <p>Wenn du an neuro-inklusivem Design und nachhaltiger App-Entwicklung interessiert bist oder einfach mal Hallo sagen möchtest, vernetze dich gerne mit mir auf <a href="https://www.linkedin.com/in/dennis-hartrampf" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </PageDocument>
+
+  <PageDocument title="Tech Stack & Architektur">
+    <p>Um hochwertige, endlos wiederspielbare Erlebnisse zu liefern und gleichzeitig als schlankes Solo-Startup zu agieren, setzt <Brand /> auf eine hochautomatisierte, KI-native Engineering-Pipeline und eine robuste, plattformübergreifende Architektur.</p>
+    
+    <h2>KI-gestütztes Engineering & Agentic Workflows</h2>
+    <p>Unsere Entwicklungsgeschwindigkeit wird maßgeblich durch Googles fortschrittliche Large Language Models (Gemini) angetrieben. Wir nutzen intensiv das neue Antigravity CLI, um lokale KI-Agenten direkt in der Shell-Umgebung zu orchestrieren. Diese Multi-Agenten-Orchestrierung ermöglicht es uns, komplexe Codegenerierung zu automatisieren, schnelles Prototyping durchzuführen und unsere UI/UX-Implementierung effizient zu skalieren. Durch die nahtlose Integration von Gemini in unseren lokalen Entwicklungsworkflow erhalten wir uns einen hochgradig agilen Produktionszyklus für neue Funktionen und visuelle Assets.</p>
+    
+    <h2>Lokale Prozedurale Generierung</h2>
+    <p>Die komplexen Logikrätsel (z. B. Gitterrätsel) werden mithilfe proprietärer Constraint-Satisfaction-Problem (CSP) Algorithmen generiert. Um strenge Qualitätskontrollen und neuro-inklusive Designstandards zu gewährleisten, läuft diese Generierungs- und Validierungspipeline vollständig auf lokaler, dedizierter Hardware. Die daraus resultierenden, validierten Rätsel-Datensätze werden anschließend optimiert, in JSON-Pakete komprimiert und direkt mit der Anwendung gebündelt.</p>
+    
+    <h2>Plattformübergreifende Architektur</h2>
+    <p>Unsere Anwendungen werden mit Kotlin Multiplatform (KMP) entwickelt, was eine robuste, gemeinsam genutzte und intensiv getestete Geschäftslogik-Schicht (MVI/MVVM State Management) für iOS und Android ermöglicht. Dies reduziert den Wartungsaufwand drastisch und sorgt für ein konsistentes Verhalten auf beiden Plattformen.</p>
+    
+    <h2>Native Darstellung & Offline-First</h2>
+    <p>Die Präsentationsschicht nutzt native deklarative Frameworks – Jetpack Compose für Android und SwiftUI für iOS. Dies sorgt für ein ruckelfreies 60fps-Rendering-Erlebnis, was für Nutzer mit sensorischen Empfindlichkeiten entscheidend ist. Durch die Nutzung einer "Dumb Client"-Architektur parsen die Apps lediglich die vorausberechneten JSON-Datensätze, ohne zur Laufzeit rechenintensive Algorithmen auszuführen. Dieser Ansatz garantiert eine 100%ige Offline-First-Fähigkeit, maximiert die Batterieeffizienz und gewährleistet absolute Datenprivatsphäre auf dem Gerät, da keine Tracking-SDKs oder aktiven Serververbindungen erforderlich sind.</p>
+  </PageDocument>
+
+</BaseLayout>

@@ -23,6 +23,7 @@ export const ui = {
     'app_yurua_title': 'yurua',
     'app_yurua_desc': 'Resolve decision paralysis without pressure. A neuro-inclusive, calming tool to help you filter options and make everyday choices at your own pace.',
     'footerCopyright': "All rights reserved.",
+    'footerAbout': "About neuro / dev",
     'footerImprint': "Legal Notice",
     'footerPrivacy': "Privacy Policy",
     'badge.playStoreAlt': "Get it on Google Play",
@@ -30,6 +31,9 @@ export const ui = {
 
     // Impressum
     'imprint.url': "legal-notice-impressum",
+
+    // About
+    'about.url': "about",
 
     // Privacy Policy
     'privacy.url': "privacy-policy",
@@ -237,6 +241,7 @@ export const ui = {
     'app_yurua_title': 'yurua',
     'app_yurua_desc': 'Entscheidungsparalyse auflösen – ganz ohne Druck. Ein reizarmes, neuro-inklusives Tool, das dir hilft, Alltagsentscheidungen im eigenen Tempo zu treffen.',
     'footerCopyright': "Alle Rechte vorbehalten.",
+    'footerAbout': "Über neuro / dev",
     'footerImprint': "Impressum",
     'footerPrivacy': "Datenschutz",
     'badge.playStoreAlt': "Jetzt bei Google Play",
@@ -244,6 +249,9 @@ export const ui = {
 
     // Impressum
     'imprint.url': "impressum",
+
+    // About
+    'about.url': "about",
 
     // Privacy Policy
     'privacy.url': "datenschutz",
