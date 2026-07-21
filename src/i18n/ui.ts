@@ -211,7 +211,7 @@ export const ui = {
     'koushi.li_2_3': '<b>Honest Purchases:</b> Buy optional themed packs for a one-time fee to support the solo developer.',
 
     'koushi.ctaTitle': 'Ready for pure cognitive flow?',
-    'koushi.ctaDesc': 'koushi is launching soon. Pre-register now to dive into the most peaceful puzzle experience!',
+    'koushi.ctaDesc': 'koushi is available now. Download today and dive into the most peaceful puzzle experience!',
 
     // 404
     '404.routing': "Routing to your language...",
@@ -429,7 +429,7 @@ export const ui = {
     'koushi.li_2_3': '<b>Faire Einmalkäufe:</b> Unterstütze die Entwicklung durch den Kauf optionaler Themenpakete.',
 
     'koushi.ctaTitle': 'Bereit für puren kognitiven Flow?',
-    'koushi.ctaDesc': 'koushi steht kurz vor der Veröffentlichung. Melde dich jetzt an, um als Erstes einzutauchen!',
+    'koushi.ctaDesc': 'koushi ist ab sofort verfügbar. Lade es dir jetzt herunter und tauch ein in das entspannendste Rätselerlebnis!',
 
     // 404
     '404.routing': "Leite zur passenden Sprache weiter...",

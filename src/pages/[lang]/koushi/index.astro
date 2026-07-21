@@ -3,7 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageDocument from '../../../components/PageDocument.astro';
 import FeatureSection from '../../../components/FeatureSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
-import BetaCTA from '../../../components/BetaCTA.astro';
+import CtaSection from '../../../components/CtaSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import headerImg from '../../../assets/koushi/header.png';
 
@@ -44,9 +44,9 @@ const backUrl = `/${lang}/`;
     </ul>
   </FeatureSection>
 
-  <BetaCTA
-      appName="koushi"
-      googleGroupUrl="https://groups.google.com/g/nalua-testers"
-      playStoreUrl="https://play.google.com/store/apps/details?id=dev.neurodiv.koushi"
+  <CtaSection
+      title="koushi"
+      description={t('koushi.ctaDesc')}
+      playStoreLink="https://play.google.com/store/apps/details?id=dev.neurodiv.koushi"
   />
 </BaseLayout>
