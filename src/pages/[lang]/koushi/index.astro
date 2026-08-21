@@ -6,6 +6,7 @@ import HeroBanner from '../../../components/HeroBanner.astro';
 import CtaSection from '../../../components/CtaSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import headerImg from '../../../assets/koushi/header.png';
+import FaqSection from "../../../components/FaqSection.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -48,5 +49,11 @@ const backUrl = `/${lang}/`;
       title="koushi"
       description={t('koushi.ctaDesc')}
       playStoreLink="https://play.google.com/store/apps/details?id=dev.neurodiv.koushi"
+      appStoreLink={t('koushi.appStoreLink')}
+  />
+
+  <FaqSection
+      title={t('koushi.faq_title')}
+      prefix="koushi.faq_"
   />
 </BaseLayout>

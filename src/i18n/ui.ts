@@ -191,27 +191,47 @@ export const ui = {
     'yurua.privacy.url': "yurua/privacy-policy",
 
     // --- koushi Unterseite ---
-    'koushi.pageTitle': 'koushi | Neuro-inclusive Word Fit Puzzle',
+    'koushi.pageTitle': 'koushi | Neuro-Inclusive Word Fit Puzzle',
     'koushi.pageDesc': 'A minimalist, neuro-inclusive word fit puzzle. No ads, no time limits, no distractions. Just visual silence and pure cognitive flow.',
     'koushi.heroImgAlt': 'koushi App Screenshot',
 
-    'koushi.title': 'Visual Silence',
-    'koushi.intro': '<b>koushi</b> adapts the classic experience of analog puzzle books for mobile devices, radically eliminating all the disturbing factors of modern gaming apps. Completely free of ads, time pressure, gamification, and haptic feedback.',
+    'koushi.title': 'Experience Visual Silence',
+    'koushi.intro': '<b>koushi</b> adapts the classic experience of analog puzzle books for mobile devices by radically eliminating the sensory clutter of modern gaming apps. It is completely free of ads, time pressure, toxic gamification, and haptic feedback.',
 
     'koushi.h2_1': 'Neuro-Inclusive Design',
-    'koushi.p_1': 'Features that support you:',
-    'koushi.li_1_1': '<b>Smart Dimming:</b> Reduces cognitive load by highlighting only relevant paths.',
-    'koushi.li_1_2': '<b>Draft Mode:</b> A safe space to experiment without the fear of making mistakes.',
-    'koushi.li_1_3': '<b>No FOMO:</b> The daily puzzle doesn\'t use streaks. Take a break anytime without losing progress.',
+    'koushi.p_1': 'Features built to support your focus:',
+    'koushi.li_1_1': '<b>Smart Dimming:</b> Reduces cognitive load by gently fading out incompatible slots when you select a word.',
+    'koushi.li_1_2': '<b>Draft Mode:</b> A safe space to place words tentatively, just like using a pencil. Experiment without the fear of making mistakes.',
+    'koushi.li_1_3': '<b>No FOMO:</b> Daily puzzles without artificial streaks. Take a break anytime and return to a quiet archive without losing progress.',
 
-    'koushi.h2_2': 'Ethical Monetization',
-    'koushi.p_2': 'No subscriptions, no in-app currencies.',
-    'koushi.li_2_1': '<b>Free Starter Pack:</b> Get started with 50 levels completely for free.',
-    'koushi.li_2_2': '<b>Daily Puzzles:</b> A new puzzle every day, forever free.',
-    'koushi.li_2_3': '<b>Honest Purchases:</b> Buy optional themed packs for a one-time fee to support the solo developer.',
+    'koushi.h2_2': 'Fair & Ethical Pricing',
+    'koushi.p_2': 'No subscriptions, no hidden dark patterns, no in-app currencies.',
+    'koushi.li_2_1': '<b>Free Starter Pack:</b> Dive right in with 50 levels, completely for free.',
+    'koushi.li_2_2': '<b>Daily Puzzles:</b> A new challenge every day, free forever.',
+    'koushi.li_2_3': '<b>Honest Purchases:</b> Buy optional themed packs for a one-time fee to support this solo developer project.',
 
     'koushi.ctaTitle': 'Ready for pure cognitive flow?',
-    'koushi.ctaDesc': 'koushi is available now. Download today and dive into the most peaceful puzzle experience!',
+    'koushi.ctaDesc': 'koushi is available now. Download today and step into the most peaceful puzzle experience!',
+    'koushi.appStoreLink': "https://apps.apple.com/us/app/koushi-word-fill-in-puzzles/id6789676290",
+
+    'koushi.faq_title': "FAQ",
+    'koushi.faq_1_q': "What is koushi and who is it for?",
+    'koushi.faq_1_a': "<b>koushi</b> is a minimalist, relaxing word fit puzzle designed for 'visual silence'. While specifically crafted with neurodivergent minds (ADHD, Autism, AuDHD) in mind to prevent sensory overload, it serves as a peaceful digital retreat for anyone who enjoys logic puzzles without stress.",
+
+    'koushi.faq_2_q': "How is koushi different from other word games?",
+    'koushi.faq_2_a': "Most modern puzzle apps are loud, ad-heavy, and use toxic gamification like timers and streaks to keep you hooked. <b>koushi</b> strips all of that away. There are no flashing banners, no ticking clocks, no haptic feedback, and no red error messages. You just play at your own pace.",
+
+    'koushi.faq_3_q': "How do 'Smart Dimming' and 'Draft Mode' help me?",
+    'koushi.faq_3_a': "These features are designed to drastically reduce cognitive load. <strong>Smart Dimming</strong> automatically fades out incompatible slots when you select a word, so you don't have to visually scan the entire board. <strong>Draft Mode</strong> lets you place words tentatively, like writing in pencil, creating a safe space to experiment without the fear of making mistakes.",
+
+    'koushi.faq_4_q': "Why are there no daily streaks or high scores?",
+    'koushi.faq_4_a': "We believe games should respect your time and mental health. Creating a daily streak often leads to FOMO (Fear of Missing Out) and artificial pressure. With <b>koushi</b>, you can solve the free daily puzzle, take a break for a week, and return to the quiet archive to catch up on past puzzles whenever you feel like it—completely guilt-free.",
+
+    'koushi.faq_5_q': "Is koushi really free, or are there hidden subscriptions?",
+    'koushi.faq_5_a': "There are zero subscriptions and zero ads. You get a free 50-level starter pack and a new daily puzzle every day, forever free. If you want more content, you can buy optional themed level packs for a one-time fee to support this solo developer project. Honest pricing, no dark patterns.",
+
+    'koushi.faq_6_q': "Do I need an account or an internet connection to play?",
+    'koushi.faq_6_a': "No. <b>koushi</b> works 100% offline. You don't need to create an account, there are no trackers, and we collect absolutely no personal data. Your progress stays locally on your device, making it a perfectly safe environment for the whole family.",
 
     // 404
     '404.routing': "Routing to your language...",
@@ -409,27 +429,46 @@ export const ui = {
     'yurua.privacy.url': "yurua/datenschutz",
 
     // --- koushi Unterseite ---
-    'koushi.pageTitle': 'koushi | Neuro-inklusives Gitterrätsel',
-    'koushi.pageDesc': 'Ein minimalistisches, neuro-inklusives Gitterrätsel. Keine Werbung, kein Zeitdruck, keine Ablenkungen. Einfach visuelle Stille und purer kognitiver Flow.',
+    'koushi.pageTitle': 'koushi | Neuro-inklusives Worträtsel',
+    'koushi.pageDesc': 'Ein minimalistisches, neuro-inklusives Worträtsel. Keine Werbung, kein Zeitlimit, keine Ablenkung. Nur visuelle Stille und purer kognitiver Flow.',
     'koushi.heroImgAlt': 'koushi App Screenshot',
 
-    'koushi.title': 'Visuelle Stille',
-    'koushi.intro': '<b>koushi</b> adaptiert das klassische Erlebnis von analogen Rätselheften für mobile Endgeräte und eliminiert dabei radikal sämtliche Störfaktoren aktueller Spiele-Apps. Komplett ohne Werbung, Zeitdruck, Gamification und haptisches Feedback.',
+    'koushi.title': 'Erlebe visuelle Stille',
+    'koushi.intro': '<b>koushi</b> bringt das klassische Erlebnis analoger Rätselhefte auf mobile Geräte und eliminiert dabei radikal die Reizüberflutung moderner Spiele-Apps. Komplett frei von Werbung, Zeitdruck, toxischer Gamification und haptischem Feedback.',
 
     'koushi.h2_1': 'Neuro-inklusives Design',
-    'koushi.p_1': 'Funktionen, die dich unterstützen:',
-    'koushi.li_1_1': '<b>Smart Dimming:</b> Reduziert die kognitive Last durch gezieltes Hervorheben passender Felder.',
-    'koushi.li_1_2': '<b>Entwurfs-Modus:</b> Ein "Safe Space" zum Ausprobieren ohne Angst vor Fehlern.',
-    'koushi.li_1_3': '<b>Kein FOMO:</b> Das tägliche Rätsel verzichtet auf Streaks. Mach jederzeit Pause, ohne Fortschritt zu verlieren.',
+    'koushi.p_1': 'Funktionen, die deinen Fokus unterstützen:',
+    'koushi.li_1_1': '<b>Smart Dimming:</b> Reduziert die kognitive Belastung, indem inkompatible Felder sanft abgedunkelt werden, sobald du ein Wort antippst.',
+    'koushi.li_1_2': '<b>Entwurfs-Modus (Draft Mode):</b> Platziere Wörter probehalber wie mit einem Bleistift. Teste Kombinationen in einem sicheren Raum, ganz ohne Angst vor Fehlern.',
+    'koushi.li_1_3': '<b>Kein FOMO:</b> Tagesrätsel ohne künstlichen "Daily-Streak"-Druck. Mach eine Pause, wann immer du möchtest. Du kannst jederzeit ins Archiv zurückkehren und vergangene Tagesrätsel in Ruhe nachholen.',
 
-    'koushi.h2_2': 'Ethische Monetarisierung',
-    'koushi.p_2': 'Keine Abos, keine In-App-Währungen.',
-    'koushi.li_2_1': '<b>Kostenloses Starter-Paket:</b> Starte direkt mit 50 kostenlosen Leveln.',
-    'koushi.li_2_2': '<b>Tägliche Rätsel:</b> Jeden Tag ein neues Rätsel, dauerhaft kostenlos.',
-    'koushi.li_2_3': '<b>Faire Einmalkäufe:</b> Unterstütze die Entwicklung durch den Kauf optionaler Themenpakete.',
+    'koushi.h2_2': 'Faires & ethisches Preismodell',
+    'koushi.p_2': 'Keine Abos, keine versteckten Dark Patterns, keine In-App-Währungen.',
+    'koushi.li_2_1': '<b>Kostenloses Starter-Paket:</b> Leg direkt mit 50 Leveln los – völlig kostenlos.',
+    'koushi.li_2_2': '<b>Tagesrätsel:</b> Jeden Tag eine neue Herausforderung, für immer gratis.',
+    'koushi.li_2_3': '<b>Ehrliche Käufe:</b> Kaufe optionale Themen-Pakete als Einmalkauf und unterstütze so dieses Solo-Entwickler-Projekt.',
 
     'koushi.ctaTitle': 'Bereit für puren kognitiven Flow?',
-    'koushi.ctaDesc': 'koushi ist ab sofort verfügbar. Lade es dir jetzt herunter und tauch ein in das entspannendste Rätselerlebnis!',
+    'koushi.ctaDesc': 'koushi ist ab sofort verfügbar. Lade es noch heute herunter und tauche in das entspannendste Rätsel-Erlebnis ein!',
+
+    'koushi.faq_title': "FAQ",
+    'koushi.faq_1_q': "Was ist koushi und für wen ist es gedacht?",
+    'koushi.faq_1_a': "<b>koushi</b> ist ein minimalistisches, entspannendes Gitterrätsel (Word Fit Puzzle), das für 'visuelle Stille' entwickelt wurde. Obwohl es speziell mit Blick auf Neurodivergenz (ADHS, Autismus, AuDHS) gestaltet wurde, um Reizüberflutung zu vermeiden, ist es der perfekte digitale Rückzugsort für jeden, der Logikrätsel ohne Stress genießen möchte.",
+
+    'koushi.faq_2_q': "Was unterscheidet koushi von anderen Wortspielen?",
+    'koushi.faq_2_a': "Die meisten modernen Rätsel-Apps sind laut, voller Werbung und nutzen toxische Gamification wie Timer und Streaks, um dich abhängig zu machen. <b>koushi</b> verzichtet auf all das. Es gibt keine blinkenden Banner, keine tickenden Uhren, kein haptisches Feedback und keine roten Fehlermeldungen. Du spielst komplett in deinem eigenen Tempo.",
+
+    'koushi.faq_3_q': "Wie helfen mir 'Smart Dimming' und der 'Entwurfs-Modus'?",
+    'koushi.faq_3_a': "Diese Funktionen wurden entwickelt, um die kognitive Belastung drastisch zu senken. <strong>Smart Dimming</strong> dunkelt inkompatible Felder automatisch ab, sobald du ein Wort antippst, sodass du nicht das ganze Gitter absuchen musst. Der <strong>Entwurfs-Modus (Draft Mode)</strong> erlaubt es dir, Wörter wie mit einem Bleistift probehalber zu platzieren – ein sicherer Raum zum Experimentieren ohne Angst vor Fehlern.",
+
+    'koushi.faq_4_q': "Warum gibt es keine Daily-Streaks oder Highscores?",
+    'koushi.faq_4_a': "Wir glauben, dass Spiele deine Zeit und mentale Gesundheit respektieren sollten. Streaks erzeugen oft FOMO (die Angst, etwas zu verpassen) und künstlichen Druck. Bei <b>koushi</b> kannst du das kostenlose Tagesrätsel lösen, eine Woche pausieren und jederzeit ins ruhige Archiv zurückkehren, um verpasste Rätsel in Ruhe nachzuholen – ganz ohne schlechtes Gewissen.",
+
+    'koushi.faq_5_q': "Ist koushi wirklich kostenlos oder gibt es versteckte Abos?",
+    'koushi.faq_5_a': "Es gibt null Abos und null Werbung. Du erhältst ein kostenloses Starter-Paket mit 50 Leveln sowie jeden Tag ein neues Tagesrätsel – für immer gratis. Wenn du mehr möchtest, kannst du optionale Themen-Pakete als fairen Einmalkauf erwerben, um dieses Solo-Entwickler-Projekt zu unterstützen. Ehrliche Preise, keine Dark Patterns.",
+
+    'koushi.faq_6_q': "Brauche ich einen Account oder Internet, um zu spielen?",
+    'koushi.faq_6_a': "Nein. <b>koushi</b> funktioniert zu 100 % offline. Du musst keinen Account anlegen, es gibt keine Tracker und wir sammeln absolut keine persönlichen Daten. Dein Spielfortschritt bleibt lokal auf deinem Gerät – ein absolut sicheres Umfeld für die ganze Familie.",
 
     // 404
     '404.routing': "Leite zur passenden Sprache weiter...",
