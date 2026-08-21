@@ -450,6 +450,7 @@ export const ui = {
 
     'koushi.ctaTitle': 'Bereit für puren kognitiven Flow?',
     'koushi.ctaDesc': 'koushi ist ab sofort verfügbar. Lade es noch heute herunter und tauche in das entspannendste Rätsel-Erlebnis ein!',
+    'koushi.appStoreLink': "https://apps.apple.com/de/app/koushi-wort-gitterr%C3%A4tsel/id6789676290",
 
     'koushi.faq_title': "FAQ",
     'koushi.faq_1_q': "Was ist koushi und für wen ist es gedacht?",
