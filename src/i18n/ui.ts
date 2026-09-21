@@ -173,22 +173,25 @@ export const ui = {
     'yurua.heroImgAlt': "yurua app - A calm, dark smartphone screen showing two soft cards and a gentle fade animation",
 
     'yurua.title': "yurua",
-    'yurua.intro': "<strong>Resolve decision paralysis without pressure.</strong> yurua is a digital retreat designed to help neurodivergent minds (AuDHD, Autism, ADHD) and anyone overwhelmed by choices make everyday decisions—at their own pace, without timers, and with full autonomy.",
+    'yurua.intro': "<strong>A calm, zero-pressure decision maker.</strong> When ADHD paralysis, autism, or overthinking makes everyday choices feel impossible, this quiet digital retreat helps you figure out what to do next. Built specifically for neurodivergent people and anyone overwhelmed by choices.",
 
-    'yurua.h2_1': "Zero Pressure & PDA-Friendly",
-    'yurua.p_1': "Most decision apps are loud, flashy, and add artificial pressure. yurua does the exact opposite:",
-    'yurua.li_1_1': "<strong>Infinite Time:</strong> No countdowns, no auto-forwarding. The app waits for your confirmation as long as you need.",
-    'yurua.li_1_2': "<strong>Silent Veto Right:</strong> If the app makes a suggestion and your body says 'no' (PDA reflex), you can silently override it with a single tap. No warnings, no 'Are you sure?' prompts.",
-    'yurua.li_1_3': "<strong>Visual Silence:</strong> A radically low-stimulation UI with 'Soft Slate' and 'Paper Light' themes that respect your sensory needs and prevent eye strain.",
+    'yurua.h2_1': "Zero Pressure & Veto Power",
+    'yurua.p_1': "Making decisions is exhausting when you are already overwhelmed. Unlike loud decision wheels or flashing spinners, yurua offers no ticking clocks and no demanding prompts:",
+    'yurua.li_1_1': "<strong>Silent Veto Power:</strong> Built with Pathological Demand Avoidance (PDA) and anxiety in mind. If the app suggests an option but you feel resistance, silently tap to fade it away. You retain the final say without friction.",
+    'yurua.li_1_2': "<strong>Visual Silence:</strong> Every screen is designed to be a calming visual environment. We replaced harsh lines and bright colors with smooth edges and slow fade animations. It is a quiet space that does not demand your attention.",
+    'yurua.li_1_3': "<strong>Saved Options:</strong> Save your most difficult daily routines—like meals or tasks—as reusable lists. Access them with a single tap, so you do not have to type them out when your cognitive capacity is low.",
 
-    'yurua.h2_2': "The Capacity Funnel",
-    'yurua.li_2_1': "<strong>State over Content:</strong> Instead of asking what you want, yurua asks what you can handle right now (Energy, Sensory Tolerance, Cognitive Load) to filter down endless options.",
-    'yurua.li_2_2': "<strong>Alexithymia Safety Net:</strong> Can't feel what you need right now? Tap the soft 'decide for me' button and let the app gently suggest a path to react to.",
-    'yurua.li_2_3': "<strong>100% Private & Ad-Free:</strong> No trackers, no accounts, fully offline. Your choices stay purely on your device.",
+    'yurua.h2_2': "Step by Step",
+    'yurua.li_2_1': "<strong>Narrow Down Options:</strong> When a large number of options feels overwhelming, guided questions help you narrow down your choices until only a few manageable ones remain—instead of asking you to analyze your feelings.",
+    'yurua.li_2_2': "<strong>'Decide For Me':</strong> If you have low energy or struggle to identify what you want, the 'Decide for me' button is always there to help. Let the app act as your choice maker at any point.",
+    'yurua.li_2_3': "<strong>Respects Your Peace:</strong> Completely free, no ads and no tracking. Works completely offline with no accounts required and no daily streaks. Your digital retreat is always ready.",
 
     'yurua.h2_3': "Honest Appreciation",
     'yurua.p_3': "yurua is and always will be <strong>completely free</strong>. If the app helps you find clarity, you can support a solo developer with a simple \"pay-what-you-want\" donation. No paywalls, just honest appreciation.",
     'yurua.privacy.url': "yurua/privacy-policy",
+    'yurua.appStoreLink': "https://apps.apple.com/us/app/yurua-decide-with-ease/id6805198734",
+    'yurua.ctaTitle': "Ready to decide without pressure?",
+    'yurua.ctaDesc': "yurua is available now. Having yurua on your phone means your digital retreat is always ready for your next difficult choice.",
 
     // --- koushi Unterseite ---
     'koushi.pageTitle': 'koushi | Neuro-Inclusive Word Fit Puzzle',
@@ -411,22 +414,25 @@ export const ui = {
     'yurua.heroImgAlt': "yurua App - Ein ruhiges, dunkles Smartphone-Display, das zwei sanfte Karten und eine sanfte Fade-Animation zeigt",
 
     'yurua.title': "yurua",
-    'yurua.intro': "<strong>Entscheidungsparalyse auflösen, ganz ohne Druck.</strong> yurua ist ein digitaler Rückzugsort, der neurodivergenten Menschen (AuDHD, Autismus, ADHS) und allen, die von Auswahlmöglichkeiten überfordert sind, hilft, Alltagsentscheidungen zu treffen – im eigenen Tempo, ohne Timer und mit voller Autonomie.",
+    'yurua.intro': "<strong>Eine ruhige Entscheidungshilfe ganz ohne Druck.</strong> Wenn dir durch ADHS-Paralyse, Autismus oder Overthinking selbst kleine Alltagsentscheidungen unmöglich erscheinen, hilft dir dieser digitale Rückzugsort dabei, den nächsten Schritt zu finden. Speziell entwickelt für neurodivergente Menschen und alle, die von Entscheidungen überfordert sind.",
 
-    'yurua.h2_1': "Zero Pressure & PDA-freundlich",
-    'yurua.p_1': "Die meisten Entscheidungs-Apps (Glücksräder) sind laut, bunt und bauen künstlichen Druck auf. yurua macht genau das Gegenteil:",
-    'yurua.li_1_1': "<strong>Unendliche Zeit:</strong> Keine Countdowns, keine automatische Weiterleitung. Die App wartet auf deine Bestätigung, solange du brauchst.",
-    'yurua.li_1_2': "<strong>Lautloses Veto-Recht:</strong> Wenn die App einen Vorschlag macht und dein Körper sich wehrt (PDA-Reflex), kannst du ihn mit einem einzigen Tippen überschreiben. Ohne Warnung, ohne Fehlermeldung.",
-    'yurua.li_1_3': "<strong>Visuelle Stille:</strong> Ein radikal reizarmes UI mit 'Soft Slate' und 'Paper Light' Themes, das deine Augen und dein Nervensystem schont.",
+    'yurua.h2_1': "Kein Druck & Veto-Recht",
+    'yurua.p_1': "Entscheidungen zu treffen kostet unglaublich viel Kraft, wenn du ohnehin schon überfordert bist. Im Gegensatz zu lauten Glücksrädern gibt es bei yurua keine tickenden Uhren und keine fordernden Fragen:",
+    'yurua.li_1_1': "<strong>Lautloses Veto-Recht:</strong> Entwickelt mit Blick auf PDA (Pathological Demand Avoidance) und Angstzustände. Wenn dir die App eine Option vorschlägt und du sofort inneren Widerstand spürst, kannst du sie einfach lautlos wegwischen. Du behältst immer das letzte Wort – ganz ohne Stress.",
+    'yurua.li_1_2': "<strong>Visuelle Stille:</strong> Jeder Screen ist als beruhigende visuelle Umgebung gestaltet. Statt harter Linien und greller Farben erwarten dich weiche Kanten und sanfte Übergänge. Ein ruhiger Raum, der keine Aufmerksamkeit von dir erzwingt.",
+    'yurua.li_1_3': "<strong>Gespeicherte Optionen:</strong> Speichere dir schwierige Alltagsroutinen – wie Mahlzeiten oder Aufgaben – einfach als wiederverwendbare Listen ab. So kannst du sie mit nur einem Tippen abrufen, wenn du wenig Energie hast.",
 
-    'yurua.h2_2': "Der Kapazitäts-Trichter",
-    'yurua.li_2_1': "<strong>Zustand statt Inhalt:</strong> Statt zu fragen, was du willst, fragt yurua, was du gerade bewältigen kannst (Energie, Sensorik, Kognitive Last), um 100 Optionen schmerzfrei auf 2-5 einzugrenzen.",
-    'yurua.li_2_2': "<strong>Alexithymie-Sicherheitsnetz:</strong> Du spürst gerade nicht, was du brauchst? Tippe auf den sanften 'Nimm mir das ab'-Button und lass dir von der App einen Weg vorschlagen, auf den du nur noch reagieren musst.",
-    'yurua.li_2_3': "<strong>100% Privat & Werbefrei:</strong> Keine Tracker, keine Konten, komplett offline. Deine Entscheidungen bleiben zu 100 % auf deinem Gerät.",
+    'yurua.h2_2': "Schritt für Schritt",
+    'yurua.li_2_1': "<strong>Optionen eingrenzen:</strong> Wenn dich eine große Auswahl überfordert, helfen dir geführte Fragen dabei, die Möglichkeiten auf wenige machbare Optionen zu reduzieren. Und das Beste: Du musst an keiner Stelle komplexe Gefühle analysieren.",
+    'yurua.li_2_2': "<strong>'Entscheide du für mich':</strong> Wenn du kaum Energie hast oder einfach nicht spüren kannst, was du eigentlich willst, ist dieser Button immer für dich da. Du kannst der App in jedem Schritt komplett die Entscheidung überlassen.",
+    'yurua.li_2_3': "<strong>Respektiert deine Ruhe:</strong> Komplett kostenlos, keine Werbung und kein Tracking. Funktioniert 100% offline, ohne Accounts oder nervige Daily Streaks. Dein digitaler Rückzugsort wartet geduldig auf dich.",
 
     'yurua.h2_3': "Ehrliche Wertschätzung",
     'yurua.p_3': "yurua ist und bleibt <strong>komplett kostenlos</strong>. Wenn dir die App hilft, Klarheit zu finden, kannst du einen Solo-Entwickler mit einer einfachen \"Zahl-was-du-willst\"-Spende unterstützen. Keine Paywalls, nur ehrliche Wertschätzung.",
     'yurua.privacy.url': "yurua/datenschutz",
+    'yurua.appStoreLink': "https://apps.apple.com/de/app/yurua-entspannt-entscheiden/id6805198734",
+    'yurua.ctaTitle': "Bereit für entspannte Entscheidungen?",
+    'yurua.ctaDesc': "yurua ist ab sofort verfügbar. Wenn du yurua auf deinem Smartphone hast, ist dein digitaler Rückzugsort für die nächste schwere Entscheidung immer bereit.",
 
     // --- koushi Unterseite ---
     'koushi.pageTitle': 'koushi | Neuro-inklusives Worträtsel',

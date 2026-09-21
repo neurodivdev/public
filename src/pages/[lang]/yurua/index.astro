@@ -5,7 +5,7 @@ import FeatureSection from '../../../components/FeatureSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import headerImg from '../../../assets/yurua/header.png';
-import BetaCTA from '../../../components/BetaCTA.astro';
+import CtaSection from "../../../components/CtaSection.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -48,9 +48,10 @@ const backUrl = `/${lang}/`;
     <p set:html={t('yurua.p_3')} />
   </FeatureSection>
 
-  <BetaCTA
-      appName="yurua"
-      googleGroupUrl="https://groups.google.com/g/yurua-testers"
-      playStoreUrl="https://play.google.com/store/apps/details?id=dev.neurodiv.yurua"
+  <CtaSection
+      title={t('yurua.ctaTitle')}
+      description={t('yurua.ctaDesc')}
+      playStoreLink="https://play.google.com/store/apps/details?id=dev.neurodiv.yurua"
+      appStoreLink={t('yurua.appStoreLink')}
   />
 </BaseLayout>
