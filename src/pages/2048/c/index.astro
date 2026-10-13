@@ -1,0 +1,42 @@
+---
+const playUrl = "https://play.google.com/store/apps/details?id=dev.neurodiv.plus2048";
+const appStoreUrl = "https://apps.apple.com/app/idXXXXXXXXXX"; // nach der Freigabe eintragen
+---
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Herausforderung – 2048 Levels</title>
+</head>
+<body>
+<main>
+  <h1>Du wurdest herausgefordert</h1>
+  <p id="from">Jemand hat dich in 2048 Levels herausgefordert.</p>
+  <p>Gleiches Level, gleicher Zufall – schaffst du es in weniger Zügen?</p>
+  <p>
+    <a href={playUrl}>Google Play</a>
+    <a href={appStoreUrl}>App Store</a>
+  </p>
+  <section id="code-box" hidden>
+    <p>App schon installiert? Öffne <strong>Herausforderungen → Code eingeben</strong> und füge diesen Code ein:</p>
+    <code id="code"></code>
+  </section>
+</main>
+<script>
+  const code = decodeURIComponent(location.hash.slice(1));
+  if (/^1\.\w+\.[0-9a-z]+\.\d+\.\d+\.[0-9a-f]{8}(~[\w-]+)?$/.test(code)) {
+    document.getElementById("code").textContent = code;
+    document.getElementById("code-box").hidden = false;
+    const name = code.split("~")[1];
+    if (name) {
+      try {
+        const bytes = Uint8Array.from(atob(name.replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
+        const decoded = new TextDecoder().decode(bytes).slice(0, 20);
+        document.getElementById("from").textContent = `${decoded} hat dich in 2048 Levels herausgefordert.`;
+      } catch {}
+    }
+  }
+</script>
+</body>
+</html>

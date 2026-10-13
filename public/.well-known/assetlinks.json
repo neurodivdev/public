@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "dev.neurodiv.plus2048",
+    "sha256_cert_fingerprints": ["36:E4:9F:CD:2B:26:3C:AA:E4:64:12:AE:1D:38:C0:BA:4E:0A:F6:8F:AF:7F:13:A0:CB:1A:2C:11:E0:77:E8:19"]
+  }
+}]
