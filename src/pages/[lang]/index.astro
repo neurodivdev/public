@@ -19,19 +19,22 @@ type TranslationKey = keyof typeof ui[typeof defaultLang];
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/*/header*.{jpg,jpeg,png,webp}', {eager: true});
+const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/*/{header,card}*.{jpg,jpeg,png,webp}', {eager: true});
 const appKeys = Object.keys(ui[defaultLang]).filter(key => key.startsWith('app_') && key.endsWith('_title'));
 
 const myApps = appKeys.map(key => {
   const slug = key.replace('app_', '').replace('_title', '');
   const imagePaths = Object.keys(images);
 
+  const cardMatch = imagePaths.find(path => path.match(new RegExp(`/${slug}/card\\.(jpg|jpeg|png|webp)$`)));
   const localizedMatch = imagePaths.find(path => path.includes(`/${slug}/header-${lang}.`));
   const defaultMatch = imagePaths.find(path => path.match(new RegExp(`/${slug}/header\\.(jpg|jpeg|png|webp)$`)));
 
   let imgSrc = null;
 
-  if (localizedMatch) {
+  if (cardMatch) {
+    imgSrc = images[cardMatch].default;
+  } else if (localizedMatch) {
     imgSrc = images[localizedMatch].default;
   } else if (defaultMatch) {
     imgSrc = images[defaultMatch].default;

@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import { imageQuality } from './imageQuality';
 
 export interface Props {
   href: string;
@@ -13,7 +14,7 @@ export interface Props {
 const { href, imgSrc, imgAlt, title, description, btnText } = Astro.props;
 ---
 <a href={href} class="app-card">
-  <Image src={imgSrc} alt={imgAlt} class="app-card-img" />
+  <Image src={imgSrc} alt={imgAlt} quality={imageQuality} class="app-card-img" />
   <div class="app-card-content">
     <h3 class="app-card-title">{title}</h3>
     <p class="app-card-desc">{description}</p>

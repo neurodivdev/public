@@ -30,5 +30,5 @@ export default defineConfig({
     '/asmr-color-reveal-kids/privacy-policy': '/calm-color-reveal/privacy-policy'
   },
 
-  integrations: [sitemap()]
+  integrations: [sitemap({ filter: (page) => !page.includes('/2048/c/') })]
 });

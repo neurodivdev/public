@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import { imageQuality } from './imageQuality';
 
 export interface Props {
   imgSrc: any;
@@ -9,7 +10,7 @@ export interface Props {
 const { imgSrc, imgAlt } = Astro.props;
 ---
 <div class="hero-banner">
-  <Image src={imgSrc} alt={imgAlt} />
+  <Image src={imgSrc} alt={imgAlt} quality={imageQuality} />
 </div>
 
 <style>

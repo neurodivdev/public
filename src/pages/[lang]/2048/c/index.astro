@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import PageDocument from '../../../../components/PageDocument.astro';
+import FeatureSection from '../../../../components/FeatureSection.astro';
+import CtaSection from '../../../../components/CtaSection.astro';
+import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export function getStaticPaths() {
+  return getStaticPathsFromUi();
+}
+
+const backUrl = `/${lang}/2048/`;
+const challengeText = {
+  fromNamed: t('plus2048.challenge_fromNamed'),
+  copyBtn: t('plus2048.challenge_copyBtn'),
+  copiedBtn: t('plus2048.challenge_copiedBtn'),
+};
+---
+
+<BaseLayout
+    title={t('plus2048.challenge_pageTitle')}
+    description={t('plus2048.challenge_pageDesc')}
+    backUrl={backUrl}
+    noindex
+>
+  <PageDocument title={t('plus2048.challenge_title')}>
+    <p id="challenge-from"><strong>{t('plus2048.challenge_fromUnknown')}</strong></p>
+    <p>{t('plus2048.challenge_intro')}</p>
+  </PageDocument>
+
+  <div id="code-box" hidden>
+    <FeatureSection title={t('plus2048.challenge_codeTitle')}>
+      <p set:html={t('plus2048.challenge_codeIntro')} />
+      <code id="challenge-code" class="challenge-code"></code>
+      <button type="button" id="copy-btn" class="copy-button">{t('plus2048.challenge_copyBtn')}</button>
+    </FeatureSection>
+  </div>
+
+  <CtaSection
+      title={t('plus2048.challenge_ctaTitle')}
+      description={t('plus2048.challenge_ctaDesc')}
+      playStoreLink="https://play.google.com/store/apps/details?id=dev.neurodiv.plus2048"
+      appStoreLink={t('plus2048.appStoreLink')}
+  />
+
+  <style>
+    .challenge-code {
+      display: block;
+      font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+      font-size: 1.05em;
+      background-color: var(--bg-color);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px 18px;
+      word-break: break-all;
+      user-select: all;
+    }
+    .copy-button {
+      display: inline-block;
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
+      font-size: 1em;
+      font-weight: bold;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .copy-button:hover {
+      background-color: var(--btn-hover);
+      color: #FFFFFF;
+      transform: scale(1.05);
+    }
+  </style>
+
+  <script is:inline define:vars={{ challengeText }}>
+    const code = decodeURIComponent(location.hash.slice(1));
+    const isValidCode = /^1\.\w+\.[0-9a-z]+\.\d+\.\d+\.[0-9a-f]{8}(~[\w-]+)?$/.test(code);
+
+    const decodeChallengerName = (encodedName) => {
+      try {
+        const base64 = encodedName.replace(/-/g, '+').replace(/_/g, '/');
+        const bytes = Uint8Array.from(atob(base64), (char) => char.charCodeAt(0));
+        return new TextDecoder().decode(bytes).slice(0, 20);
+      } catch {
+        return null;
+      }
+    };
+
+    const showChallengerName = () => {
+      const encodedName = code.split('~')[1];
+      const name = encodedName && decodeChallengerName(encodedName);
+      if (!name) return;
+      document.querySelector('#challenge-from strong').textContent = challengeText.fromNamed.replace('{name}', name);
+    };
+
+    const enableCopyButton = () => {
+      const copyButton = document.getElementById('copy-btn');
+      copyButton.addEventListener('click', async () => {
+        await navigator.clipboard.writeText(code);
+        copyButton.textContent = challengeText.copiedBtn;
+        setTimeout(() => { copyButton.textContent = challengeText.copyBtn; }, 2000);
+      });
+    };
+
+    const keepCodeOnLanguageSwitch = () => {
+      const langButton = document.getElementById('lang-btn');
+      if (langButton) langButton.href += location.hash;
+    };
+
+    if (isValidCode) {
+      document.getElementById('challenge-code').textContent = code;
+      document.getElementById('code-box').hidden = false;
+      showChallengerName();
+      enableCopyButton();
+      keepCodeOnLanguageSwitch();
+    }
+  </script>
+</BaseLayout>

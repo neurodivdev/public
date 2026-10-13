@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import { imageQuality } from './imageQuality';
 
 export interface Props {
   title: string;
@@ -23,7 +24,7 @@ const {
 ---
 <div class="reward-section">
   <a href={appLink} target="_blank" rel="noopener noreferrer">
-    <Image src={imgSrc} alt={imgAlt} class="reward-img" />
+    <Image src={imgSrc} alt={imgAlt} quality={imageQuality} class="reward-img" />
   </a>
   <div class="reward-content">
     <h2>{title}</h2>

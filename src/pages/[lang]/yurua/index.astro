@@ -3,9 +3,10 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageDocument from '../../../components/PageDocument.astro';
 import FeatureSection from '../../../components/FeatureSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
+import CtaSection from '../../../components/CtaSection.astro';
+import FaqSection from '../../../components/FaqSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import headerImg from '../../../assets/yurua/header.png';
-import CtaSection from "../../../components/CtaSection.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -36,11 +37,12 @@ const backUrl = `/${lang}/`;
     </ul>
   </FeatureSection>
 
-  <FeatureSection title={t('yurua.h2_2')}>
+  <FeatureSection title={t('yurua.h2_2')} intro={t('yurua.p_2')}>
     <ul class="custom-list">
       <li set:html={t('yurua.li_2_1')} />
       <li set:html={t('yurua.li_2_2')} />
       <li set:html={t('yurua.li_2_3')} />
+      <li set:html={t('yurua.li_2_4')} />
     </ul>
   </FeatureSection>
 
@@ -48,10 +50,28 @@ const backUrl = `/${lang}/`;
     <p set:html={t('yurua.p_3')} />
   </FeatureSection>
 
+  <FeatureSection title={t('yurua.h2_4')}>
+    <ul class="custom-list">
+      <li set:html={t('yurua.li_4_1')} />
+      <li set:html={t('yurua.li_4_2')} />
+      <li set:html={t('yurua.li_4_3')} />
+      <li set:html={t('yurua.li_4_4')} />
+    </ul>
+  </FeatureSection>
+
+  <FeatureSection title={t('yurua.h2_5')}>
+    <p set:html={t('yurua.p_5')} />
+  </FeatureSection>
+
   <CtaSection
       title={t('yurua.ctaTitle')}
       description={t('yurua.ctaDesc')}
       playStoreLink="https://play.google.com/store/apps/details?id=dev.neurodiv.yurua"
       appStoreLink={t('yurua.appStoreLink')}
+  />
+
+  <FaqSection
+      title={t('yurua.faq_title')}
+      prefix="yurua.faq_"
   />
 </BaseLayout>

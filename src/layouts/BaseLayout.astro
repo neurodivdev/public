@@ -10,9 +10,10 @@ export interface Props {
   description?: string;
   backUrl?: string;
   socialImage?: ImageMetadata | string;
+  noindex?: boolean;
 }
 
-const { title, description, backUrl, socialImage } = Astro.props;
+const { title, description, backUrl, socialImage, noindex } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
@@ -48,6 +49,7 @@ if (socialImage) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{pageTitle}</title>
   <meta name="description" content={pageDesc}>
+  {noindex && <meta name="robots" content="noindex">}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
