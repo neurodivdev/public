@@ -26,21 +26,21 @@ const myApps = appKeys.map(key => {
   const slug = key.replace('app_', '').replace('_title', '');
   const imagePaths = Object.keys(images);
 
-  const cardMatch = imagePaths.find(path => path.match(new RegExp(`/${slug}/card\\.(jpg|jpeg|png|webp)$`)));
+  const localizedCardMatch = imagePaths.find(path => path.includes(`/${slug}/card-${lang}.`));
+  const cardMatch = localizedCardMatch ?? imagePaths.find(path => path.match(new RegExp(`/${slug}/card\\.(jpg|jpeg|png|webp)$`)));
   const localizedMatch = imagePaths.find(path => path.includes(`/${slug}/header-${lang}.`));
   const defaultMatch = imagePaths.find(path => path.match(new RegExp(`/${slug}/header\\.(jpg|jpeg|png|webp)$`)));
 
+  const desktopImgSrc = cardMatch ? images[cardMatch].default : undefined;
   let imgSrc = null;
 
-  if (cardMatch) {
-    imgSrc = images[cardMatch].default;
-  } else if (localizedMatch) {
+  if (localizedMatch) {
     imgSrc = images[localizedMatch].default;
   } else if (defaultMatch) {
     imgSrc = images[defaultMatch].default;
   }
 
-  return {slug, imgSrc};
+  return {slug, imgSrc, desktopImgSrc};
 });
 ---
 <BaseLayout description={t('pageDesc')}>
@@ -62,6 +62,7 @@ const myApps = appKeys.map(key => {
         <AppCard
             href={`/${lang}/${app.slug}`}
             imgSrc={app.imgSrc}
+            desktopImgSrc={app.desktopImgSrc}
             imgAlt={t(`app_${app.slug}_title` as TranslationKey)}
             title={t(`app_${app.slug}_title` as TranslationKey)}
             description={t(`app_${app.slug}_desc` as TranslationKey)}

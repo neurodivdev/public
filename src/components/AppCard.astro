@@ -1,20 +1,25 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import { imageQuality } from './imageQuality';
 
 export interface Props {
   href: string;
   imgSrc: any;
+  desktopImgSrc?: ImageMetadata;
   imgAlt: string;
   title: string;
   description: string;
   btnText: string;
 }
 
-const { href, imgSrc, imgAlt, title, description, btnText } = Astro.props;
+const { href, imgSrc, desktopImgSrc, imgAlt, title, description, btnText } = Astro.props;
+const desktopImage = desktopImgSrc && await getImage({ src: desktopImgSrc, format: 'webp', quality: imageQuality });
 ---
 <a href={href} class="app-card">
-  <Image src={imgSrc} alt={imgAlt} quality={imageQuality} class="app-card-img" />
+  <picture class="app-card-picture">
+    {desktopImage && <source media="(min-width: 768px)" srcset={desktopImage.src} />}
+    <Image src={imgSrc} alt={imgAlt} quality={imageQuality} class="app-card-img" />
+  </picture>
   <div class="app-card-content">
     <h3 class="app-card-title">{title}</h3>
     <p class="app-card-desc">{description}</p>
@@ -42,6 +47,9 @@ const { href, imgSrc, imgAlt, title, description, btnText } = Astro.props;
     background-color: var(--btn-hover);
     color: #FFFFFF;
     transform: scale(1.05);
+  }
+  .app-card-picture {
+    display: contents;
   }
   .app-card-img {
     width: 100%;

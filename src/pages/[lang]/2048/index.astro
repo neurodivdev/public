@@ -6,8 +6,8 @@ import HeroBanner from '../../../components/HeroBanner.astro';
 import CtaSection from '../../../components/CtaSection.astro';
 import FaqSection from '../../../components/FaqSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
-import defaultHeroImg from '../../../assets/2048/hero.png';
-import germanHeroImg from '../../../assets/2048/hero-de.png';
+import defaultHeaderImg from '../../../assets/2048/header.png';
+import germanHeaderImg from '../../../assets/2048/header-de.png';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -17,7 +17,7 @@ export function getStaticPaths() {
 }
 
 const backUrl = `/${lang}/`;
-const heroImg = lang === 'de' ? germanHeroImg : defaultHeroImg;
+const headerImg = lang === 'de' ? germanHeaderImg : defaultHeaderImg;
 ---
 
 <BaseLayout
@@ -25,7 +25,7 @@ const heroImg = lang === 'de' ? germanHeroImg : defaultHeroImg;
     description={t('plus2048.pageDesc')}
     backUrl={backUrl}
 >
-  <HeroBanner imgSrc={heroImg} imgAlt={t('plus2048.heroImgAlt')} />
+  <HeroBanner imgSrc={headerImg} imgAlt={t('plus2048.heroImgAlt')} />
 
   <PageDocument title={t('plus2048.title')}>
     <p set:html={t('plus2048.intro')} />
