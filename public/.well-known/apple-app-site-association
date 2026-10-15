@@ -2,7 +2,7 @@
   "applinks": {
     "details": [{
       "appIDs": ["S75B8YU53V.dev.neurodiv.plus2048"],
-      "components": [{ "/": "/2048/c/*" }]
+      "components": [{ "/": "/2048/c/*" }, { "/": "/de/2048/c/*" }]
     }]
   }
 }
