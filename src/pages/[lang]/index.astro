@@ -9,6 +9,7 @@ import AppsSection from '../../components/AppsSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../i18n/utils';
 import websiteHeaderImg from '../../assets/website_header.jpg';
 import {ui, defaultLang} from '../../i18n/ui';
+import {homepageApps} from '../../config/apps';
 
 export function getStaticPaths() {
   return getStaticPathsFromUi();
@@ -20,10 +21,12 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const images = import.meta.glob<{ default: ImageMetadata }>('../../assets/*/{header,card}*.{jpg,jpeg,png,webp}', {eager: true});
-const appKeys = Object.keys(ui[defaultLang]).filter(key => key.startsWith('app_') && key.endsWith('_title'));
+const missingTitles = homepageApps.filter(slug => !(`app_${slug}_title` in ui[defaultLang]));
+if (missingTitles.length > 0) {
+  throw new Error(`config/apps.ts: no 'app_<slug>_title' in ui.ts for ${missingTitles.join(', ')}`);
+}
 
-const myApps = appKeys.map(key => {
-  const slug = key.replace('app_', '').replace('_title', '');
+const myApps = homepageApps.map(slug => {
   const imagePaths = Object.keys(images);
 
   const localizedCardMatch = imagePaths.find(path => path.includes(`/${slug}/card-${lang}.`));
