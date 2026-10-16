@@ -3,7 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageDocument from '../../../components/PageDocument.astro';
 import FeatureSection from '../../../components/FeatureSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
-import CtaSection from '../../../components/CtaSection.astro';
+import BetaCTA from '../../../components/BetaCTA.astro';
 import FaqSection from '../../../components/FaqSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import defaultHeaderImg from '../../../assets/2048/header.png';
@@ -64,11 +64,11 @@ const headerImg = lang === 'de' ? germanHeaderImg : defaultHeaderImg;
     </ul>
   </FeatureSection>
 
-  <CtaSection
-      title={t('plus2048.ctaTitle')}
-      description={t('plus2048.ctaDesc')}
-      playStoreLink="https://play.google.com/store/apps/details?id=dev.neurodiv.plus2048"
-      appStoreLink={t('plus2048.appStoreLink')}
+  <BetaCTA
+      appName={t('plus2048.title')}
+      googleGroupUrl="https://groups.google.com/g/nalua-testers"
+      playStoreUrl="https://play.google.com/store/apps/details?id=dev.neurodiv.plus2048"
+      testFlightUrl="https://testflight.apple.com/join/C9VJZdGu"
   />
 
   <FaqSection

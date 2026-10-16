@@ -168,6 +168,11 @@ export const ui = {
     'beta.step2.title': 'Download the App',
     'beta.step2.desc': 'Once you\'re in the group, you can download {appName} right away.',
     'beta.step2.btn': '2. Download on Google Play',
+    'beta.introWithIos': '{appName} is currently in a closed beta phase. If you want to experience the app before the official release, I would love to welcome you as a tester! Here is how to join on Android or iPhone:',
+    'beta.android.title': 'Android',
+    'beta.ios.title': 'iPhone & iPad',
+    'beta.ios.desc': 'Join the public beta via Apple\'s free TestFlight app. TestFlight will guide you through the installation.',
+    'beta.ios.btn': 'Join via TestFlight',
 
     // --- yurua Unterseite ---
     'yurua.pageTitle': "yurua | Decide with Ease & Resolve Paralysis",
@@ -497,6 +502,11 @@ export const ui = {
     'beta.step2.title': 'App herunterladen',
     'beta.step2.desc': 'Sobald du in der Gruppe bist, kannst du {appName} direkt installieren.',
     'beta.step2.btn': '2. Bei Google Play laden',
+    'beta.introWithIos': '{appName} befindet sich aktuell in einer geschlossenen Beta-Phase. Wenn du die App schon vor dem offiziellen Release ausprobieren möchtest, freue ich mich riesig über dich als Tester! So machst du mit – auf Android oder iPhone:',
+    'beta.android.title': 'Android',
+    'beta.ios.title': 'iPhone & iPad',
+    'beta.ios.desc': 'Tritt der öffentlichen Beta über Apples kostenlose TestFlight-App bei. TestFlight führt dich durch die Installation.',
+    'beta.ios.btn': 'Über TestFlight beitreten',
 
     // --- yurua Unterseite ---
     'yurua.pageTitle': "yurua | Entspannt entscheiden",

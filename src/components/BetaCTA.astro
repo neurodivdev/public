@@ -5,6 +5,7 @@ export interface Props {
   appName: string;
   googleGroupUrl: string;
   playStoreUrl: string;
+  testFlightUrl?: string;
   // Optionale Overrides, falls eine App mal völlig andere Texte braucht
   titleKey?: any;
   introKey?: any;
@@ -14,8 +15,9 @@ const {
   appName,
   googleGroupUrl,
   playStoreUrl,
+  testFlightUrl,
   titleKey = 'beta.title',
-  introKey = 'beta.intro'
+  introKey = testFlightUrl ? 'beta.introWithIos' : 'beta.intro'
 } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
@@ -36,6 +38,7 @@ const insertAppName = (text: string) => text.replace('{appName}', appName);
     {insertAppName(t(introKey))}
   </p>
 
+  {testFlightUrl && <h3 class="platform-title">{t('beta.android.title')}</h3>}
   <div class="beta-steps">
     <div class="beta-step">
       <div class="step-number">1</div>
@@ -59,6 +62,16 @@ const insertAppName = (text: string) => text.replace('{appName}', appName);
       </div>
     </div>
   </div>
+
+  {testFlightUrl && (
+    <div class="ios-beta">
+      <h3 class="platform-title">{t('beta.ios.title')}</h3>
+      <p>{t('beta.ios.desc')}</p>
+      <a href={testFlightUrl} class="btn-primary" target="_blank" rel="noopener noreferrer">
+        {t('beta.ios.btn')}
+      </a>
+    </div>
+  )}
 </div>
 
 <style>
@@ -119,6 +132,25 @@ const insertAppName = (text: string) => text.replace('{appName}', appName);
   }
 
   .step-content p {
+    margin: 0 0 15px 0;
+    font-size: 0.95em;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  .platform-title {
+    margin: 0 0 20px 0;
+    color: var(--accent-secondary);
+    font-size: 1.15em;
+  }
+
+  .ios-beta {
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .ios-beta p {
     margin: 0 0 15px 0;
     font-size: 0.95em;
     color: var(--text-muted);
