@@ -49,14 +49,16 @@ export const ui = {
 
     'calm.privacy.url': "calm-color-reveal/privacy-policy",
 
-    'calm.mechTitle': "🎨 Unique Ways to Reveal",
+    'calm.mechTitle': "🎨 7 Unique Ways to Reveal",
     'calm.mechIntro': "The world looks a bit sleepy — covered in a gray shadow. It is waiting for your touch. Every tap and swipe brings the image to life. There are no wrong moves. Just pure, relaxing fun!",
     'calm.mech1Title': "Wonderful Watercolor",
     'calm.mech1Desc': "Watch colors spread like real paint!",
     'calm.mech2Title': "Super Swipes",
     'calm.mech2Desc': "Reveal the picture in cool stripes and zig-zags.",
     'calm.mech3Title': "Gorgeous Grids",
-    'calm.mech3Desc': "Pop the squares and sparkling diamonds one by one to see what’s hiding.",
+    'calm.mech3Desc': "Pop the squares one by one to see what’s hiding.",
+    'calm.mech4Title': "Dazzling Diamonds",
+    'calm.mech4Desc': "Discover pictures by revealing sparkling diamond shapes.",
 
     'calm.safeTitle': "♾️ A Digital Retreat",
     'calm.safeIntro': "As a neurodivergent developer, creating a calming digital retreat was a project close to my heart. This app was designed specifically with the needs of neurodivergent children in mind (such as those with ADHD or on the Autism spectrum)—and it provides a peaceful, relaxing experience for any child.",
@@ -64,21 +66,22 @@ export const ui = {
     'calm.safe2': "<strong>Calming Repetition:</strong> Predictable movements and gentle ASMR sounds create a relaxing environment.",
     'calm.safe3': "<strong>Full Control:</strong> A safe design where the child sets their own pace. Completely stress-free, with no timers and no mistakes.",
     'calm.safe4': "<strong>100% Ad-Free & Offline:</strong> No annoying ads. Take your colors on car rides or plane trips.",
-    'calm.safe5': "<strong>Your Own Secret Levels:</strong> Use your own photos to create custom levels! 100% private—photos never leave your device.",
+    'calm.safe5': "<strong>Your Own Secret Levels:</strong> Use your own photos to create custom levels! Your first 3 photos are free. 100% private—photos never leave your device.",
+    'calm.safe6': "<strong>Parental Gate:</strong> Settings and purchases stay safely locked for little hands.",
 
     'calm.ctaTitle': "Ready to see what's hiding?",
-    'calm.ctaDesc': "Calm Color Reveal is available now. Download today and start your relaxing coloring adventure!",
+    'calm.ctaDesc': "Calm Color Reveal is available now. Download today, try the first two worlds for free and start your relaxing coloring adventure!",
 
 
     'calm.faq_title': "FAQ",
     'calm.faq_1_q': "Is Calm Color Reveal only for neurodivergent kids?",
     'calm.faq_1_a': "Originally, the app was designed specifically with the needs of neurodivergent children in mind (such as those with ADHD or on the Autism spectrum). However, its radically low-stimulation environment makes it a perfect, calming digital retreat for any child. It is especially helpful for gently regulating the nervous system after a long, loud day at school.",
     'calm.faq_2_q': "Are there ads, hidden costs, or subscriptions?",
-    'calm.faq_2_a': "No. The app is 100% ad-free and contains zero trackers. The base game is completely free to play. There is only a single, transparent one-time in-app purchase. This unlocks the custom photo levels as well as the remaining 9 levels in our special Premium Worlds. We believe in fair transparency: the first level of every Premium World is completely free for everyone to try out. No subscription traps, ever.",
+    'calm.faq_2_a': "No. The app is 100% ad-free and contains zero trackers. The first two worlds with 20 pictures, two ways to reveal (watercolor and vertical stripes) and 3 of your own photos are free forever. A single, transparent one-time purchase unlocks the full version: all worlds (more than 20, with new ones added regularly), all 7 ways to reveal and unlimited own photos. Purchases are protected by a parental gate, so children can't buy anything by accident. No subscription traps, ever.",
     'calm.faq_3_q': "What makes this app \"neuro-inclusive\" and safe?",
     'calm.faq_3_a': "Many kids' apps are loud, flashy, and rely on the stress of timers or \"Game Over\" screens. Calm Color Reveal completely removes these elements (\"Visual Silence\"). There are no sudden pop-ups, no flashing lights, and no wrong moves. The predictable movements and gentle responses to tapping and swiping create a safe, low-stimulation environment that is also friendly for safe stimming.",
     'calm.faq_4_q': "How do the custom photo levels work?",
-    'calm.faq_4_a': "Once the premium feature is unlocked, you can use your own images (like a favorite toy, a beloved pet, or family members) to create custom levels. I take privacy seriously: All photos are processed 100% locally on your device and never leave your smartphone or tablet.",
+    'calm.faq_4_a': "Your first 3 photos are free, the full version has no limit. You can use your own images (like a favorite toy, a beloved pet, or family members) to create custom levels. I take privacy seriously: All photos are processed 100% locally on your device and never leave your smartphone or tablet.",
     'calm.faq_5_q': "Does the app require an internet connection?",
     'calm.faq_5_a': "Absolutely not. Calm Color Reveal works completely offline. This makes it perfect for long car rides, flights, or any situation where you don't have a stable connection but your child needs a calming, safe activity.",
 
@@ -125,7 +128,7 @@ export const ui = {
     'nalua.li_1_3': "<strong>Visual Silence:</strong> A radically low-stimulation design on a deep black OLED background. No distractions, no sharp edges—just calm.",
 
     'nalua.h2_2': "Your Digital Retreat",
-    'nalua.li_2_1': "<strong>Endless Mode:</strong> No timers, no goals. nalua helps you fall asleep or manage sensory overload with zero artificial limits, for as long as you need.",
+    'nalua.li_2_1': "<strong>Endless or with a Timer:</strong> No goals, never a countdown. Breathe without limits for as long as you need – or choose 5, 10 or 15 minutes.",
     'nalua.li_2_2': "<strong>Gentle Fade-Out:</strong> If you fall asleep, nalua fades out gently to keep your environment quiet and save your battery.",
     'nalua.li_2_3': "<strong>Ethical & Private:</strong> 100% ad-free and no trackers. nalua works completely offline and respects your data.",
 
@@ -150,11 +153,11 @@ export const ui = {
     'nalua.faq_4_q': "What breathing exercises does nalua offer?",
     'nalua.faq_4_a': "Instead of overwhelming you with complex settings, <em>nalua</em> features a simple swipe carousel with four proven breathing rhythms:<br><br><ul><li><strong>Box Breathing:</strong> The classic technique for quick focus and grounding.</li><li><strong>Coherent Breathing (5-5):</strong> A balanced rhythm to calm the autonomic nervous system.</li><li><strong>Vagus Breathing (4-6):</strong> An extended exhale that specifically activates the parasympathetic state (rest and digest).</li><li><strong>Gentle 4-4-8 Breathing:</strong> A custom variant of the 4-7-8 technique adapted for ME/CFS. It maintains the calming effect while avoiding air hunger.</li></ul>",
     'nalua.faq_5_q': "Do I need to create an account or go through a complex setup?",
-    'nalua.faq_5_a': "No. nalua is completely free of accounts and complex settings. The only thing the app asks on your very first start is permission for notifications. This is strictly necessary so the app can continue running and vibrating seamlessly while your screen is turned off. After that, you can find your rhythm with a single tap.",
+    'nalua.faq_5_a': "No. nalua is completely free of accounts and complex settings. There is not even a permission prompt: your breathing keeps running and vibrating seamlessly in the background while your screen is locked. Just open the app and find your rhythm with a single tap.",
     'nalua.faq_6_q': "Why are there no streaks, levels, or goals?",
     'nalua.faq_6_a': "Classic health apps often rely on gamification to keep users hooked. We believe that someone who is acutely overstimulated or trying to regulate their nervous system doesn't need the added pressure of maintaining a 300-day streak or dealing with notifications. <em>nalua</em> is a digital retreat. There are no goals to achieve—you open the app, breathe, and close it again, completely guilt-free.",
     'nalua.faq_7_q': "Does the app really run endlessly?",
-    'nalua.faq_7_a': "Almost. To remove the pressure of visible timers or stressful countdowns, <em>nalua</em> runs continuously for a full hour. This gives you all the time you need to ease out of sensory overload or gently drift off to sleep. After 60 minutes, the app gracefully fades out the haptic feedback to save your battery and keep your environment quiet. If you want to keep breathing, a single tap resumes the rhythm immediately.",
+    'nalua.faq_7_a': "Almost. If you prefer a fixed length, you can choose 5, 10 or 15 minutes – there is never a visible countdown. In endless mode, <em>nalua</em> runs continuously for a full hour. This gives you all the time you need to ease out of sensory overload or gently drift off to sleep. After 60 minutes, the app gracefully fades out the haptic feedback to save your battery and keep your environment quiet. If you want to keep breathing, a single tap resumes the rhythm immediately.",
     'nalua.faq_8_q': "What happens to my data?",
     'nalua.faq_8_a': "Absolutely nothing. <em>nalua</em> requires no account, skips the onboarding process, and includes zero trackers. The app runs 100% offline on your device. Your breath and your nervous system belong to you, and your data never leaves your phone.",
     'nalua.faq_9_q': "Is nalua really free, or are there hidden subscriptions?",
@@ -229,19 +232,21 @@ export const ui = {
     'koushi.heroImgAlt': 'koushi App Screenshot',
 
     'koushi.title': 'Experience Visual Silence',
-    'koushi.intro': '<b>koushi</b> adapts the classic experience of analog puzzle books for mobile devices by radically eliminating the sensory clutter of modern gaming apps. It is completely free of ads, time pressure, toxic gamification, and haptic feedback.',
+    'koushi.intro': '<b>koushi</b> adapts the classic experience of analog puzzle books for phones and tablets by radically eliminating the sensory clutter of modern gaming apps. It is completely free of ads, time pressure, toxic gamification, and haptic feedback – and awarded the "Teacher Approved" badge by Google (ages 9+).',
 
     'koushi.h2_1': 'Neuro-Inclusive Design',
     'koushi.p_1': 'Features built to support your focus:',
     'koushi.li_1_1': '<b>Smart Dimming:</b> Reduces cognitive load by gently fading out incompatible slots when you select a word.',
     'koushi.li_1_2': '<b>Draft Mode:</b> A safe space to place words tentatively, just like using a pencil. Experiment without the fear of making mistakes.',
-    'koushi.li_1_3': '<b>No FOMO:</b> Daily puzzles without artificial streaks. Take a break anytime and return to a quiet archive without losing progress.',
+    'koushi.li_1_3': '<b>Filter Bar:</b> Groups the words by length and drastically reduces cognitive load.',
+    'koushi.li_1_4': '<b>Map View:</b> An abstract bird\'s-eye view keeps you oriented – even on huge grids.',
+    'koushi.li_1_5': '<b>No FOMO:</b> Daily puzzles without artificial streaks. Skip a day and catch up on the puzzles of the last 7 days whenever you like.',
 
     'koushi.h2_2': 'Fair & Ethical Pricing',
     'koushi.p_2': 'No subscriptions, no hidden dark patterns, no in-app currencies.',
-    'koushi.li_2_1': '<b>Free Starter Pack:</b> Dive right in with 50 levels, completely for free.',
-    'koushi.li_2_2': '<b>Daily Puzzles:</b> A new challenge every day, free forever.',
-    'koushi.li_2_3': '<b>Honest Purchases:</b> Buy optional themed packs for a one-time fee to support this solo developer project.',
+    'koushi.li_2_1': '<b>Free Starter Pack:</b> Dive right in with 20 levels, completely for free.',
+    'koushi.li_2_2': '<b>Daily Puzzles:</b> A new challenge every day – the puzzles of the last 7 days and all color themes are always free.',
+    'koushi.li_2_3': '<b>One Premium Upgrade:</b> A single, fair one-time purchase unlocks all current and future level packs plus the complete archive of past daily puzzles.',
 
     'koushi.ctaTitle': 'Ready for pure cognitive flow?',
     'koushi.ctaDesc': 'koushi is available now. Download today and step into the most peaceful puzzle experience!',
@@ -258,10 +263,10 @@ export const ui = {
     'koushi.faq_3_a': "These features are designed to drastically reduce cognitive load. <strong>Smart Dimming</strong> automatically fades out incompatible slots when you select a word, so you don't have to visually scan the entire board. <strong>Draft Mode</strong> lets you place words tentatively, like writing in pencil, creating a safe space to experiment without the fear of making mistakes.",
 
     'koushi.faq_4_q': "Why are there no daily streaks or high scores?",
-    'koushi.faq_4_a': "We believe games should respect your time and mental health. Creating a daily streak often leads to FOMO (Fear of Missing Out) and artificial pressure. With <b>koushi</b>, you can solve the free daily puzzle, take a break for a week, and return to the quiet archive to catch up on past puzzles whenever you feel like it—completely guilt-free.",
+    'koushi.faq_4_a': "We believe games should respect your time and mental health. Creating a daily streak often leads to FOMO (Fear of Missing Out) and artificial pressure. With <b>koushi</b>, you can solve the free daily puzzle, take a few days off, and catch up on the puzzles of the last 7 days whenever you feel like it—completely guilt-free. With Premium, the complete archive of past puzzles is open to you.",
 
     'koushi.faq_5_q': "Is koushi really free, or are there hidden subscriptions?",
-    'koushi.faq_5_a': "There are zero subscriptions and zero ads. You get a free 50-level starter pack and a new daily puzzle every day, forever free. If you want more content, you can buy optional themed level packs for a one-time fee to support this solo developer project. Honest pricing, no dark patterns.",
+    'koushi.faq_5_a': "There are zero subscriptions and zero ads. For free, you get a 20-level starter pack, the daily puzzles of the last 7 days and all color themes. If you want more, a single one-time Premium purchase unlocks all current and future level packs and the complete daily puzzle archive. No single packs, no dark patterns – and it supports this solo developer project.",
 
     'koushi.faq_6_q': "Do I need an account or an internet connection to play?",
     'koushi.faq_6_a': "No. <b>koushi</b> works 100% offline. You don't need to create an account, there are no trackers, and we collect absolutely no personal data. Your progress stays locally on your device, making it a perfectly safe environment for the whole family.",
@@ -394,14 +399,16 @@ export const ui = {
 
     'calm.privacy.url': "calm-color-reveal/datenschutz",
 
-    'calm.mechTitle': "🎨 Verschiedene Wege, die Farben zu wecken",
+    'calm.mechTitle': "🎨 7 Wege, die Farben zu wecken",
     'calm.mechIntro': "Die Welt liegt unter einem grauen Schleier und wartet auf deine Berührung. Mit jedem Tippen und Wischen blühen die Farben auf. Es gibt keine falschen Züge – nur puren, entspannten Spaß!",
     'calm.mech1Title': "Fließendes Aquarell",
     'calm.mech1Desc': "Beobachte, wie sich die Farben wie echte Wasserfarben ausbreiten.",
     'calm.mech2Title': "Zickzack & Streifen",
     'calm.mech2Desc': "Enthülle die versteckten Bilder durch sanftes Tippen und Wischen.",
-    'calm.mech3Title': "Coole Raster & Diamanten",
-    'calm.mech3Desc': "Lass Vierecke und funkelnde Rauten aufpoppen, um zu entdecken, was sich dahinter verbirgt.",
+    'calm.mech3Title': "Geniale Gitter",
+    'calm.mech3Desc': "Lass die Quadrate einzeln aufpoppen, um zu entdecken, was sich dahinter verbirgt.",
+    'calm.mech4Title': "Funkelnde Diamanten",
+    'calm.mech4Desc': "Entdecke Bilder durch glitzernde Diamantformen.",
 
     'calm.safeTitle': "♾️ Ein digitaler Rückzugsort",
     'calm.safeIntro': "Als neurodivergenter Entwickler war es mir eine Herzensangelegenheit, diesen beruhigenden digitalen Rückzugsort zu erschaffen. Diese App wurde speziell für die Bedürfnisse neurodivergenter Kinder (z. B. auf dem Autismus-Spektrum oder mit ADHS) entwickelt – und ist eine Wohltat für alle anderen.",
@@ -409,21 +416,22 @@ export const ui = {
     'calm.safe2': "<strong>Beruhigende Wiederholung:</strong> Vorhersehbare Bewegungen und sanfte ASMR-Sounds fördern den Fokus und helfen beim Entspannen.",
     'calm.safe3': "<strong>Volle Kontrolle:</strong> Keine Timer, keine Highscores und kein \"Game Over\". Jedes Kind spielt im ganz eigenen Tempo.",
     'calm.safe4': "<strong>100% Werbefrei & Offline:</strong> Keine nervigen Unterbrechungen. Perfekt für lange Autofahrten oder Flüge.",
-    'calm.safe5': "<strong>Deine eigenen, geheimen Level:</strong> Nutze eigene Fotos (z. B. vom Haustier oder Lieblingsspielzeug). 100 % privat – die Fotos verlassen niemals dein Gerät.",
+    'calm.safe5': "<strong>Deine eigenen, geheimen Level:</strong> Nutze eigene Fotos (z. B. vom Haustier oder Lieblingsspielzeug). Deine ersten 3 Fotos sind gratis. 100 % privat – die Fotos verlassen niemals dein Gerät.",
+    'calm.safe6': "<strong>Elternsperre:</strong> Einstellungen und Käufe bleiben vor kleinen Händen sicher verschlossen.",
 
     'calm.ctaTitle': "Bereit für ein farbenfrohes Abenteuer?",
-    'calm.ctaDesc': "Calm Color Reveal ist ab sofort verfügbar. Lade es dir jetzt herunter und entdecke den entspanntesten Malspaß!",
+    'calm.ctaDesc': "Calm Color Reveal ist ab sofort verfügbar. Lade es dir jetzt herunter, teste die ersten beiden Welten gratis und entdecke den entspanntesten Malspaß!",
 
 
     'calm.faq_title': "FAQ",
     'calm.faq_1_q': "Ist Calm Color Reveal nur für neurodivergente Kinder geeignet?",
     'calm.faq_1_a': "Ursprünglich wurde die App speziell für die Bedürfnisse von neurodivergenten Kindern (z. B. mit ADHS oder im Autismus-Spektrum) entwickelt. Die radikale Reizarmut macht sie jedoch zu einem perfekten, beruhigenden Rückzugsort für jedes Kind. Besonders nach einem langen, lauten Tag in der Schule oder im Kindergarten hilft die App dabei, das Nervensystem sanft wieder zu regulieren.",
     'calm.faq_2_q': "Gibt es versteckte Kosten, Werbung oder Abos?",
-    'calm.faq_2_a': "Nein. Die App ist zu 100 % werbefrei und enthält keinerlei Tracker. Das Basisspiel ist völlig kostenlos spielbar. Es gibt lediglich einen einzigen, transparenten In-App-Kauf. Dieser schaltet die Funktion für eigene Fotos (\"Geheim-Level\") frei sowie die restlichen 9 Level unserer speziellen Premium-Welten. Faire Transparenz ist uns wichtig: Das erste Level jeder Premium-Welt kann von jedem Kind kostenlos gespielt werden, um die Mechanik auszuprobieren. Keine Abofallen, versprochen.",
+    'calm.faq_2_a': "Nein. Die App ist zu 100 % werbefrei und enthält keinerlei Tracker. Für immer gratis sind die ersten beiden Welten mit 20 Bildern, zwei Arten des Freilegens (Wasserfarben und senkrechte Streifen) und 3 eigene Fotos. Ein einziger, transparenter Einmalkauf schaltet die Vollversion frei: alle Welten (über 20, regelmäßig kommen neue dazu), alle 7 Arten des Freilegens und unbegrenzt eigene Fotos. Käufe sind durch eine Elternsperre geschützt, damit Kinder nichts aus Versehen kaufen. Keine Abofallen, versprochen.",
     'calm.faq_3_q': "Was macht die App \"neuroinklusiv\" und reizarm?",
     'calm.faq_3_a': "Viele Kinder-Apps sind laut, grell und setzen auf Stress durch Timer oder \"Game Over\"-Bildschirme. Calm Color Reveal verzichtet komplett darauf (\"Visual Silence\"). Es gibt keine plötzlichen Pop-ups, keine blinkenden Lichter und keine falschen Züge. Die vorhersehbaren Bewegungen und sanften Reaktionen auf das Wischen und Tippen schaffen eine sichere, reizarme Umgebung, die auch Stimming-freundlich ist.",
     'calm.faq_4_q': "Wie funktioniert die Funktion mit den eigenen Fotos (\"Geheim-Level\")?",
-    'calm.faq_4_a': "Nach dem Freischalten der Premium-Funktion können Sie eigene Bilder (z. B. das Lieblingsspielzeug, das Haustier oder Familienmitglieder) in die App laden und als Level nutzen. Ich weiß, wie wichtig Privatsphäre ist: Alle Fotos werden zu 100 % lokal auf Ihrem Gerät verarbeitet und verlassen Ihr Smartphone oder Tablet niemals.",
+    'calm.faq_4_a': "Die ersten 3 Fotos sind gratis, in der Vollversion gibt es kein Limit. Sie können eigene Bilder (z. B. das Lieblingsspielzeug, das Haustier oder Familienmitglieder) in die App laden und als Level nutzen. Ich weiß, wie wichtig Privatsphäre ist: Alle Fotos werden zu 100 % lokal auf Ihrem Gerät verarbeitet und verlassen Ihr Smartphone oder Tablet niemals.",
     'calm.faq_5_q': "Braucht die App eine aktive Internetverbindung?",
     'calm.faq_5_a': "Absolut nicht. Calm Color Reveal funktioniert komplett offline. Sie eignet sich also perfekt für lange Autofahrten, Flüge oder Situationen, in denen keine stabile Verbindung verfügbar ist, das Kind aber eine beruhigende, sichere Beschäftigung braucht.",
 
@@ -470,7 +478,7 @@ export const ui = {
     'nalua.li_1_3': "<strong>Visuelle Stille:</strong> Ein radikal reizarmes Design auf einem tiefschwarzen OLED-Hintergrund. Keine Ablenkungen, keine scharfen Kanten – einfach nur Ruhe.",
 
     'nalua.h2_2': "Dein digitaler Rückzugsort",
-    'nalua.li_2_1': "<strong>Endlos-Modus:</strong> Keine Timer, keine Ziele. nalua hilft dir beim Einschlafen oder bei der Bewältigung von Reizüberflutung, völlig ohne künstliche Grenzen.",
+    'nalua.li_2_1': "<strong>Endlos oder mit Timer:</strong> Keine Ziele, niemals ein Countdown. Atme ohne Grenzen, so lange du brauchst – oder wähle 5, 10 oder 15 Minuten.",
     'nalua.li_2_2': "<strong>Sanftes Ausblenden:</strong> Wenn du einschläfst, blendet nalua sanft aus, um deinen Akku zu schonen und deine Umgebung ruhig zu halten.",
     'nalua.li_2_3': "<strong>Ethisch & Privat:</strong> 100 % werbefrei und ohne Tracker. nalua funktioniert komplett offline und respektiert deine Daten.",
 
@@ -495,11 +503,11 @@ export const ui = {
     'nalua.faq_4_q': "Welche Atemübungen bietet nalua an?",
     'nalua.faq_4_a': "Anstatt dich mit komplexen Einstellungen zu überfordern, bietet <em>nalua</em> ein simples Swipe-Karussell mit vier bewährten Atemrhythmen:<br><br><ul><li><strong>Box-Atmung:</strong> Der Klassiker zur schnellen Fokussierung.</li><li><strong>Kohärentes Atmen (5-5):</strong> Ein ausbalancierter Rhythmus, um das Nervensystem zu beruhigen.</li><li><strong>Vagus-Atmung (4-6):</strong> Eine verlängerte Ausatmung, die gezielt den Parasympathikus aktiviert.</li><li><strong>Sanfte 4-4-8-Atmung:</strong> Eine speziell für ME/CFS angepasste Variante der 4-7-8-Technik, die den beruhigenden Effekt beibehält, aber Luftnot (Air Hunger) vermeidet.</li></ul>",
     'nalua.faq_5_q': "Muss ich ein Konto erstellen oder Einstellungen vornehmen?",
-    'nalua.faq_5_a': "Nein. nalua verzichtet komplett auf Accounts und komplexe Einstellungen. Die App fragt dich beim ersten Start nur nach einer einzigen Berechtigung: Dir Benachrichtigungen schicken zu dürfen. nalua benötigt diese Berechtigung, damit die Atemübungen (insbesondere die Vibrationen) nahtlos weiterlaufen, wenn du deinen Bildschirm sperrst. Das ist eine strikte Vorgabe von Android. Danach kannst du deine Lieblings-Atemübung mit einem einzigen Tippen starten.",
+    'nalua.faq_5_a': "Nein. nalua verzichtet komplett auf Accounts und komplexe Einstellungen. Es gibt nicht einmal eine Berechtigungsabfrage: Deine Atemübungen (inklusive der Vibrationen) laufen nahtlos im Hintergrund weiter, wenn du deinen Bildschirm sperrst. Öffne einfach die App und starte deine Lieblings-Atemübung mit einem einzigen Tippen.",
     'nalua.faq_6_q': "Warum gibt es keine Streaks, Level oder Ziele?",
     'nalua.faq_6_a': "Klassische Gesundheits-Apps setzen oft auf Gamification, um Nutzer in der App zu halten. Ich glaube: Wer akut überreizt ist oder sein Nervensystem regulieren möchte, braucht keinen zusätzlichen Druck durch „300-Tage-Streaks“ oder Benachrichtigungen. <em>nalua</em> ist ein digitaler Rückzugsort. Es gibt keine Ziele zu erreichen – du öffnest die App, atmest durch und schließt sie wieder, völlig ohne schlechtes Gewissen.",
     'nalua.faq_7_q': "Läuft die App wirklich endlos durch?",
-    'nalua.faq_7_a': "Fast. Um dir den Druck von sichtbaren Timern oder Countdowns zu nehmen, läuft <em>nalua</em> für eine volle Stunde kontinuierlich durch. So hast du alle Zeit der Welt, um dich aus einer Reizüberflutung zu lösen oder sanft einzuschlafen. Nach 60 Minuten blendet die App das haptische Feedback sanft aus, um deinen Akku zu schonen und deine Umgebung ruhig zu halten. Wenn du weiteratmen möchtest, reicht ein einziges Tippen.",
+    'nalua.faq_7_a': "Fast. Wenn du eine feste Dauer möchtest, kannst du 5, 10 oder 15 Minuten wählen – ein sichtbarer Countdown läuft dabei nie. Im Endlos-Modus läuft <em>nalua</em> für eine volle Stunde kontinuierlich durch. So hast du alle Zeit der Welt, um dich aus einer Reizüberflutung zu lösen oder sanft einzuschlafen. Nach 60 Minuten blendet die App das haptische Feedback sanft aus, um deinen Akku zu schonen und deine Umgebung ruhig zu halten. Wenn du weiteratmen möchtest, reicht ein einziges Tippen.",
     'nalua.faq_8_q': "Was passiert mit meinen Daten?",
     'nalua.faq_8_a': "Absolut nichts. <em>nalua</em> erfordert kein Konto, kein Onboarding und hat keine Tracker eingebaut. Die App läuft zu 100 % offline auf deinem Gerät. Dein Atem und dein Nervensystem gehören dir, und deine Daten verlassen niemals dein Smartphone.",
     'nalua.faq_9_q': "Ist nalua wirklich kostenlos oder gibt es versteckte Abos?",
@@ -574,19 +582,21 @@ export const ui = {
     'koushi.heroImgAlt': 'koushi App Screenshot',
 
     'koushi.title': 'Erlebe visuelle Stille',
-    'koushi.intro': '<b>koushi</b> bringt das klassische Erlebnis analoger Rätselhefte auf mobile Geräte und eliminiert dabei radikal die Reizüberflutung moderner Spiele-Apps. Komplett frei von Werbung, Zeitdruck, toxischer Gamification und haptischem Feedback.',
+    'koushi.intro': '<b>koushi</b> bringt das klassische Erlebnis analoger Rätselhefte auf Smartphone und Tablet und eliminiert dabei radikal die Reizüberflutung moderner Spiele-Apps. Komplett frei von Werbung, Zeitdruck, toxischer Gamification und haptischem Feedback – und von Google mit dem Prädikat "Von Pädagogen empfohlen" (ab 9 Jahren) ausgezeichnet.',
 
     'koushi.h2_1': 'Neuro-inklusives Design',
     'koushi.p_1': 'Funktionen, die deinen Fokus unterstützen:',
     'koushi.li_1_1': '<b>Smart Dimming:</b> Reduziert die kognitive Belastung, indem inkompatible Felder sanft abgedunkelt werden, sobald du ein Wort antippst.',
     'koushi.li_1_2': '<b>Entwurfs-Modus (Draft Mode):</b> Platziere Wörter probehalber wie mit einem Bleistift. Teste Kombinationen in einem sicheren Raum, ganz ohne Angst vor Fehlern.',
-    'koushi.li_1_3': '<b>Kein FOMO:</b> Tagesrätsel ohne künstlichen "Daily-Streak"-Druck. Mach eine Pause, wann immer du möchtest. Du kannst jederzeit ins Archiv zurückkehren und vergangene Tagesrätsel in Ruhe nachholen.',
+    'koushi.li_1_3': '<b>Filterleiste:</b> Gruppiert die Wörter nach Länge und senkt so die kognitive Belastung drastisch.',
+    'koushi.li_1_4': '<b>Kartenansicht:</b> Eine abstrakte Vogelperspektive sorgt für Überblick – auch auf riesigen Gittern.',
+    'koushi.li_1_5': '<b>Kein FOMO:</b> Tagesrätsel ohne künstlichen "Daily-Streak"-Druck. Mach eine Pause, wann immer du möchtest, und hole die Rätsel der letzten 7 Tage in Ruhe nach.',
 
     'koushi.h2_2': 'Faires & ethisches Preismodell',
     'koushi.p_2': 'Keine Abos, keine versteckten Dark Patterns, keine In-App-Währungen.',
-    'koushi.li_2_1': '<b>Kostenloses Starter-Paket:</b> Leg direkt mit 50 Leveln los – völlig kostenlos.',
-    'koushi.li_2_2': '<b>Tagesrätsel:</b> Jeden Tag eine neue Herausforderung, für immer gratis.',
-    'koushi.li_2_3': '<b>Ehrliche Käufe:</b> Kaufe optionale Themen-Pakete als Einmalkauf und unterstütze so dieses Solo-Entwickler-Projekt.',
+    'koushi.li_2_1': '<b>Kostenloses Starter-Paket:</b> Leg direkt mit 20 Leveln los – völlig kostenlos.',
+    'koushi.li_2_2': '<b>Tagesrätsel:</b> Jeden Tag eine neue Herausforderung – die Rätsel der letzten 7 Tage und alle Farb-Themes sind immer gratis.',
+    'koushi.li_2_3': '<b>Ein Premium-Upgrade:</b> Ein einziger, fairer Einmalkauf schaltet alle aktuellen und zukünftigen Level-Pakete sowie das komplette Archiv vergangener Tagesrätsel frei.',
 
     'koushi.ctaTitle': 'Bereit für puren kognitiven Flow?',
     'koushi.ctaDesc': 'koushi ist ab sofort verfügbar. Lade es noch heute herunter und tauche in das entspannendste Rätsel-Erlebnis ein!',
@@ -603,10 +613,10 @@ export const ui = {
     'koushi.faq_3_a': "Diese Funktionen wurden entwickelt, um die kognitive Belastung drastisch zu senken. <strong>Smart Dimming</strong> dunkelt inkompatible Felder automatisch ab, sobald du ein Wort antippst, sodass du nicht das ganze Gitter absuchen musst. Der <strong>Entwurfs-Modus (Draft Mode)</strong> erlaubt es dir, Wörter wie mit einem Bleistift probehalber zu platzieren – ein sicherer Raum zum Experimentieren ohne Angst vor Fehlern.",
 
     'koushi.faq_4_q': "Warum gibt es keine Daily-Streaks oder Highscores?",
-    'koushi.faq_4_a': "Wir glauben, dass Spiele deine Zeit und mentale Gesundheit respektieren sollten. Streaks erzeugen oft FOMO (die Angst, etwas zu verpassen) und künstlichen Druck. Bei <b>koushi</b> kannst du das kostenlose Tagesrätsel lösen, eine Woche pausieren und jederzeit ins ruhige Archiv zurückkehren, um verpasste Rätsel in Ruhe nachzuholen – ganz ohne schlechtes Gewissen.",
+    'koushi.faq_4_a': "Wir glauben, dass Spiele deine Zeit und mentale Gesundheit respektieren sollten. Streaks erzeugen oft FOMO (die Angst, etwas zu verpassen) und künstlichen Druck. Bei <b>koushi</b> kannst du das kostenlose Tagesrätsel lösen, ein paar Tage pausieren und die Rätsel der letzten 7 Tage in Ruhe nachholen – ganz ohne schlechtes Gewissen. Mit Premium steht dir das komplette Archiv aller vergangenen Rätsel offen.",
 
     'koushi.faq_5_q': "Ist koushi wirklich kostenlos oder gibt es versteckte Abos?",
-    'koushi.faq_5_a': "Es gibt null Abos und null Werbung. Du erhältst ein kostenloses Starter-Paket mit 50 Leveln sowie jeden Tag ein neues Tagesrätsel – für immer gratis. Wenn du mehr möchtest, kannst du optionale Themen-Pakete als fairen Einmalkauf erwerben, um dieses Solo-Entwickler-Projekt zu unterstützen. Ehrliche Preise, keine Dark Patterns.",
+    'koushi.faq_5_a': "Es gibt null Abos und null Werbung. Kostenlos erhältst du ein Starter-Paket mit 20 Leveln, die Tagesrätsel der letzten 7 Tage und alle Farb-Themes. Wenn du mehr möchtest, schaltet ein einziger Premium-Einmalkauf alle aktuellen und zukünftigen Level-Pakete und das komplette Archiv der Tagesrätsel frei. Keine Einzelpakete, keine Dark Patterns – und du unterstützt damit dieses Solo-Entwickler-Projekt.",
 
     'koushi.faq_6_q': "Brauche ich einen Account oder Internet, um zu spielen?",
     'koushi.faq_6_a': "Nein. <b>koushi</b> funktioniert zu 100 % offline. Du musst keinen Account anlegen, es gibt keine Tracker und wir sammeln absolut keine persönlichen Daten. Dein Spielfortschritt bleibt lokal auf deinem Gerät – ein absolut sicheres Umfeld für die ganze Familie.",
