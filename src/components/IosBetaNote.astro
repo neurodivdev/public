@@ -1,0 +1,46 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+export interface Props {
+  text: string;
+  testFlightUrl: string;
+}
+
+const { text, testFlightUrl } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<div class="ios-beta-note">
+  <p>{text}</p>
+  <a href={testFlightUrl} class="testflight-btn" target="_blank" rel="noopener noreferrer">
+    {t('beta.ios.btn')}
+  </a>
+</div>
+
+<style>
+  .ios-beta-note {
+    margin-top: 30px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+  }
+  .ios-beta-note p {
+    color: var(--text-muted);
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin: 0 0 15px 0;
+  }
+  .testflight-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    transition: background-color 0.2s ease;
+  }
+  .testflight-btn:hover {
+    background-color: var(--btn-hover);
+    color: var(--btn-text);
+  }
+</style>

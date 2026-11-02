@@ -3,7 +3,8 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageDocument from '../../../components/PageDocument.astro';
 import FeatureSection from '../../../components/FeatureSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
-import BetaCTA from '../../../components/BetaCTA.astro';
+import CtaSection from '../../../components/CtaSection.astro';
+import IosBetaNote from '../../../components/IosBetaNote.astro';
 import FaqSection from '../../../components/FaqSection.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 import defaultHeaderImg from '../../../assets/2048/header.png';
@@ -46,7 +47,16 @@ const headerImg = lang === 'de' ? germanHeaderImg : defaultHeaderImg;
       <li set:html={t('plus2048.li_2_1')} />
       <li set:html={t('plus2048.li_2_2')} />
       <li set:html={t('plus2048.li_2_3')} />
-      <li set:html={t('plus2048.li_2_4')} />
+    </ul>
+  </FeatureSection>
+
+  <FeatureSection title={t('plus2048.h2_free')} intro={t('plus2048.p_free')}>
+    <ul class="custom-list">
+      <li set:html={t('plus2048.li_free_1')} />
+      <li set:html={t('plus2048.li_free_2')} />
+      <li set:html={t('plus2048.li_free_3')} />
+      <li set:html={t('plus2048.li_free_4')} />
+      <li set:html={t('plus2048.li_free_5')} />
     </ul>
   </FeatureSection>
 
@@ -61,15 +71,17 @@ const headerImg = lang === 'de' ? germanHeaderImg : defaultHeaderImg;
       <li set:html={t('plus2048.li_4_3')} />
       <li set:html={t('plus2048.li_4_4')} />
       <li set:html={t('plus2048.li_4_5')} />
+      <li set:html={t('plus2048.li_4_6')} />
     </ul>
   </FeatureSection>
 
-  <BetaCTA
-      appName={t('plus2048.title')}
-      googleGroupUrl="https://groups.google.com/g/neurodivdev-testers"
-      playStoreUrl="https://play.google.com/store/apps/details?id=dev.neurodiv.plus2048"
-      testFlightUrl="https://testflight.apple.com/join/C9VJZdGu"
-  />
+  <CtaSection
+      title={t('plus2048.ctaTitle')}
+      description={t('plus2048.ctaDesc')}
+      playStoreLink="https://play.google.com/store/apps/details?id=dev.neurodiv.plus2048"
+  >
+    <IosBetaNote text={t('plus2048.iosPending')} testFlightUrl="https://testflight.apple.com/join/C9VJZdGu" />
+  </CtaSection>
 
   <FaqSection
       title={t('plus2048.faq_title')}
