@@ -45,8 +45,8 @@ export const termsApps: TermsApp[] = [
     },
     privacyPath: { en: 'calm-color-reveal/privacy-policy', de: 'calm-color-reveal/datenschutz' },
     userContent: {
-      en: 'You can turn your own photos into coloring levels. Your photos are processed exclusively on your device and are never uploaded to me or to third parties. Please only use photos that you are allowed to use and that do not violate anyone else\'s rights.',
-      de: 'Sie können eigene Fotos als Ausmal-Level verwenden. Ihre Fotos werden ausschließlich auf Ihrem Gerät verarbeitet und weder an mich noch an Dritte übertragen. Bitte verwenden Sie nur Fotos, die Sie verwenden dürfen und die keine Rechte anderer verletzen.',
+      en: 'You can turn your own photos into coloring levels, either from your gallery or taken with the camera. Your photos are processed exclusively on your device and are never uploaded to me or to third parties. Please only use photos that you are allowed to use and that do not violate anyone else\'s rights.',
+      de: 'Sie können eigene Fotos als Ausmal-Level verwenden – aus der Galerie oder direkt mit der Kamera aufgenommen. Ihre Fotos werden ausschließlich auf Ihrem Gerät verarbeitet und weder an mich noch an Dritte übertragen. Bitte verwenden Sie nur Fotos, die Sie verwenden dürfen und die keine Rechte anderer verletzen.',
     },
     family: true,
     parentalGate: true,
