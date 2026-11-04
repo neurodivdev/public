@@ -1,0 +1,41 @@
+---
+// Nutzungsbedingungen je App: /en/<slug>/terms und /de/<slug>/terms
+// Inhalt und App-Liste: src/config/terms.ts
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageDocument from '../../../components/PageDocument.astro';
+import { useTranslations } from '../../../i18n/utils';
+import { ui } from '../../../i18n/ui';
+import { termsApps, buildTerms, termsLastUpdated, type Lang, type TermsApp } from '../../../config/terms';
+
+export function getStaticPaths() {
+  return Object.keys(ui).flatMap((lang) =>
+    termsApps.map((app) => ({ params: { lang, app: app.slug }, props: { app } }))
+  );
+}
+
+const lang = Astro.params.lang as Lang;
+const { app } = Astro.props as { app: TermsApp };
+const t = useTranslations(lang);
+
+const links = {
+  imprint: `/${lang}/${t('imprint.url')}`,
+  privacy: `/${lang}/${app.privacyPath?.[lang] ?? t('privacy.url')}`,
+};
+const sections = buildTerms(app, lang, links);
+
+const heading = lang === 'de' ? 'Nutzungsbedingungen' : 'Terms of Service';
+const updated = lang === 'de' ? 'Zuletzt aktualisiert' : 'Last updated';
+---
+
+<BaseLayout title={`${heading} - ${app.name}`} backUrl={`/${lang}/${app.slug}/`}>
+  <PageDocument title={heading}>
+    <p class="text-muted">{app.name} · {updated}: {termsLastUpdated[lang]}</p>
+
+    {sections.map((section) => (
+      <>
+        <h2>{section.title}</h2>
+        {section.html.map((p) => <p set:html={p} />)}
+      </>
+    ))}
+  </PageDocument>
+</BaseLayout>
