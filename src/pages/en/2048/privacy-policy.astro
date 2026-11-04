@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageDocument from '../../../components/PageDocument.astro';
+---
+
+<BaseLayout title="Privacy Policy - abayo 2048" backUrl="/en/2048/">
+  <PageDocument title="Privacy Policy">
+    <p class="text-muted">Last updated: November 2026</p>
+
+    <p>abayo 2048 ("the App") is built to respect your privacy. This policy explains how the App handles data – the short version: your data stays on your device.</p>
+
+    <h2>Who Is Responsible</h2>
+    <p>The controller within the meaning of the EU General Data Protection Regulation (GDPR) is Dennis Hartrampf, neuro / dev, Priorter Dorfstr. 33, 14641 Wustermark, Germany. Further details are available in the <a href="/en/legal-notice-impressum">legal notice</a>.</p>
+
+    <h2>Information the App Processes</h2>
+    <p>The App works without an account and processes only the data it needs to function:</p>
+    <ul class="custom-list">
+        <li><strong>Game progress:</strong> Completed levels, paused games, your best score and received challenges are stored locally on your device.</li>
+        <li><strong>Preferences:</strong> Settings such as the selected theme are stored locally on your device.</li>
+        <li><strong>Purchase status:</strong> Whether Premium has been unlocked is stored locally on your device.</li>
+    </ul>
+
+    <h2>No Servers, No Tracking, No Ads</h2>
+    <p>All of this data is stored <strong>exclusively locally on your device</strong>. I do not operate any servers for the App, and I do not collect, transmit, analyze or store your personal information. The App contains no advertising, no advertising ID and no analytics or tracking tools.</p>
+
+    <h2>Challenge Links</h2>
+    <p>You can challenge friends by sharing a level as a link or code. The link contains only the level data (layout and random values) and, if you enter one, a short name of your choice so your friend knows who challenged them. Nothing is sent to me: you decide who you share the link with, and sharing takes place via the apps on your device (e.g. messengers).</p>
+    <p>If someone opens a challenge link on a device without the App, the website neurodiv.dev opens in their browser. The level data and name are in the part of the link after the "#" and are therefore <strong>not transmitted to the web server</strong>; they are only read in the browser to display the challenge. Information on hosting the website can be found in the <a href="/en/privacy-policy">website privacy policy</a>.</p>
+
+    <h2>Third-Party Services</h2>
+    <ul class="custom-list">
+        <li><strong>Google Play Billing (Android) / Apple In-App Purchase (iOS):</strong> Processes the optional one-time Premium purchase. Google or Apple process and manage all payment information according to their own privacy policies. I never receive your payment details or your name. The App only learns from the store whether Premium has been unlocked and stores this locally.</li>
+        <li><strong>App stores:</strong> When you download or update the App, Google Play or the Apple App Store process data under their own privacy policies. I have no influence on this and receive at most anonymous, aggregated statistics (e.g. number of installs).</li>
+    </ul>
+
+    <h2>Your Rights</h2>
+    <p>Because your data never leaves your device, you have full control:</p>
+    <ul class="custom-list">
+        <li>Clear the App's data through your device settings to remove all locally stored information.</li>
+        <li>Uninstall the App at any time to remove it and all associated local data from your device.</li>
+    </ul>
+    <p>Under the GDPR you also have the right to access, rectification, erasure, restriction of processing, data portability and objection, as well as the right to lodge a complaint with a data protection supervisory authority. As I do not store any personal data about you, there is usually nothing I could disclose or delete – but feel free to ask.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>I may update this privacy policy from time to time, for example when the App changes. The current version is always available on this page with an updated revision date.</p>
+
+    <h2 style="margin-top: 30px;">Contact</h2>
+    <p>If you have any questions about this privacy policy or the App, please contact me at:</p>
+    <p><a href="mailto:android-support@neurodiv.dev">android-support@neurodiv.dev</a></p>
+  </PageDocument>
+</BaseLayout>
