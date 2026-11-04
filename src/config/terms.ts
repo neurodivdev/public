@@ -26,6 +26,8 @@ export interface TermsApp {
   healthNotice?: 'breathing' | 'decisions';
   /** App richtet sich (auch) an Kinder und Familien. */
   family?: boolean;
+  /** Käufe in der App sind durch eine Elternsperre geschützt. */
+  parentalGate?: boolean;
 }
 
 export const termsApps: TermsApp[] = [
@@ -47,6 +49,7 @@ export const termsApps: TermsApp[] = [
       de: 'Sie können eigene Fotos als Ausmal-Level verwenden. Ihre Fotos werden ausschließlich auf Ihrem Gerät verarbeitet und weder an mich noch an Dritte übertragen. Bitte verwenden Sie nur Fotos, die Sie verwenden dürfen und die keine Rechte anderer verletzen.',
     },
     family: true,
+    parentalGate: true,
   },
   {
     slug: 'nalua',
@@ -67,6 +70,7 @@ export const termsApps: TermsApp[] = [
       en: 'a minimalist word fill-in puzzle game with level packs and daily puzzles',
       de: 'ein minimalistisches Wort-Gitterrätsel mit Level-Paketen und Tagesrätseln',
     },
+    privacyPath: { en: 'koushi/privacy-policy', de: 'koushi/datenschutz' },
     premium: {
       en: 'all current and future level packs and the complete archive of past daily puzzles',
       de: 'alle aktuellen und zukünftigen Level-Pakete sowie das komplette Archiv vergangener Tagesrätsel',
@@ -81,6 +85,7 @@ export const termsApps: TermsApp[] = [
       en: 'a calm decision helper that lets you filter options and pick one at random, at your own pace',
       de: 'eine ruhige Entscheidungshilfe, mit der Sie Optionen filtern und zufällig auswählen lassen können – in Ihrem eigenen Tempo',
     },
+    privacyPath: { en: 'yurua/privacy-policy', de: 'yurua/datenschutz' },
     userContent: {
       en: 'The options and lists you enter are stored only on your device. They are never transmitted to me or to third parties.',
       de: 'Die Optionen und Listen, die Sie eingeben, werden nur auf Ihrem Gerät gespeichert. Sie werden weder an mich noch an Dritte übertragen.',
@@ -95,6 +100,7 @@ export const termsApps: TermsApp[] = [
       en: 'a puzzle game based on the swipe-and-merge principle, with handcrafted levels, obstacles and a classic endless mode',
       de: 'ein Denkspiel nach dem Wisch-und-Verschmelz-Prinzip mit handgebauten Levels, Hindernissen und einem klassischen Endlos-Modus',
     },
+    privacyPath: { en: '2048/privacy-policy', de: '2048/datenschutz' },
     premium: {
       en: 'the full campaign, the expert levels in The Lab, the endless Void mode, unlimited undo and redo, the next-tile preview and additional themes',
       de: 'die komplette Kampagne, die Experten-Levels im Lab, den endlosen Void-Modus, unbegrenztes Rückgängig und Wiederholen, die Vorschau auf das nächste Plättchen sowie zusätzliche Themes',
@@ -178,7 +184,7 @@ export function buildTerms(app: TermsApp, lang: Lang, links: { imprint: string; 
       const html: string[] = [];
       if (app.userContent) html.push(app.userContent.de);
       if (app.shareLinks) {
-        html.push(`Sie können Levels als Link mit anderen teilen. Ein solcher Link enthält nur die Level-Daten (Aufbau und Zufallswerte), keine personenbezogenen Daten. Sie entscheiden selbst, mit wem Sie einen Link teilen; das Teilen erfolgt über die Apps Ihres Geräts (z. B. Messenger) und unterliegt deren Bedingungen.`);
+        html.push(`Sie können Levels als Link mit anderen teilen. Ein solcher Link enthält nur die Level-Daten (Aufbau und Zufallswerte) und, falls Sie einen eingeben, einen kurzen selbst gewählten Namen. Sie entscheiden selbst, mit wem Sie einen Link teilen; das Teilen erfolgt über die Apps Ihres Geräts (z. B. Messenger) und unterliegt deren Bedingungen.`);
       }
       s.push({ title: `${i++}. Ihre Inhalte`, html });
     }
@@ -204,7 +210,7 @@ export function buildTerms(app: TermsApp, lang: Lang, links: { imprint: string; 
       s.push({
         title: `${i++}. Kinder und Familien`,
         html: [
-          `Die App ist auch für Kinder geeignet. Wenn Kinder die App nutzen, sind die Eltern bzw. Erziehungsberechtigten für die Nutzung verantwortlich. Käufe sind in der App durch eine Elternsperre geschützt; zusätzlich empfehle ich, in den Einstellungen des App-Stores eine Bestätigung für Käufe zu aktivieren.`,
+          `Die App ist auch für Kinder geeignet. Wenn Kinder die App nutzen, sind die Eltern bzw. Erziehungsberechtigten für die Nutzung verantwortlich. ${app.parentalGate ? 'Käufe sind in der App durch eine Elternsperre geschützt; zusätzlich empfehle ich' : 'Ich empfehle'}, in den Einstellungen des App-Stores eine Bestätigung für Käufe zu aktivieren.`,
         ],
       });
     }
@@ -315,7 +321,7 @@ export function buildTerms(app: TermsApp, lang: Lang, links: { imprint: string; 
     const html: string[] = [];
     if (app.userContent) html.push(app.userContent.en);
     if (app.shareLinks) {
-      html.push(`You can share levels with others as a link. Such a link contains only the level data (layout and random values), no personal data. You decide who you share a link with; sharing takes place via the apps on your device (e.g. messengers) and is subject to their terms.`);
+      html.push(`You can share levels with others as a link. Such a link contains only the level data (layout and random values) and, if you enter one, a short name of your choice. You decide who you share a link with; sharing takes place via the apps on your device (e.g. messengers) and is subject to their terms.`);
     }
     s.push({ title: `${i++}. Your Content`, html });
   }
@@ -341,7 +347,7 @@ export function buildTerms(app: TermsApp, lang: Lang, links: { imprint: string; 
     s.push({
       title: `${i++}. Children and Families`,
       html: [
-        `The App is suitable for children. When children use the App, their parents or legal guardians are responsible for that use. Purchases inside the App are protected by a parental gate; I also recommend enabling purchase authentication in your app store settings.`,
+        `The App is suitable for children. When children use the App, their parents or legal guardians are responsible for that use. ${app.parentalGate ? 'Purchases inside the App are protected by a parental gate; I also recommend' : 'I recommend'} enabling purchase authentication in your app store settings.`,
       ],
     });
   }
