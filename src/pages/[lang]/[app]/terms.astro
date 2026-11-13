@@ -27,7 +27,7 @@ const heading = lang === 'de' ? 'Nutzungsbedingungen' : 'Terms of Service';
 const updated = lang === 'de' ? 'Zuletzt aktualisiert' : 'Last updated';
 ---
 
-<BaseLayout title={`${heading} - ${app.name}`} backUrl={`/${lang}/${app.slug}/`}>
+<BaseLayout title={`${heading} - ${app.name}`} backUrl={app.noLandingPage ? `/${lang}/` : `/${lang}/${app.slug}/`}>
   <PageDocument title={heading}>
     <p class="text-muted">{app.name} · {updated}: {termsLastUpdated[lang]}</p>
 

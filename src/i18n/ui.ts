@@ -213,6 +213,7 @@ export const ui = {
     'koushi.privacy.url': "koushi/privacy-policy",
     'plus2048.privacy.url': "2048/privacy-policy",
     'yurua.appStoreLink': "https://apps.apple.com/us/app/yurua-decide-with-ease/id6805198734",
+    'neben.privacy.url': "neben/privacy-policy",
     'yurua.ctaTitle': "Ready to decide without pressure?",
     'yurua.ctaDesc': "yurua is available now for Android and iOS. Having yurua on your phone means your digital retreat is always ready for your next difficult choice.",
 
@@ -566,6 +567,7 @@ export const ui = {
     'plus2048.privacy.url': "2048/datenschutz",
     'yurua.appStoreLink': "https://apps.apple.com/de/app/yurua-entspannt-entscheiden/id6805198734",
     'yurua.ctaTitle': "Bereit für entspannte Entscheidungen?",
+    'neben.privacy.url': "neben/datenschutz",
     'yurua.ctaDesc': "yurua ist ab sofort für Android und iOS verfügbar. Wenn du yurua auf deinem Smartphone hast, ist dein digitaler Rückzugsort für die nächste schwere Entscheidung immer bereit.",
 
     'yurua.faq_title': "FAQ",
