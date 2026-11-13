@@ -71,6 +71,7 @@ export const ui = {
 
     'calm.ctaTitle': "Ready to see what's hiding?",
     'calm.ctaDesc': "Calm Color Reveal is available now. Download today, try the first two worlds for free and start your relaxing coloring adventure!",
+    'calm.appStoreLink': "https://apps.apple.com/us/app/calming-reveal-quiet-retreat/id6825036227",
 
 
     'calm.faq_title': "FAQ",
@@ -212,8 +213,8 @@ export const ui = {
     'yurua.privacy.url': "yurua/privacy-policy",
     'koushi.privacy.url': "koushi/privacy-policy",
     'plus2048.privacy.url': "2048/privacy-policy",
-    'yurua.appStoreLink': "https://apps.apple.com/us/app/yurua-decide-with-ease/id6805198734",
     'neben.privacy.url': "neben/privacy-policy",
+    'yurua.appStoreLink': "https://apps.apple.com/us/app/yurua-decide-with-ease/id6805198734",
     'yurua.ctaTitle': "Ready to decide without pressure?",
     'yurua.ctaDesc': "yurua is available now for Android and iOS. Having yurua on your phone means your digital retreat is always ready for your next difficult choice.",
 
@@ -424,6 +425,7 @@ export const ui = {
 
     'calm.ctaTitle': "Bereit für ein farbenfrohes Abenteuer?",
     'calm.ctaDesc': "Calm Color Reveal ist ab sofort verfügbar. Lade es dir jetzt herunter, teste die ersten beiden Welten gratis und entdecke den entspanntesten Malspaß!",
+    'calm.appStoreLink': "https://apps.apple.com/de/app/calm-reveal-sanfte-harmonie/id6825036227",
 
 
     'calm.faq_title': "FAQ",
@@ -565,9 +567,9 @@ export const ui = {
     'yurua.privacy.url': "yurua/datenschutz",
     'koushi.privacy.url': "koushi/datenschutz",
     'plus2048.privacy.url': "2048/datenschutz",
+    'neben.privacy.url': "neben/datenschutz",
     'yurua.appStoreLink': "https://apps.apple.com/de/app/yurua-entspannt-entscheiden/id6805198734",
     'yurua.ctaTitle': "Bereit für entspannte Entscheidungen?",
-    'neben.privacy.url': "neben/datenschutz",
     'yurua.ctaDesc': "yurua ist ab sofort für Android und iOS verfügbar. Wenn du yurua auf deinem Smartphone hast, ist dein digitaler Rückzugsort für die nächste schwere Entscheidung immer bereit.",
 
     'yurua.faq_title': "FAQ",
