@@ -23,7 +23,9 @@ export interface TermsApp {
   /** Die App kann Links zum Teilen von Levels erzeugen. */
   shareLinks?: boolean;
   /** Hinweis: kein Medizinprodukt / keine professionelle Beratung. */
-  healthNotice?: 'breathing' | 'decisions';
+  healthNotice?: 'breathing' | 'decisions' | 'focus';
+  /** Die App hat (noch) keine eigene Seite auf neurodiv.dev; „Zurück“ führt dann zur Startseite. */
+  noLandingPage?: boolean;
   /** App richtet sich (auch) an Kinder und Familien. */
   family?: boolean;
   /** Käufe in der App sind durch eine Elternsperre geschützt. */
@@ -106,6 +108,22 @@ export const termsApps: TermsApp[] = [
       de: 'die komplette Kampagne, die Experten-Levels im Lab, den endlosen Void-Modus, unbegrenztes Rückgängig und Wiederholen, die Vorschau auf das nächste Plättchen sowie zusätzliche Themes',
     },
     shareLinks: true,
+  },
+  {
+    slug: 'neben',
+    name: 'neben',
+    model: 'premium',
+    what: {
+      en: 'a calm focus companion based on the body doubling principle, in which an animated animal companion works next to you in a cozy room, with optional ambient sounds and gentle self-care impulses',
+      de: 'ein ruhiger Fokus-Begleiter nach dem Prinzip des Body Doubling, in dem ein animierter Tier-Begleiter in einem gemütlichen Raum neben Ihnen arbeitet – mit optionalen Naturklängen und sanften Selbstfürsorge-Impulsen',
+    },
+    privacyPath: { en: 'neben/privacy-policy', de: 'neben/datenschutz' },
+    premium: {
+      en: 'longer and open-ended focus sessions, all rooms and companions, all room items and accessories, and all ambient sound layers – including rooms, companions and sound layers added later',
+      de: 'längere und offene Fokus-Sessions, alle Rückzugsorte und Begleiter, alle Raum-Gegenstände und Accessoires sowie alle Klang-Ebenen – auch später hinzukommende Rückzugsorte, Begleiter und Klang-Ebenen',
+    },
+    healthNotice: 'focus',
+    noLandingPage: true,
   },
 ];
 
@@ -203,6 +221,15 @@ export function buildTerms(app: TermsApp, lang: Lang, links: { imprint: string; 
         title: `${i++}. Hinweis zu Entscheidungen`,
         html: [
           `${n} hilft Ihnen, Optionen zu sortieren und bei Bedarf zufällig eine auszuwählen. Die App gibt keine Empfehlungen und ersetzt keine medizinische, psychologische, rechtliche, finanzielle oder sonstige professionelle Beratung. Die Verantwortung für Ihre Entscheidungen liegt bei Ihnen. Bitte nutzen Sie die App nicht für Entscheidungen, bei denen Ihre Gesundheit, Sicherheit oder die anderer Menschen auf dem Spiel steht.`,
+        ],
+      });
+    }
+    if (app.healthNotice === 'focus') {
+      s.push({
+        title: `${i++}. Hinweis zu Fokus und Wohlbefinden`,
+        html: [
+          `${n} ist ein Begleiter für ruhiges Arbeiten und Lernen. Die App ist <strong>kein Medizinprodukt</strong>, keine Therapie und ersetzt keine ärztliche, psychotherapeutische oder sonstige professionelle Diagnose, Beratung oder Behandlung. Ein bestimmter Erfolg, etwa beim Konzentrieren oder Anfangen von Aufgaben, wird nicht versprochen.`,
+          `Die Selbstfürsorge-Impulse (z. B. trinken, strecken, Augen ausruhen) sind freundliche Erinnerungen und keine medizinischen Empfehlungen. Achten Sie auf Ihre eigenen Bedürfnisse und passen Sie die Abstände an oder schalten Sie die Impulse ab. Wählen Sie die Lautstärke der Naturklänge so, dass sie für Sie angenehm ist, besonders bei Kopfhörern.`,
         ],
       });
     }
@@ -340,6 +367,15 @@ export function buildTerms(app: TermsApp, lang: Lang, links: { imprint: string; 
       title: `${i++}. Note on Decisions`,
       html: [
         `${n} helps you sort options and, if you like, pick one at random. The App does not give recommendations and does not replace medical, psychological, legal, financial or any other professional advice. You remain responsible for your decisions. Please do not use the App for decisions affecting your health or safety or that of other people.`,
+      ],
+    });
+  }
+  if (app.healthNotice === 'focus') {
+    s.push({
+      title: `${i++}. Note on Focus and Wellbeing`,
+      html: [
+        `${n} is a companion for calm working and studying. The App is <strong>not a medical device</strong>, not a therapy and does not replace medical, psychotherapeutic or any other professional diagnosis, advice or treatment. No particular result, for example in concentrating or starting tasks, is promised.`,
+        `The self-care impulses (e.g. drinking, stretching, resting your eyes) are friendly reminders, not medical recommendations. Pay attention to your own needs and adjust the intervals or turn the impulses off. Set the volume of the ambient sounds to a level that is comfortable for you, especially when using headphones.`,
       ],
     });
   }
