@@ -222,7 +222,7 @@ export const ui = {
     'neben.pageDesc': "Body doubling for ADHD, autistic and PDA people, and for everyone else. A calm animal companion works quietly beside you. No camera, no streaks, no subscription. 100% private and offline.",
     'neben.heroImgAlt': "neben app - a fox with round glasses writes at a cozy desk by lamplight in a rainy cabin, next to the words Body Doubling, zero pressure",
     'neben.title': "neben",
-    'neben.intro': "<strong>Body doubling without guilt.</strong> Place your phone beside your laptop, your book or wherever you need to do your work: a calm animal companion sits at a cozy desk and reads and writes right alongside you, while gentle rain falls outside. No camera, no strangers, no social pressure. And if you need to step away, nothing dies and no one gets sad. Your companion simply waits for you. <em>neben</em> is German for <em>beside</em>. It works for anyone who wants a calm focus companion, and it was designed around the needs of neurodivergent people.",
+    'neben.intro': "<strong>Body doubling without guilt.</strong> Place your phone beside your laptop, your book or wherever you need to do your work: a calm animal companion sits at a cozy desk, in a rainy cabin or a night train, and reads and writes right alongside you. No camera, no strangers, no social pressure. And if you need to step away, nothing dies and no one gets sad. Your companion simply waits for you. <em>neben</em> is German for <em>beside</em>. It works for anyone who wants a calm focus companion, and it was designed around the needs of neurodivergent people.",
 
     'neben.h2_nd': "Made for Neurodivergent People",
     'neben.p_nd': "neben is for everyone, but every detail was shaped by what neurodivergent people often struggle with in classic focus apps:",
@@ -251,7 +251,7 @@ export const ui = {
     'neben.h2_4': "Visual Calm & Quiet Sounds",
     'neben.li_4_1': "<strong>Dark OLED Look:</strong> warm lamplight and slow animations, with pixel shift and respect for the system's reduce-motion setting.",
     'neben.li_4_2': "<strong>Sounds to Mix:</strong> gentle rain, brown noise, the soft rattle of the night train. Every sound has its own slider and blends with your music or podcasts.",
-    'neben.li_4_3': "<strong>Two Retreats, Two Companions:</strong> a fox in a rainy cabin and a capybara in a night train, while the landscape drifts past the window. More are on the way.",
+    'neben.li_4_3': "<strong>Pick Your Retreat and Your Companion:</strong> a rainy cabin or a night train with the landscape drifting past the window, and a fox or a capybara at the desk. Every companion works in every retreat and wears its accessories everywhere. More retreats and companions are on the way.",
 
     'neben.h2_5': "Fair & Private",
     'neben.li_5_1': "<strong>100% Private:</strong> no account, no tracking, no analytics, no ads. neben works completely offline.",
@@ -274,7 +274,7 @@ export const ui = {
     'neben.faq_5_q': "Does neben collect my data?",
     'neben.faq_5_a': "No. There is no account, no tracking and no analytics. neben runs 100% offline, and your focus minutes never leave your device.",
     'neben.faq_6_q': "What does neben cost?",
-    'neben.faq_6_a': "The rainy cabin with the fox, rain and brown noise and sessions up to 30 minutes are free forever. A single one-time purchase unlocks everything else, including future retreats and companions. There is no subscription and there are no further in-app purchases.",
+    'neben.faq_6_a': "The rainy cabin, the fox, rain and brown noise and sessions up to 30 minutes are free forever. A single one-time purchase unlocks everything else, including future retreats and companions. There is no subscription and there are no further in-app purchases.",
     'neben.faq_7_q': "Can I already use neben?",
     'neben.faq_7_a': "Yes. neben is in an open beta: on Android, you can install it directly from Google Play. The iPhone and iPad version follows soon. Feedback is very welcome.",
     'yurua.appStoreLink': "https://apps.apple.com/us/app/yurua-decide-with-ease/id6805198734",
@@ -639,7 +639,7 @@ export const ui = {
     'neben.pageDesc': "Body Doubling für Menschen mit ADHS, Autismus und PDA und für alle anderen. Ein ruhiger Tier-Begleiter arbeitet still neben dir. Keine Kamera, keine Streaks, kein Abo. 100 % privat und offline.",
     'neben.heroImgAlt': "neben App - Ein Fuchs mit runder Brille schreibt im Lampenlicht an einem gemütlichen Schreibtisch in einer verregneten Hütte, daneben der Schriftzug Body Doubling ohne Druck",
     'neben.title': "neben",
-    'neben.intro': "<strong>Body Doubling ohne Schuldgefühle.</strong> Stell dein Handy neben deinen Laptop, dein Buch oder wo auch immer du arbeitest: Ein ruhiger Tier-Begleiter sitzt an einem gemütlichen Schreibtisch und liest und schreibt direkt neben dir, während draußen sanfter Regen fällt. Keine Kamera, keine Fremden, kein sozialer Druck. Und wenn du kurz weg musst, stirbt nichts und niemand wird traurig. Dein Begleiter wartet einfach auf dich. neben ist für alle gemacht, die einen ruhigen Fokus-Begleiter suchen, und rund um die Bedürfnisse neurodivergenter Menschen gestaltet.",
+    'neben.intro': "<strong>Body Doubling ohne Schuldgefühle.</strong> Stell dein Handy neben deinen Laptop, dein Buch oder wo auch immer du arbeitest: Ein ruhiger Tier-Begleiter sitzt an einem gemütlichen Schreibtisch, in einer verregneten Hütte oder einem Nachtzug, und liest und schreibt direkt neben dir. Keine Kamera, keine Fremden, kein sozialer Druck. Und wenn du kurz weg musst, stirbt nichts und niemand wird traurig. Dein Begleiter wartet einfach auf dich. neben ist für alle gemacht, die einen ruhigen Fokus-Begleiter suchen, und rund um die Bedürfnisse neurodivergenter Menschen gestaltet.",
 
     'neben.h2_nd': "Für neurodivergente Menschen gemacht",
     'neben.p_nd': "neben ist für alle da, aber jedes Detail ist aus dem entstanden, woran neurodivergente Menschen bei klassischen Fokus-Apps oft scheitern:",
@@ -668,7 +668,7 @@ export const ui = {
     'neben.h2_4': "Visuelle Stille & ruhige Klänge",
     'neben.li_4_1': "<strong>Dunkle OLED-Ästhetik:</strong> warmes Lampenlicht und langsame Animationen, mit Pixel-Shift und Rücksicht auf die Systemeinstellung „Bewegung reduzieren“.",
     'neben.li_4_2': "<strong>Klänge zum Mischen:</strong> sanfter Regen, braunes Rauschen, das leise Rattern des Nachtzugs. Jeder Klang hat seinen eigenen Regler und mischt sich mit deiner Musik oder deinen Podcasts.",
-    'neben.li_4_3': "<strong>Zwei Rückzugsorte, zwei Begleiter:</strong> ein Fuchs in einer verregneten Hütte und ein Capybara in einem Nachtzug, vor dessen Fenster die Landschaft vorbeizieht. Weitere sind in Arbeit.",
+    'neben.li_4_3': "<strong>Rückzugsort und Begleiter frei wählbar:</strong> eine verregnete Hütte oder ein Nachtzug, vor dessen Fenster die Landschaft vorbeizieht, und am Schreibtisch ein Fuchs oder ein Capybara. Jeder Begleiter passt in jeden Rückzugsort und trägt seine Accessoires überall. Weitere Rückzugsorte und Begleiter sind in Arbeit.",
 
     'neben.h2_5': "Fair & privat",
     'neben.li_5_1': "<strong>100 % privat:</strong> kein Konto, kein Tracking, keine Analyse, keine Werbung. neben funktioniert komplett offline.",
@@ -691,7 +691,7 @@ export const ui = {
     'neben.faq_5_q': "Sammelt neben meine Daten?",
     'neben.faq_5_a': "Nein. Es gibt kein Konto, kein Tracking und keine Analyse. neben läuft zu 100 % offline, und deine Fokus-Minuten verlassen nie dein Gerät.",
     'neben.faq_6_q': "Was kostet neben?",
-    'neben.faq_6_a': "Die Regenhütte mit dem Fuchs, Regen und braunes Rauschen und Sessions bis 30 Minuten sind für immer kostenlos. Ein einziger Einmalkauf schaltet alles Weitere frei, auch künftige Rückzugsorte und Begleiter. Es gibt kein Abo und keine weiteren In-App-Käufe.",
+    'neben.faq_6_a': "Die Regenhütte, der Fuchs, Regen und braunes Rauschen und Sessions bis 30 Minuten sind für immer kostenlos. Ein einziger Einmalkauf schaltet alles Weitere frei, auch künftige Rückzugsorte und Begleiter. Es gibt kein Abo und keine weiteren In-App-Käufe.",
     'neben.faq_7_q': "Kann ich neben schon nutzen?",
     'neben.faq_7_a': "Ja. neben ist in einer offenen Beta: Auf Android installierst du die App direkt bei Google Play. Die Version für iPhone und iPad folgt bald. Feedback ist sehr willkommen.",
     'yurua.appStoreLink': "https://apps.apple.com/de/app/yurua-entspannt-entscheiden/id6805198734",
