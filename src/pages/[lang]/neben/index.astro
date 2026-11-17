@@ -5,6 +5,7 @@ import FeatureSection from '../../../components/FeatureSection.astro';
 import HeroBanner from '../../../components/HeroBanner.astro';
 import CtaSection from '../../../components/CtaSection.astro';
 import FaqSection from '../../../components/FaqSection.astro';
+import IosBetaNote from '../../../components/IosBetaNote.astro';
 import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
 
 export function getStaticPaths() {
@@ -19,6 +20,10 @@ const headerImg = images[`../../../assets/neben/header-${lang}.webp`]?.default
     ?? images['../../../assets/neben/header-en.webp'].default;
 
 const playStoreLink = `https://play.google.com/store/apps/details?id=dev.neurodiv.neben&hl=${lang}`;
+// Öffentlicher TestFlight-Link (testflight.apple.com/join/…) eintragen, dann erscheint der iOS-Hinweis.
+// Danach in ui.ts neben.faq_7_a um TestFlight ergänzen. Nach dem App-Store-Release stattdessen
+// appStoreLink an CtaSection geben: https://apps.apple.com/app/neben-cozy-body-doubling/id6834490734
+const testFlightUrl: string | undefined = undefined;
 ---
 
 <BaseLayout
@@ -31,6 +36,15 @@ const playStoreLink = `https://play.google.com/store/apps/details?id=dev.neurodi
   <PageDocument title={t('neben.title')}>
     <p set:html={t('neben.intro')} />
   </PageDocument>
+
+  <FeatureSection title={t('neben.h2_nd')} intro={t('neben.p_nd')}>
+    <ul class="custom-list">
+      <li set:html={t('neben.li_nd_1')} />
+      <li set:html={t('neben.li_nd_2')} />
+      <li set:html={t('neben.li_nd_3')} />
+      <li set:html={t('neben.li_nd_4')} />
+    </ul>
+  </FeatureSection>
 
   <FeatureSection title={t('neben.h2_1')} intro={t('neben.p_1')}>
     <ul class="custom-list">
@@ -73,7 +87,9 @@ const playStoreLink = `https://play.google.com/store/apps/details?id=dev.neurodi
       title={t('neben.ctaTitle')}
       description={t('neben.ctaDesc')}
       playStoreLink={playStoreLink}
-  />
+  >
+    {testFlightUrl && <IosBetaNote text={t('neben.iosBeta')} testFlightUrl={testFlightUrl} />}
+  </CtaSection>
 
   <FaqSection title={t('neben.faq_title')} prefix="neben.faq_" />
 </BaseLayout>
