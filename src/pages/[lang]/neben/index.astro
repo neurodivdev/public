@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageDocument from '../../../components/PageDocument.astro';
+import FeatureSection from '../../../components/FeatureSection.astro';
+import HeroBanner from '../../../components/HeroBanner.astro';
+import CtaSection from '../../../components/CtaSection.astro';
+import FaqSection from '../../../components/FaqSection.astro';
+import {getLangFromUrl, getStaticPathsFromUi, useTranslations} from '../../../i18n/utils';
+
+export function getStaticPaths() {
+  return getStaticPathsFromUi();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const images = import.meta.glob<{ default: ImageMetadata }>('../../../assets/neben/header-*.webp', { eager: true });
+const headerImg = images[`../../../assets/neben/header-${lang}.webp`]?.default
+    ?? images['../../../assets/neben/header-en.webp'].default;
+
+const playStoreLink = `https://play.google.com/store/apps/details?id=dev.neurodiv.neben&hl=${lang}`;
+---
+
+<BaseLayout
+    title={t('neben.pageTitle')}
+    description={t('neben.pageDesc')}
+    backUrl={`/${lang}/`}
+>
+  <HeroBanner imgSrc={headerImg} imgAlt={t('neben.heroImgAlt')} />
+
+  <PageDocument title={t('neben.title')}>
+    <p set:html={t('neben.intro')} />
+  </PageDocument>
+
+  <FeatureSection title={t('neben.h2_1')} intro={t('neben.p_1')}>
+    <ul class="custom-list">
+      <li set:html={t('neben.li_1_1')} />
+      <li set:html={t('neben.li_1_2')} />
+      <li set:html={t('neben.li_1_3')} />
+      <li set:html={t('neben.li_1_4')} />
+    </ul>
+  </FeatureSection>
+
+  <FeatureSection title={t('neben.h2_2')} intro={t('neben.p_2')}>
+    <ul class="custom-list">
+      <li set:html={t('neben.li_2_1')} />
+      <li set:html={t('neben.li_2_2')} />
+      <li set:html={t('neben.li_2_3')} />
+    </ul>
+  </FeatureSection>
+
+  <FeatureSection title={t('neben.h2_3')}>
+    <p set:html={t('neben.p_3')} />
+  </FeatureSection>
+
+  <FeatureSection title={t('neben.h2_4')}>
+    <ul class="custom-list">
+      <li set:html={t('neben.li_4_1')} />
+      <li set:html={t('neben.li_4_2')} />
+      <li set:html={t('neben.li_4_3')} />
+    </ul>
+  </FeatureSection>
+
+  <FeatureSection title={t('neben.h2_5')}>
+    <ul class="custom-list">
+      <li set:html={t('neben.li_5_1')} />
+      <li set:html={t('neben.li_5_2')} />
+      <li set:html={t('neben.li_5_3')} />
+    </ul>
+  </FeatureSection>
+
+  <CtaSection
+      title={t('neben.ctaTitle')}
+      description={t('neben.ctaDesc')}
+      playStoreLink={playStoreLink}
+  />
+
+  <FaqSection title={t('neben.faq_title')} prefix="neben.faq_" />
+</BaseLayout>
