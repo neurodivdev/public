@@ -123,7 +123,6 @@ export const termsApps: TermsApp[] = [
       de: 'längere und offene Fokus-Sessions, alle Rückzugsorte und Begleiter, alle Raum-Gegenstände und Accessoires sowie alle Klang-Ebenen – auch später hinzukommende Rückzugsorte, Begleiter und Klang-Ebenen',
     },
     healthNotice: 'focus',
-    noLandingPage: true,
   },
 ];
 
