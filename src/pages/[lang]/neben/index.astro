@@ -20,10 +20,10 @@ const headerImg = images[`../../../assets/neben/header-${lang}.webp`]?.default
     ?? images['../../../assets/neben/header-en.webp'].default;
 
 const playStoreLink = `https://play.google.com/store/apps/details?id=dev.neurodiv.neben&hl=${lang}`;
-// Öffentlicher TestFlight-Link (testflight.apple.com/join/…) eintragen, dann erscheint der iOS-Hinweis.
-// Danach in ui.ts neben.faq_7_a um TestFlight ergänzen. Nach dem App-Store-Release stattdessen
-// appStoreLink an CtaSection geben: https://apps.apple.com/app/neben-cozy-body-doubling/id6834490734
-const testFlightUrl =`https://testflight.apple.com/join/A7yhqQpk`;
+// Nach dem App-Store-Release TestFlight entfernen, stattdessen appStoreLink an CtaSection geben
+// (https://apps.apple.com/app/neben-cozy-body-doubling/id6834490734) und in ui.ts
+// neben.ctaDesc, neben.faq_7_a und neben.iosBeta anpassen.
+const testFlightUrl = 'https://testflight.apple.com/join/A7yhqQpk';
 ---
 
 <BaseLayout

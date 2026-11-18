@@ -260,7 +260,7 @@ export const ui = {
 
     'neben.ctaTitle': "Ready to focus beside a calm companion?",
     'neben.iosBeta': "On iPhone or iPad? Join the public beta via Apple's free TestFlight app and try neben before the App Store release.",
-    'neben.ctaDesc': "neben is currently in an open beta. On Android, you can install it right away from Google Play, no sign-up needed.",
+    'neben.ctaDesc': "neben is currently in an open beta. You can install it right away, no sign-up needed: on Android from Google Play, on iPhone and iPad via Apple's free TestFlight app.",
 
     'neben.faq_title': "FAQ",
     'neben.faq_1_q': "What is body doubling?",
@@ -276,7 +276,7 @@ export const ui = {
     'neben.faq_6_q': "What does neben cost?",
     'neben.faq_6_a': "The rainy cabin, the fox, rain and brown noise and sessions up to 30 minutes are free forever. A single one-time purchase unlocks everything else, including future retreats and companions. There is no subscription and there are no further in-app purchases.",
     'neben.faq_7_q': "Can I already use neben?",
-    'neben.faq_7_a': "Yes. neben is in an open beta: on Android, you can install it directly from Google Play. The iPhone and iPad version follows soon. Feedback is very welcome.",
+    'neben.faq_7_a': "Yes. neben is in an open beta: on Android, you can install it directly from Google Play, on iPhone and iPad via Apple's free TestFlight app. Feedback is very welcome.",
     'yurua.appStoreLink': "https://apps.apple.com/us/app/yurua-decide-with-ease/id6805198734",
     'yurua.ctaTitle': "Ready to decide without pressure?",
     'yurua.ctaDesc': "yurua is available now for Android and iOS. Having yurua on your phone means your digital retreat is always ready for your next difficult choice.",
@@ -677,7 +677,7 @@ export const ui = {
 
     'neben.ctaTitle': "Bereit, neben einem ruhigen Begleiter zu fokussieren?",
     'neben.iosBeta': "Du hast ein iPhone oder iPad? Tritt der öffentlichen Beta über Apples kostenlose TestFlight-App bei und probiere neben schon vor dem App-Store-Release aus.",
-    'neben.ctaDesc': "neben ist gerade in einer offenen Beta. Auf Android kannst du die App direkt bei Google Play installieren, ganz ohne Anmeldung.",
+    'neben.ctaDesc': "neben ist gerade in einer offenen Beta. Du kannst die App direkt installieren, ganz ohne Anmeldung: auf Android bei Google Play, auf iPhone und iPad über Apples kostenlose TestFlight-App.",
 
     'neben.faq_title': "FAQ",
     'neben.faq_1_q': "Was ist Body Doubling?",
@@ -693,7 +693,7 @@ export const ui = {
     'neben.faq_6_q': "Was kostet neben?",
     'neben.faq_6_a': "Die Regenhütte, der Fuchs, Regen und braunes Rauschen und Sessions bis 30 Minuten sind für immer kostenlos. Ein einziger Einmalkauf schaltet alles Weitere frei, auch künftige Rückzugsorte und Begleiter. Es gibt kein Abo und keine weiteren In-App-Käufe.",
     'neben.faq_7_q': "Kann ich neben schon nutzen?",
-    'neben.faq_7_a': "Ja. neben ist in einer offenen Beta: Auf Android installierst du die App direkt bei Google Play. Die Version für iPhone und iPad folgt bald. Feedback ist sehr willkommen.",
+    'neben.faq_7_a': "Ja. neben ist in einer offenen Beta: Auf Android installierst du die App direkt bei Google Play, auf iPhone und iPad über Apples kostenlose TestFlight-App. Feedback ist sehr willkommen.",
     'yurua.appStoreLink': "https://apps.apple.com/de/app/yurua-entspannt-entscheiden/id6805198734",
     'yurua.ctaTitle': "Bereit für entspannte Entscheidungen?",
     'yurua.ctaDesc': "yurua ist ab sofort für Android und iOS verfügbar. Wenn du yurua auf deinem Smartphone hast, ist dein digitaler Rückzugsort für die nächste schwere Entscheidung immer bereit.",
