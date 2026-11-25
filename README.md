@@ -1,3 +1,29 @@
+# neuro / dev Website
+
+## Neuen Blog-Artikel anlegen
+
+1. Ordner anlegen: `src/content/blog/<slug>/`. Der Ordnername ist die URL: `/en/blog/<slug>/` und `/de/blog/<slug>/`.
+2. Darin `en.md` **und** `de.md` anlegen (am einfachsten einen Platzhalter-Ordner kopieren). Fehlt eine Sprache, bricht der Build mit einer Meldung ab.
+3. Bilder in denselben Ordner legen. Astro optimiert sie automatisch.
+   - Titelbild: `cover: ./cover.webp` und `coverAlt: "..."` im Kopfteil. Es erscheint auf der Übersicht, über dem Artikel und als Social-Media-Vorschau.
+   - Bild im Text: `![Was das Bild zeigt](./bild-1.webp)`
+4. Kopfteil (Frontmatter):
+
+   ```yaml
+   ---
+   title: "Titel"
+   description: "1–2 Sätze für Übersicht und Suchmaschinen"
+   pubDate: 2026-12-01
+   cover: ./cover.webp          # optional
+   coverAlt: "Bildbeschreibung" # Pflicht, wenn cover gesetzt ist
+   draft: true                  # nur lokal sichtbar (npm run dev), nicht im Deploy
+   ---
+   ```
+
+5. Zum Veröffentlichen `draft: true` entfernen oder auf `false` setzen.
+
+Darunter folgt der Text in Markdown (`## Zwischenüberschrift`, Listen, Links, `> Zitat`).
+
 # Astro Starter Kit: Minimal
 
 ```sh

@@ -1,0 +1,67 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import HeroBanner from '../../../components/HeroBanner.astro';
+import PageDocument from '../../../components/PageDocument.astro';
+import { useTranslations } from '../../../i18n/utils';
+import { ui } from '../../../i18n/ui';
+import { formatPublishDate, getBlogPosts } from '../../../scripts/blogCollection';
+import { parseBlogEntryId } from '../../../scripts/blogPosts';
+
+export async function getStaticPaths() {
+  const pathsPerLang = await Promise.all(
+    Object.keys(ui).map(async (lang) =>
+      (await getBlogPosts(lang)).map((post) => ({
+        params: { lang, slug: parseBlogEntryId(post.id).slug },
+        props: { post },
+      })),
+    ),
+  );
+  return pathsPerLang.flat();
+}
+
+const { post } = Astro.props;
+const { lang } = Astro.params as { lang: keyof typeof ui };
+const t = useTranslations(lang);
+const { Content } = await render(post);
+---
+
+<BaseLayout
+  title={`${post.data.title} - neuro / dev`}
+  description={post.data.description}
+  backUrl={`/${lang}/${t('blog.url')}/`}
+  socialImage={post.data.cover}
+  noindex={post.data.draft}
+>
+  {post.data.cover && <HeroBanner imgSrc={post.data.cover} imgAlt={post.data.coverAlt ?? ''} />}
+
+  <PageDocument title={post.data.title}>
+    <p class="blog-post-date">{formatPublishDate(post.data.pubDate, lang)}</p>
+    <div class="blog-post-body">
+      <Content />
+    </div>
+  </PageDocument>
+</BaseLayout>
+
+<style>
+  .blog-post-date {
+    margin-top: -10px;
+    color: var(--text-muted);
+  }
+  .blog-post-body :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+  }
+  .blog-post-body :global(h2) {
+    margin-top: 30px;
+  }
+  .blog-post-body :global(blockquote) {
+    margin: 20px 0;
+    padding: 5px 20px;
+    border-left: 4px solid var(--accent-secondary);
+    color: var(--text-muted);
+  }
+</style>

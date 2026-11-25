@@ -39,6 +39,14 @@ export const ui = {
     // About
     'about.url': "about",
 
+    // Blog
+    'blog.url': "blog",
+    'blog.pageTitle': "Blog - neuro / dev",
+    'blog.pageDesc': "Notes on neuro-inclusive app design, calm technology and building digital retreats as a neurodivergent solo developer.",
+    'blog.title': "Blog",
+    'blog.subtitle': "Notes on calm technology and neuro-inclusive design.",
+    'blog.empty': "No articles yet. Check back soon!",
+
     // Privacy Policy
     'privacy.url': "privacy-policy",
 
@@ -455,6 +463,14 @@ export const ui = {
 
     // About
     'about.url': "about",
+
+    // Blog
+    'blog.url': "blog",
+    'blog.pageTitle': "Blog - neuro / dev",
+    'blog.pageDesc': "Notizen zu neuro-inklusivem App-Design, ruhiger Technik und dem Bau digitaler Rückzugsorte als neurodivergenter Solo-Entwickler.",
+    'blog.title': "Blog",
+    'blog.subtitle': "Notizen zu ruhiger Technik und neuro-inklusivem Design.",
+    'blog.empty': "Noch keine Artikel. Schau bald wieder vorbei!",
 
     // Privacy Policy
     'privacy.url': "datenschutz",

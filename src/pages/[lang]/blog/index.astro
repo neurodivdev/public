@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BlogPostCard from '../../../components/BlogPostCard.astro';
+import { getLangFromUrl, getStaticPathsFromUi, useTranslations } from '../../../i18n/utils';
+import { formatPublishDate, getBlogPosts } from '../../../scripts/blogCollection';
+import { parseBlogEntryId } from '../../../scripts/blogPosts';
+
+export function getStaticPaths() {
+  return getStaticPathsFromUi();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const posts = await getBlogPosts(lang);
+---
+
+<BaseLayout title={t('blog.pageTitle')} description={t('blog.pageDesc')} backUrl={`/${lang}/`}>
+  <header class="blog-header">
+    <h1>{t('blog.title')}</h1>
+    <p class="blog-subtitle">{t('blog.subtitle')}</p>
+  </header>
+
+  {posts.length === 0 && <p class="blog-empty">{t('blog.empty')}</p>}
+
+  <div class="blog-list">
+    {posts.map((post) => (
+      <BlogPostCard
+        href={`/${lang}/${t('blog.url')}/${parseBlogEntryId(post.id).slug}/`}
+        title={post.data.title}
+        description={post.data.description}
+        dateText={formatPublishDate(post.data.pubDate, lang)}
+        isDraft={post.data.draft}
+        cover={post.data.cover}
+        coverAlt={post.data.coverAlt}
+      />
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .blog-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .blog-header h1 {
+    color: var(--accent-primary);
+    font-size: clamp(2rem, 6vw + 0.5rem, 3rem);
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+  .blog-subtitle {
+    font-size: 1.2em;
+    color: var(--text-muted);
+    margin: 0;
+  }
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .blog-empty {
+    text-align: center;
+    color: var(--text-muted);
+  }
+</style>
