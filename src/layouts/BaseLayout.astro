@@ -87,5 +87,15 @@ if (socialImage) {
 <Footer>
   <slot name="footer-extra" slot="footer-extra" />
 </Footer>
+<script>
+  import { withStoreCampaign } from '../scripts/storeCampaign';
+  import { withInternalCampaign } from '../scripts/internalCampaign';
+  import { appStoreProviderToken } from '../config/apps';
+
+  document.querySelectorAll<HTMLAnchorElement>('a[href]').forEach((link) => {
+    const internalHref = withInternalCampaign(link.getAttribute('href')!, window.location.href);
+    link.setAttribute('href', withStoreCampaign(internalHref, window.location.search, appStoreProviderToken));
+  });
+</script>
 </body>
 </html>

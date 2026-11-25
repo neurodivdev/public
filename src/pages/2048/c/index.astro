@@ -26,7 +26,7 @@ const socialImageUrl = new URL(socialPreview.src, Astro.site);
   <script is:inline define:vars={{ supportedLangs, defaultLang }}>
     const browserLang = (navigator.language || navigator.userLanguage || '').split('-')[0];
     const targetLang = supportedLangs.includes(browserLang) ? browserLang : defaultLang;
-    window.location.replace('/' + targetLang + '/2048/c/' + window.location.hash);
+    window.location.replace('/' + targetLang + '/2048/c/' + window.location.search + window.location.hash);
   </script>
 
   <style>

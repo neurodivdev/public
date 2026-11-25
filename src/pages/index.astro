@@ -14,9 +14,9 @@ import Brand from '../components/Brand.astro';
     const browserLang = navigator.language || navigator.userLanguage;
 
     if (browserLang.startsWith('de')) {
-      window.location.replace('/de/');
+      window.location.replace('/de/' + window.location.search);
     } else {
-      window.location.replace('/en/');
+      window.location.replace('/en/' + window.location.search);
     }
   </script>
 

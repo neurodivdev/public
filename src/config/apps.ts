@@ -8,3 +8,6 @@ export const homepageApps = [
   'yurua',
   'calm-color-reveal',
 ];
+
+// Provider Token aus App Store Connect (App Analytics > Kampagnen-Link erstellen, Parameter "pt").
+export const appStoreProviderToken = '128971985';
