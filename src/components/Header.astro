@@ -1,7 +1,7 @@
 ---
 import LangToggle from './LangToggle.astro';
 import ThemeToggle from './ThemeToggle.astro';
-import { getLangFromUrl } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 export interface Props {
   backUrl?: string;
@@ -9,14 +9,22 @@ export interface Props {
 
 const { backUrl } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const backText = lang === 'de' ? 'Zurück' : 'Back';
+const blogUrl = `/${lang}/${t('blog.url')}/`;
+const isOnBlogIndex = Astro.url.pathname.replace(/\/?$/, '/') === blogUrl;
 ---
 <div class="controls-container">
-  {backUrl && (
-    <a href={backUrl} class="back-link">
-      <span>←</span> {backText}
+  <nav class="nav-group">
+    {backUrl && (
+      <a href={backUrl} class="nav-link" aria-label={backText}>
+        <span>←</span> <span class="back-text">{backText}</span>
+      </a>
+    )}
+    <a href={blogUrl} class="blog-btn" aria-label={t('blog.title')} aria-current={isOnBlogIndex ? 'page' : undefined}>
+      <span aria-hidden="true">📝</span> <span class="blog-btn-label">{t('blog.title')}</span>
     </a>
-  )}
+  </nav>
   <div class="control-group">
     <LangToggle />
     <ThemeToggle />
@@ -28,10 +36,17 @@ const backText = lang === 'de' ? 'Zurück' : 'Back';
     width: 100%;
     max-width: 900px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 10px;
     padding: 20px 20px 0 20px;
   }
-  .back-link {
+  .nav-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
@@ -40,12 +55,69 @@ const backText = lang === 'de' ? 'Zurück' : 'Back';
     gap: 5px;
     transition: color 0.2s ease;
   }
-  .back-link:hover {
+  .nav-link:hover {
+    color: var(--accent-primary);
+  }
+  .blog-btn {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--accent-primary);
+    border-radius: 50px;
+    padding: 8px 16px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+  }
+  .blog-btn:hover {
+    transform: scale(1.05);
+    border-color: var(--accent-secondary);
+  }
+  .blog-btn[aria-current="page"] {
     color: var(--accent-primary);
   }
   .control-group {
     display: flex;
     gap: 10px;
     margin-left: auto;
+  }
+  @media (max-width: 400px) {
+    .nav-group {
+      gap: 10px;
+    }
+    .blog-btn {
+      padding: 6px 10px;
+      gap: 4px;
+    }
+    .control-group {
+      gap: 6px;
+    }
+    .control-group :global(.control-btn) {
+      padding: 6px 10px;
+      gap: 4px;
+    }
+  }
+  @media (max-width: 440px) {
+    .back-text {
+      display: none;
+    }
+  }
+  @media (max-width: 400px) {
+    .control-group :global(.theme-btn-label) {
+      display: none;
+    }
+  }
+  @media (max-width: 340px) {
+    .blog-btn-label {
+      display: none;
+    }
+  }
+  @media (max-width: 300px) {
+    .control-group :global(.lang-btn-label) {
+      display: none;
+    }
   }
 </style>

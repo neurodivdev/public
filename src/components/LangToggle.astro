@@ -45,7 +45,7 @@ if (translationKey) {
   style="text-decoration: none;"
   onclick="event.preventDefault(); window.location.replace(this.href);"
 >
-  {t('langBtnText')}
+  <span aria-hidden="true">{t('langBtnFlag')}</span> <span class="lang-btn-label">{t('langBtnText')}</span>
 </a>
 
 <style>

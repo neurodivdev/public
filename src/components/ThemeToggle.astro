@@ -5,7 +5,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 <button id="theme-btn" class="control-btn" aria-label="Erscheinungsbild anpassen">
-  <span class="icon-light">☀️</span><span class="icon-dark">🌙</span> <span>{t('themeBtnText')}</span>
+  <span class="icon-light">☀️</span><span class="icon-dark">🌙</span> <span class="theme-btn-label">{t('themeBtnText')}</span>
 </button>
 
 <script is:inline>
