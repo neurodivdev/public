@@ -3,7 +3,7 @@ export const defaultLang = 'en';
 export const ui = {
   en: {
     'pageTitle': "neuro / dev | Digital Retreats & Peaceful Apps",
-    'pageDesc': "Digital retreats with zero sensory overload. I build peaceful apps free from ads and dopamine traps, designed for neurodivergent minds and anyone seeking calm.",
+    'pageDesc': "Digital retreats with zero sensory overload. I build peaceful apps free from ads and dopamine traps, designed for neurodivergent people and anyone seeking calm.",
     'themeBtnText': "Mode",
     'langBtnFlag': "🇩🇪",
     'langBtnText': "DE",
@@ -127,11 +127,11 @@ export const ui = {
 
     // nalua
     'nalua.pageTitle': "nalua | Sensory Breathing App & Digital Retreat",
-    'nalua.pageDesc': "Feel your breath without looking at the screen. nalua is a calming app designed for neurodivergent minds and sensory overload. 100% ad-free.",
+    'nalua.pageDesc': "Feel your breath without looking at the screen. nalua is a calming app designed for neurodivergent people and sensory overload. 100% ad-free.",
     'nalua.heroImgAlt': "nalua app - A dark smartphone screen showing visual silence and sensory feedback for deep relaxation",
 
     'nalua.title': "nalua",
-    'nalua.intro': "<strong>Feel your breath without ever looking at the screen.</strong> nalua is a calm, sensory tool for deep relaxation—designed for neurodivergent minds, and a peaceful retreat for everyone else. No setup, no noise—just you and your breath.",
+    'nalua.intro': "<strong>Feel your breath without ever looking at the screen.</strong> nalua is a calm, sensory tool for deep relaxation—designed for neurodivergent people, and a peaceful retreat for everyone else. No setup, no noise—just you and your breath.",
 
     'nalua.h2_1': "Effortless & Low-Stimulation",
     'nalua.p_1': "Unlike other breathing apps that pressure you with streaks and notifications, or overwhelm you with complex settings, nalua respects your peace:",
@@ -157,7 +157,7 @@ export const ui = {
 
     'nalua.faq_title': "FAQ",
     'nalua.faq_1_q': "What is nalua and who is it for?",
-    'nalua.faq_1_a': "nalua is a calming, sensory breathing app for deep relaxation. It is specifically designed for neurodivergent minds to help manage sensory overload, but it also serves as a peaceful digital retreat for anyone seeking calm.",
+    'nalua.faq_1_a': "nalua is a calming, sensory breathing app for deep relaxation. It is specifically designed for neurodivergent people to help manage sensory overload, but it also serves as a peaceful digital retreat for anyone seeking calm.",
     'nalua.faq_2_q': "Was nalua specifically designed for neurodivergence or ME/CFS?",
     'nalua.faq_2_a': "Originally, yes. <em>nalua</em> was born out of the need to create a regulation tool for severe dysautonomia (ME/CFS) and sensory overload that works entirely without visual or auditory triggers. However, this radical low-stimulus approach makes the app a perfect tool for <em>anyone</em> who needs a screen-free break after a long day, practices energy pacing, or simply wants to fall asleep more easily.",
     'nalua.faq_3_q': "How does the app work if I never look at the screen?",
@@ -167,7 +167,7 @@ export const ui = {
     'nalua.faq_5_q': "Do I need to create an account or go through a complex setup?",
     'nalua.faq_5_a': "No. nalua is completely free of accounts and complex settings. There is not even a permission prompt: your breathing keeps running and vibrating seamlessly in the background while your screen is locked. Just open the app and find your rhythm with a single tap.",
     'nalua.faq_6_q': "Why are there no streaks, levels, or goals?",
-    'nalua.faq_6_a': "Classic health apps often rely on gamification to keep users hooked. We believe that someone who is acutely overstimulated or trying to regulate their nervous system doesn't need the added pressure of maintaining a 300-day streak or dealing with notifications. <em>nalua</em> is a digital retreat. There are no goals to achieve—you open the app, breathe, and close it again, completely guilt-free.",
+    'nalua.faq_6_a': "Classic health apps often rely on gamification to keep users hooked. I believe that someone who is acutely overstimulated or trying to regulate their nervous system doesn't need the added pressure of maintaining a 300-day streak or dealing with notifications. <em>nalua</em> is a digital retreat. There are no goals to achieve—you open the app, breathe, and close it again, completely guilt-free.",
     'nalua.faq_7_q': "Does the app really run endlessly?",
     'nalua.faq_7_a': "Almost. If you prefer a fixed length, you can choose 5, 10 or 15 minutes – there is never a visible countdown. In endless mode, <em>nalua</em> runs continuously for a full hour. This gives you all the time you need to ease out of sensory overload or gently drift off to sleep. After 60 minutes, the app gracefully fades out the haptic feedback to save your battery and keep your environment quiet. If you want to keep breathing, a single tap resumes the rhythm immediately.",
     'nalua.faq_8_q': "What happens to my data?",
@@ -178,7 +178,7 @@ export const ui = {
     'beta.title': 'Be Among the First to Try {appName}',
     'beta.intro': '{appName} is currently in a closed beta phase. If you want to experience the app before the official release, I would love to welcome you as a tester! Just follow these two quick steps:',
     'beta.step1.title': 'Get Access',
-    'beta.step1.desc': 'Join our testing group to unlock the download for your Google account.',
+    'beta.step1.desc': 'Join the testing group to unlock the download for your Google account.',
     'beta.step1.btn': '1. Join Google Group',
     'beta.step2.title': 'Download the App',
     'beta.step2.desc': 'Once you\'re in the group, you can download {appName} right away.',
@@ -191,11 +191,11 @@ export const ui = {
 
     // --- yurua Unterseite ---
     'yurua.pageTitle': "yurua | Decide with Ease & Resolve Paralysis",
-    'yurua.pageDesc': "A calm, zero-pressure decision maker and random picker for neurodivergent minds. For overwhelm, executive dysfunction, anxiety and decision fatigue. Free, offline, no ads.",
+    'yurua.pageDesc': "A calm, zero-pressure decision maker and random picker for neurodivergent people. For overwhelm, executive dysfunction, anxiety and decision fatigue. Free, offline, no ads.",
     'yurua.heroImgAlt': "yurua – many clothing options flow into a soft 'Decide for me' button that picks a single one: blue t-shirt",
 
     'yurua.title': "yurua",
-    'yurua.intro': "<strong>A calm, zero-pressure decision maker and random picker – built for neurodivergent minds.</strong> When choosing what to eat, which task to start or how to spend your evening feels impossible, yurua gives you a quiet place to begin. Made for overwhelm, executive dysfunction, ADHD paralysis, anxiety and decision fatigue – without adding more noise.",
+    'yurua.intro': "<strong>A calm, zero-pressure decision maker and random picker – built for neurodivergent people.</strong> When choosing what to eat, which task to start or how to spend your evening feels impossible, yurua gives you a quiet place to begin. Made for overwhelm, executive dysfunction, ADHD paralysis, anxiety and decision fatigue – without adding more noise.",
 
     'yurua.h2_1': "Three Ways to Decide",
     'yurua.p_1': "Open the app and choose what fits your current situation:",
@@ -292,7 +292,7 @@ export const ui = {
 
     'yurua.faq_title': "FAQ",
     'yurua.faq_1_q': "What is yurua and who is it for?",
-    'yurua.faq_1_a': "<b>yurua</b> is a calm decision maker and random picker for everyday choices. It is built for neurodivergent minds – ADHD, autism, AuDHD, PDA – and for anyone who gets stuck when too many options, demands or decisions arrive at once.",
+    'yurua.faq_1_a': "<b>yurua</b> is a calm decision maker and random picker for everyday choices. It is built for neurodivergent people – ADHD, autism, AuDHD, PDA – and for anyone who gets stuck when too many options, demands or decisions arrive at once.",
     'yurua.faq_2_q': "How is yurua different from a decision wheel?",
     'yurua.faq_2_a': "Decision wheels are loud, flashy and built like a casino game. <b>yurua</b> uses soft fades instead of spinning animations, never rushes you and always lets you veto a suggestion with a single tap. For long lists, it helps you narrow things down step by step instead of leaving everything to chance.",
     'yurua.faq_3_q': "Does yurua ask me how I feel?",
@@ -330,7 +330,7 @@ export const ui = {
 
     'koushi.faq_title': "FAQ",
     'koushi.faq_1_q': "What is koushi and who is it for?",
-    'koushi.faq_1_a': "<b>koushi</b> is a minimalist, relaxing word fit puzzle designed for 'visual silence'. While specifically crafted with neurodivergent minds (ADHD, Autism, AuDHD) in mind to prevent sensory overload, it serves as a peaceful digital retreat for anyone who enjoys logic puzzles without stress.",
+    'koushi.faq_1_a': "<b>koushi</b> is a minimalist, relaxing word fit puzzle designed for 'visual silence'. While specifically crafted with neurodivergent people (ADHD, Autism, AuDHD) in mind to prevent sensory overload, it serves as a peaceful digital retreat for anyone who enjoys logic puzzles without stress.",
 
     'koushi.faq_2_q': "How is koushi different from other word games?",
     'koushi.faq_2_a': "Most modern puzzle apps are loud, ad-heavy, and use toxic gamification like timers and streaks to keep you hooked. <b>koushi</b> strips all of that away. There are no flashing banners, no ticking clocks, no haptic feedback, and no red error messages. You just play at your own pace.",
@@ -339,13 +339,13 @@ export const ui = {
     'koushi.faq_3_a': "These features are designed to drastically reduce cognitive load. <strong>Smart Dimming</strong> automatically fades out incompatible slots when you select a word, so you don't have to visually scan the entire board. <strong>Draft Mode</strong> lets you place words tentatively, like writing in pencil, creating a safe space to experiment without the fear of making mistakes.",
 
     'koushi.faq_4_q': "Why are there no daily streaks or high scores?",
-    'koushi.faq_4_a': "We believe games should respect your time and mental health. Creating a daily streak often leads to FOMO (Fear of Missing Out) and artificial pressure. With <b>koushi</b>, you can solve the free daily puzzle, take a few days off, and catch up on the puzzles of the last 7 days whenever you feel like it—completely guilt-free. With Premium, the complete archive of past puzzles is open to you.",
+    'koushi.faq_4_a': "I believe games should respect your time and mental health. Creating a daily streak often leads to FOMO (Fear of Missing Out) and artificial pressure. With <b>koushi</b>, you can solve the free daily puzzle, take a few days off, and catch up on the puzzles of the last 7 days whenever you feel like it—completely guilt-free. With Premium, the complete archive of past puzzles is open to you.",
 
     'koushi.faq_5_q': "Is koushi really free, or are there hidden subscriptions?",
     'koushi.faq_5_a': "There are zero subscriptions and zero ads. For free, you get a 20-level starter pack, the daily puzzles of the last 7 days and all color themes. If you want more, a single one-time Premium purchase unlocks all current and future level packs and the complete daily puzzle archive. No single packs, no dark patterns – and it supports this solo developer project.",
 
     'koushi.faq_6_q': "Do I need an account or an internet connection to play?",
-    'koushi.faq_6_a': "No. <b>koushi</b> works 100% offline. You don't need to create an account, there are no trackers, and we collect absolutely no personal data. Your progress stays locally on your device, making it a perfectly safe environment for the whole family.",
+    'koushi.faq_6_a': "No. <b>koushi</b> works 100% offline. You don't need to create an account, there are no trackers, and I collect absolutely no personal data. Your progress stays locally on your device, making it a perfectly safe environment for the whole family.",
 
     // abayo 2048
     'plus2048.pageTitle': "abayo 2048 | Walls, Holes & Portals Brainteaser",
@@ -765,13 +765,13 @@ export const ui = {
     'koushi.faq_3_a': "Diese Funktionen wurden entwickelt, um die kognitive Belastung drastisch zu senken. <strong>Smart Dimming</strong> dunkelt inkompatible Felder automatisch ab, sobald du ein Wort antippst, sodass du nicht das ganze Gitter absuchen musst. Der <strong>Entwurfs-Modus (Draft Mode)</strong> erlaubt es dir, Wörter wie mit einem Bleistift probehalber zu platzieren – ein sicherer Raum zum Experimentieren ohne Angst vor Fehlern.",
 
     'koushi.faq_4_q': "Warum gibt es keine Daily-Streaks oder Highscores?",
-    'koushi.faq_4_a': "Wir glauben, dass Spiele deine Zeit und mentale Gesundheit respektieren sollten. Streaks erzeugen oft FOMO (die Angst, etwas zu verpassen) und künstlichen Druck. Bei <b>koushi</b> kannst du das kostenlose Tagesrätsel lösen, ein paar Tage pausieren und die Rätsel der letzten 7 Tage in Ruhe nachholen – ganz ohne schlechtes Gewissen. Mit Premium steht dir das komplette Archiv aller vergangenen Rätsel offen.",
+    'koushi.faq_4_a': "Ich glaube, dass Spiele deine Zeit und mentale Gesundheit respektieren sollten. Streaks erzeugen oft FOMO (die Angst, etwas zu verpassen) und künstlichen Druck. Bei <b>koushi</b> kannst du das kostenlose Tagesrätsel lösen, ein paar Tage pausieren und die Rätsel der letzten 7 Tage in Ruhe nachholen – ganz ohne schlechtes Gewissen. Mit Premium steht dir das komplette Archiv aller vergangenen Rätsel offen.",
 
     'koushi.faq_5_q': "Ist koushi wirklich kostenlos oder gibt es versteckte Abos?",
     'koushi.faq_5_a': "Es gibt null Abos und null Werbung. Kostenlos erhältst du ein Starter-Paket mit 20 Leveln, die Tagesrätsel der letzten 7 Tage und alle Farb-Themes. Wenn du mehr möchtest, schaltet ein einziger Premium-Einmalkauf alle aktuellen und zukünftigen Level-Pakete und das komplette Archiv der Tagesrätsel frei. Keine Einzelpakete, keine Dark Patterns – und du unterstützt damit dieses Solo-Entwickler-Projekt.",
 
     'koushi.faq_6_q': "Brauche ich einen Account oder Internet, um zu spielen?",
-    'koushi.faq_6_a': "Nein. <b>koushi</b> funktioniert zu 100 % offline. Du musst keinen Account anlegen, es gibt keine Tracker und wir sammeln absolut keine persönlichen Daten. Dein Spielfortschritt bleibt lokal auf deinem Gerät – ein absolut sicheres Umfeld für die ganze Familie.",
+    'koushi.faq_6_a': "Nein. <b>koushi</b> funktioniert zu 100 % offline. Du musst keinen Account anlegen, es gibt keine Tracker und ich sammle absolut keine persönlichen Daten. Dein Spielfortschritt bleibt lokal auf deinem Gerät – ein absolut sicheres Umfeld für die ganze Familie.",
 
     // abayo 2048
     'plus2048.pageTitle': "abayo 2048 | Denkspiel mit Wänden, Löchern & Portalen",

@@ -17,7 +17,7 @@ const isOnBlogIndex = Astro.url.pathname.replace(/\/?$/, '/') === blogUrl;
 <div class="controls-container">
   <nav class="nav-group">
     {backUrl && (
-      <a href={backUrl} class="nav-link" aria-label={backText}>
+      <a href={backUrl} class="nav-link" aria-label={backText} data-back-link>
         <span>←</span> <span class="back-text">{backText}</span>
       </a>
     )}
@@ -30,6 +30,26 @@ const isOnBlogIndex = Astro.url.pathname.replace(/\/?$/, '/') === blogUrl;
     <ThemeToggle />
   </div>
 </div>
+
+<script>
+  import { resolveBackUrl } from '../scripts/backNavigation';
+
+  const backLink = document.querySelector<HTMLAnchorElement>('a[data-back-link]');
+  if (backLink) {
+    const fallbackUrl = backLink.getAttribute('href') ?? '';
+    const resolvedUrl = resolveBackUrl(fallbackUrl, document.referrer, window.location.href);
+    if (resolvedUrl !== fallbackUrl) {
+      backLink.setAttribute('href', resolvedUrl);
+      backLink.addEventListener('click', (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+        if (window.history.length > 1) {
+          event.preventDefault();
+          window.history.back();
+        }
+      });
+    }
+  }
+</script>
 
 <style>
   .controls-container {
